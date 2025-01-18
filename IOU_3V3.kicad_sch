@@ -11,6 +11,17 @@
 		(company "Frozen Signal")
 	)
 	(lib_symbols)
+	(text "*** FIXME: Find a way to move what's in the IOU sheet\nhere without causing problems in the PCB design tool"
+		(exclude_from_sim no)
+		(at 24.384 61.722 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "070d7aad-9b01-4d30-a691-4ac8c74fd55d")
+	)
 	(sheet
 		(at 25.4 24.13)
 		(size 40.64 33.02)
