@@ -1,0 +1,201 @@
+(footprint "DMP2104LP7"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "DMP2104LP-7")
+	(tags "MOSFET (P-Channel)")
+	(property "Reference" "Q**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "c9ec8ddb-ebff-4b60-bc71-41219887bc61")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "DMP2104LP7"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "433d3e0e-a8c9-455a-a706-da8425383288")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "256f8c8d-a5ce-4f4a-a51a-43e888d53bdd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18f169c7-f38c-4abc-b915-72bc9b5a6af0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "516437a9-e6a4-4e0a-ae37-a8e4e9da4040")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0.445 1)
+		(end 0.445 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "51aae5ef-faa5-455d-a579-83622c04cab0")
+	)
+	(fp_line
+		(start 0.445 1.1)
+		(end 0.445 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7ee408a4-56df-476e-a405-78ddbd11752b")
+	)
+	(fp_arc
+		(start 0.445 1)
+		(mid 0.495 1.05)
+		(end 0.445 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e8be422c-2d97-4986-98ef-0ee467727ab3")
+	)
+	(fp_arc
+		(start 0.445 1.1)
+		(mid 0.395 1.05)
+		(end 0.445 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "36569c7c-977a-40bc-a1a8-d47e163998a1")
+	)
+	(fp_rect
+		(start -1.2 -1.05)
+		(end 1.2 1.05)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "1ec062f8-6b2d-44cc-939f-2e03473d6250")
+	)
+	(fp_line
+		(start -0.7 -0.55)
+		(end 0.7 -0.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "242a61c4-52da-4634-abb4-07281762a4cc")
+	)
+	(fp_line
+		(start -0.7 0.55)
+		(end -0.7 -0.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "adc5dcc1-0cd1-4b35-9b70-bb69c2357650")
+	)
+	(fp_line
+		(start 0.7 -0.55)
+		(end 0.7 0.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "df693b20-591c-4450-9ded-9ecaba8d9403")
+	)
+	(fp_line
+		(start 0.7 0.55)
+		(end -0.7 0.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "43e05d7e-716e-430f-b983-527270f8d6b5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "3cb6d7f1-5a82-4f99-a834-cdd273571053")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.445 0.275 90)
+		(size 0.4 0.48)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e090fa8d-f932-46ec-9d84-c0508f98b0a9")
+	)
+	(pad "2" smd rect
+		(at 0.445 -0.275 90)
+		(size 0.4 0.48)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "1cff2ef5-db59-42a0-8ed4-2340b388dfc0")
+	)
+	(pad "3" smd rect
+		(at -0.315 0 90)
+		(size 0.75 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f8a182b9-d6fe-43cf-88e7-9a1b64dc00dd")
+	)
+	(model "${KIPRJMOD}/3D_Models/DMP2104LP-7.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
