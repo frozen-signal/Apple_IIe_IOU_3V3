@@ -2458,12 +2458,12 @@
 				)
 			)
 		)
-		(symbol "000_Symbols:LSF0102DDFR"
+		(symbol "000_Symbols:LSF0102DCH"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 29.21 7.62 0)
+				(at 12.7 4.572 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2471,8 +2471,8 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "LSF0102DDFR"
-				(at 29.21 5.08 0)
+			(property "Value" "LSF0102DCH"
+				(at 12.954 -9.906 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2480,18 +2480,8 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "000_Footprints:SOP65P280X110-8N"
-				(at 4.064 -3.302 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 29.21 -194.92 0)
+			(property "Footprint" "000_Footprints:SOP50P310X100-8N"
+				(at 24.13 -94.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2500,7 +2490,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Translation - Voltage Levels Dual bidirectional multi-voltage level translator"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/LSF0102.pdf"
+				(at 24.13 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Translation - Voltage Levels LSF0102DC/SOT765/VSSOP8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2509,10 +2509,60 @@
 					(hide yes)
 				)
 			)
-			(symbol "LSF0102DDFR_1_1"
+			(property "Height" "1"
+				(at 24.13 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "771-LSF0102DCH"
+				(at 24.13 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Nexperia/LSF0102DCH?qs=zW32dvEIR3vhhHCS5E8Gjg%3D%3D"
+				(at 24.13 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Nexperia"
+				(at 24.13 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "LSF0102DCH"
+				(at 24.13 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "LSF0102DCH_1_1"
 				(rectangle
 					(start 5.08 2.54)
-					(end 27.94 -10.16)
+					(end 22.86 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2542,7 +2592,7 @@
 				(pin passive line
 					(at 0 -2.54 0)
 					(length 5.08)
-					(name "VREF_A"
+					(name "REFA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2594,7 +2644,7 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 -7.62 180)
+					(at 27.94 -7.62 180)
 					(length 5.08)
 					(name "B2"
 						(effects
@@ -2612,7 +2662,7 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 -5.08 180)
+					(at 27.94 -5.08 180)
 					(length 5.08)
 					(name "B1"
 						(effects
@@ -2630,9 +2680,9 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 -2.54 180)
+					(at 27.94 -2.54 180)
 					(length 5.08)
-					(name "VREF_B"
+					(name "REFB"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2648,7 +2698,7 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 0 180)
+					(at 27.94 0 180)
 					(length 5.08)
 					(name "EN"
 						(effects
@@ -5508,7 +5558,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 215.9) (xy 265.43 215.9)
+			(xy 248.92 215.9) (xy 267.97 215.9)
 		)
 		(stroke
 			(width 0)
@@ -5688,16 +5738,6 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 210.82) (xy 304.8 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10df78fa-2c68-4ba2-a415-2167e7857cd4")
-	)
-	(wire
-		(pts
 			(xy 321.31 203.2) (xy 321.31 215.9)
 		)
 		(stroke
@@ -5788,7 +5828,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 213.36) (xy 261.62 213.36)
+			(xy 261.62 213.36) (xy 267.97 213.36)
 		)
 		(stroke
 			(width 0)
@@ -5855,16 +5895,6 @@
 			(type default)
 		)
 		(uuid "18af2b28-316e-4edc-b6d9-8da30c72cc75")
-	)
-	(wire
-		(pts
-			(xy 332.74 218.44) (xy 298.45 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "193cb928-43ed-4525-8672-d8a5294a58bd")
 	)
 	(wire
 		(pts
@@ -5968,6 +5998,16 @@
 	)
 	(wire
 		(pts
+			(xy 295.91 213.36) (xy 304.8 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f9a0dd4-f4f3-4df3-bbae-42641cb3a2e8")
+	)
+	(wire
+		(pts
 			(xy 304.8 187.96) (xy 304.8 195.58)
 		)
 		(stroke
@@ -6028,7 +6068,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 218.44) (xy 265.43 218.44)
+			(xy 236.22 218.44) (xy 267.97 218.44)
 		)
 		(stroke
 			(width 0)
@@ -6295,16 +6335,6 @@
 			(type default)
 		)
 		(uuid "3e8becb5-88f9-4761-8095-183d073cf993")
-	)
-	(wire
-		(pts
-			(xy 298.45 213.36) (xy 304.8 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4207cb67-b65a-4e80-a771-fb0c49c41d0e")
 	)
 	(wire
 		(pts
@@ -7338,7 +7368,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 210.82) (xy 259.08 210.82)
+			(xy 259.08 210.82) (xy 267.97 210.82)
 		)
 		(stroke
 			(width 0)
@@ -7818,6 +7848,16 @@
 	)
 	(wire
 		(pts
+			(xy 295.91 210.82) (xy 304.8 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6e5d6e0-4a37-4200-9e91-2d12a8a58cff")
+	)
+	(wire
+		(pts
 			(xy 92.71 170.18) (xy 92.71 166.37)
 		)
 		(stroke
@@ -7885,16 +7925,6 @@
 			(type default)
 		)
 		(uuid "aa75c0a3-45f1-49b4-9e09-6aec3ba3c4f2")
-	)
-	(wire
-		(pts
-			(xy 321.31 215.9) (xy 298.45 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aad54f63-c0d3-4055-a087-5669002898bb")
 	)
 	(wire
 		(pts
@@ -8288,6 +8318,16 @@
 	)
 	(wire
 		(pts
+			(xy 295.91 215.9) (xy 321.31 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c40541b3-7070-4cc1-b409-90c484a43a66")
+	)
+	(wire
+		(pts
 			(xy 156.21 36.83) (xy 156.21 40.64)
 		)
 		(stroke
@@ -8535,6 +8575,16 @@
 			(type default)
 		)
 		(uuid "d48934f2-7dd4-430a-a233-19dcced84de7")
+	)
+	(wire
+		(pts
+			(xy 295.91 218.44) (xy 332.74 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4cff49f-4a5a-410e-87fd-1b3741b3e888")
 	)
 	(wire
 		(pts
@@ -19425,6 +19475,144 @@
 		)
 	)
 	(symbol
+		(lib_id "000_Symbols:LSF0102DCH")
+		(at 267.97 210.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e788ffdb-2dec-4d51-90f5-96059feb518e")
+		(property "Reference" "U2"
+			(at 281.94 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LSF0102DCH"
+			(at 281.94 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "000_Footprints:SOP50P310X100-8N"
+			(at 292.1 305.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/LSF0102.pdf"
+			(at 292.1 405.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Translation - Voltage Levels LSF0102DC/SOT765/VSSOP8"
+			(at 267.97 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 292.1 605.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "771-LSF0102DCH"
+			(at 292.1 705.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Nexperia/LSF0102DCH?qs=zW32dvEIR3vhhHCS5E8Gjg%3D%3D"
+			(at 292.1 805.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Nexperia"
+			(at 292.1 905.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LSF0102DCH"
+			(at 292.1 1005.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "83ca6803-26ac-41c2-8b84-2799e3d6bfeb")
+		)
+		(pin "7"
+			(uuid "74b0a8b9-da8d-4cba-874d-53069e600a06")
+		)
+		(pin "5"
+			(uuid "baacae6e-191a-4838-bf1e-b9fd216b2aa4")
+		)
+		(pin "6"
+			(uuid "90b5786a-c4b9-47de-9247-dea2fd1b7ddd")
+		)
+		(pin "1"
+			(uuid "f37e88dd-9197-4631-b77f-530ff7e4d892")
+		)
+		(pin "4"
+			(uuid "f9642cdf-23ff-45b7-a0f9-4ff3a2ee50d7")
+		)
+		(pin "8"
+			(uuid "53f0f453-5819-4875-9b00-1c0c3f80ec64")
+		)
+		(pin "2"
+			(uuid "389f9ec8-a09d-4fa2-a72e-27cb54fd4b54")
+		)
+		(instances
+			(project ""
+				(path "/7cd0c0ca-3d12-4860-aa86-3321ef5fa4ba"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 317.5 115.57 0)
 		(unit 1)
@@ -19945,100 +20133,6 @@
 			(project "IOU_3V3"
 				(path "/7cd0c0ca-3d12-4860-aa86-3321ef5fa4ba"
 					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "000_Symbols:LSF0102DDFR")
-		(at 265.43 210.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fefba2a0-db27-4f95-9005-d6d926505cd3")
-		(property "Reference" "U3"
-			(at 281.94 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LSF0102DDFR"
-			(at 281.94 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "000_Footprints:SOP65P280X110-8N"
-			(at 269.494 214.122 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 294.64 405.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Translation - Voltage Levels Dual bidirectional multi-voltage level translator"
-			(at 265.43 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "09835d26-13bf-4bec-9f2e-2d1d023e3fe8")
-		)
-		(pin "8"
-			(uuid "19fa0ace-49a2-4848-931d-364c2af5f893")
-		)
-		(pin "7"
-			(uuid "e8ce916a-0a89-4147-b25e-a223f8c6c326")
-		)
-		(pin "2"
-			(uuid "eefda31b-9fb3-4a44-a731-8fd94ce251e0")
-		)
-		(pin "5"
-			(uuid "d5d02dab-c013-4929-a296-582f55717fbb")
-		)
-		(pin "4"
-			(uuid "b11c88a7-ee62-4ff1-b528-1109062a148c")
-		)
-		(pin "3"
-			(uuid "03875dcc-b37d-4189-b14f-90e66c70dbbb")
-		)
-		(pin "1"
-			(uuid "38365130-edfd-45d6-a9ef-53100de03d28")
-		)
-		(instances
-			(project ""
-				(path "/55069440-6249-4c38-b942-beed3e8959d4/bb58d5d7-bdcb-43fe-8609-a447d85cbde6"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-			(project "IOU_3V3"
-				(path "/7cd0c0ca-3d12-4860-aa86-3321ef5fa4ba"
-					(reference "U7")
 					(unit 1)
 				)
 			)
