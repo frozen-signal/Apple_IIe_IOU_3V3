@@ -6,13 +6,13 @@
 	(descr "MIC5504-3.3YM5-T")
 	(tags "Integrated Circuit")
 	(property "Reference" "U"
-		(at 0 0 0)
+		(at 0 -2.2 0)
 		(layer "F.SilkS")
 		(uuid "a7e31035-571e-4284-9895-0642edfc0142")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 0.6 0.6)
+				(thickness 0.06)
 			)
 		)
 	)

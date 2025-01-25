@@ -6,13 +6,13 @@
 	(descr "DMP2104LP-7")
 	(tags "MOSFET (P-Channel)")
 	(property "Reference" "Q**"
-		(at 0 0 0)
+		(at 0 -1.45 0)
 		(layer "F.SilkS")
 		(uuid "c9ec8ddb-ebff-4b60-bc71-41219887bc61")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 0.6 0.6)
+				(thickness 0.06)
 			)
 		)
 	)
@@ -65,47 +65,17 @@
 		)
 	)
 	(attr smd)
-	(fp_line
-		(start 0.445 1)
-		(end 0.445 1)
+	(fp_poly
+		(pts
+			(xy 0.907322 0.734835) (xy 0.925 1) (xy 1.172487 0.752513)
+		)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
+		(fill solid)
 		(layer "F.SilkS")
-		(uuid "51aae5ef-faa5-455d-a579-83622c04cab0")
-	)
-	(fp_line
-		(start 0.445 1.1)
-		(end 0.445 1.1)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "7ee408a4-56df-476e-a405-78ddbd11752b")
-	)
-	(fp_arc
-		(start 0.445 1)
-		(mid 0.495 1.05)
-		(end 0.445 1.1)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "e8be422c-2d97-4986-98ef-0ee467727ab3")
-	)
-	(fp_arc
-		(start 0.445 1.1)
-		(mid 0.395 1.05)
-		(end 0.445 1)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "36569c7c-977a-40bc-a1a8-d47e163998a1")
+		(uuid "55352390-e2f1-4c68-b634-5f986df4d313")
 	)
 	(fp_rect
 		(start -1.2 -1.05)

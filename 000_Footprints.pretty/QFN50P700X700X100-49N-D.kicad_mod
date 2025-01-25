@@ -6,13 +6,13 @@
 	(descr "48-Pin QFN")
 	(tags "Integrated Circuit")
 	(property "Reference" "IC**"
-		(at 0 0 0)
+		(at 0 -4.75 0)
 		(layer "F.SilkS")
 		(uuid "26dcef02-886f-4dcf-8f16-d2f8717ed928")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 0.6 0.6)
+				(thickness 0.06)
 			)
 		)
 	)
@@ -164,16 +164,17 @@
 		(layer "F.Paste")
 		(uuid "7a594ce7-5c1b-41b7-af78-076c9f0c91f8")
 	)
-	(fp_circle
-		(center -3.875 -3.5)
-		(end -3.875 -3.375)
+	(fp_poly
+		(pts
+			(xy -3.932322 -3.909835) (xy -3.95 -4.175) (xy -4.197487 -3.927513)
+		)
 		(stroke
-			(width 0.25)
+			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill solid)
 		(layer "F.SilkS")
-		(uuid "8bfdb47f-ad2f-4dc8-b931-8a5bd0032ee9")
+		(uuid "96f3cb0b-9dc7-4260-b22a-9ab1261cebf1")
 	)
 	(fp_line
 		(start -4.125 -4.125)

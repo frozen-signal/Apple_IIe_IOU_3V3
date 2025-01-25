@@ -6,13 +6,13 @@
 	(descr "-sot523")
 	(tags "MOSFET (N-Channel)")
 	(property "Reference" "Q**"
-		(at 0 -1.775 0)
+		(at 0 -1.55 0)
 		(layer "F.SilkS")
 		(uuid "1857290f-9e9c-40f1-84eb-0ddfad81b6db")
 		(effects
 			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
+				(size 0.6 0.6)
+				(thickness 0.06)
 			)
 		)
 	)

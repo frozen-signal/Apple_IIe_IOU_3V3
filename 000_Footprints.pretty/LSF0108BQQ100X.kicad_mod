@@ -6,13 +6,13 @@
 	(descr "SOT764-1")
 	(tags "Integrated Circuit")
 	(property "Reference" "U"
-		(at 0 0 0)
+		(at 0 -2.375 0)
 		(layer "F.SilkS")
 		(uuid "43bd8e9e-ba1c-4e9e-bfe5-a0e5faa0eba5")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 0.6 0.6)
+				(thickness 0.06)
 			)
 		)
 	)
@@ -65,47 +65,17 @@
 		)
 	)
 	(attr smd)
-	(fp_line
-		(start -3.2 0.2)
-		(end -3.2 0.2)
+	(fp_poly
+		(pts
+			(xy -2.525 0.75) (xy -2.790165 0.767678) (xy -2.542678 1.015165)
+		)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
+		(fill solid)
 		(layer "F.SilkS")
-		(uuid "3aa5f70c-d543-4865-b772-9c3b04a216f9")
-	)
-	(fp_line
-		(start -3.2 0.3)
-		(end -3.2 0.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "bff620bc-1bd0-4b6f-bab8-b673fe8aeaff")
-	)
-	(fp_arc
-		(start -3.2 0.2)
-		(mid -3.15 0.25)
-		(end -3.2 0.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "886ae99f-7a62-43a0-be49-8323bf54717b")
-	)
-	(fp_arc
-		(start -3.2 0.3)
-		(mid -3.25 0.25)
-		(end -3.2 0.2)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "7fffca55-0a12-4e8b-82d3-42aea234683a")
+		(uuid "d557d92d-1a4c-40f4-847d-621df3858927")
 	)
 	(fp_rect
 		(start -3 -2)
