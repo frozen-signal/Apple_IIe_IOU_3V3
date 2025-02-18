@@ -5609,7 +5609,7 @@
 			)
 		)
 	)
-	(symbol "TXU0102QDTTR"
+	(symbol "TXU0102DTTR"
 		(pin_names
 			(offset 0.254)
 		)
@@ -5624,7 +5624,7 @@
 				)
 			)
 		)
-		(property "Value" "TXU0102QDTTR"
+		(property "Value" "TXU0102DTTR"
 			(at -0.254 -14.224 0)
 			(effects
 				(font
@@ -5642,7 +5642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "TXU0102QDTTR"
+		(property "Datasheet" "TXU0102DTTR"
 			(at 18.034 -24.638 0)
 			(effects
 				(font
@@ -5679,7 +5679,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "TXU0102QDTTR_0_1"
+		(symbol "TXU0102DTTR_0_1"
 			(pin output line
 				(at 15.24 -11.43 180)
 				(length 5.08)
@@ -5807,7 +5807,7 @@
 				)
 			)
 		)
-		(symbol "TXU0102QDTTR_1_1"
+		(symbol "TXU0102DTTR_1_1"
 			(rectangle
 				(start -10.16 0)
 				(end 10.16 -20.32)

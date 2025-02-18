@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "000_Symbols")(type "KiCad")(uri "${KIPRJMOD}/000_Symbols.kicad_sym")(options "")(descr ""))
   (lib (name "programmingpins")(type "KiCad")(uri "C:/crap/programmingpins.kicad_sym")(options "")(descr ""))
+  (lib (name "txu0102dttr")(type "KiCad")(uri "C:/crap/txu0102dttr.kicad_sym")(options "")(descr ""))
 )

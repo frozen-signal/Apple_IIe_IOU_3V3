@@ -3967,7 +3967,7 @@
 				)
 			)
 		)
-		(symbol "000_Symbols:TXU0102QDTTR"
+		(symbol "000_Symbols:TXU0102DTTR"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3982,7 +3982,7 @@
 					)
 				)
 			)
-			(property "Value" "TXU0102QDTTR"
+			(property "Value" "TXU0102DTTR"
 				(at -0.254 -14.224 0)
 				(effects
 					(font
@@ -4000,7 +4000,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "TXU0102QDTTR"
+			(property "Datasheet" "TXU0102DTTR"
 				(at 18.034 -24.638 0)
 				(effects
 					(font
@@ -4037,7 +4037,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "TXU0102QDTTR_0_1"
+			(symbol "TXU0102DTTR_0_1"
 				(pin output line
 					(at 15.24 -11.43 180)
 					(length 5.08)
@@ -4165,7 +4165,7 @@
 					)
 				)
 			)
-			(symbol "TXU0102QDTTR_1_1"
+			(symbol "TXU0102DTTR_1_1"
 				(rectangle
 					(start -10.16 0)
 					(end 10.16 -20.32)
@@ -14898,95 +14898,6 @@
 		)
 	)
 	(symbol
-		(lib_id "000_Symbols:TXU0102QDTTR")
-		(at 303.53 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "581009b8-f1ab-42ef-b182-8ea53cb527e6")
-		(property "Reference" "U10"
-			(at 309.118 129.032 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TXU0102QDTTR"
-			(at 295.402 145.796 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_Footprints:X1SON8_DTT_TEX"
-			(at 324.104 161.798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "TXU0102QDTTR"
-			(at 324.104 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 285.75 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "d28417f0-3067-4f9d-827d-ec99388c2fa3")
-		)
-		(pin "6"
-			(uuid "a0ca7eab-bccb-4b23-9a9a-b91c3ec04285")
-		)
-		(pin "2"
-			(uuid "595ed0b2-077e-44eb-99ad-3b3213d134ba")
-		)
-		(pin "7"
-			(uuid "e7b68a30-88b9-42a7-858d-af5c6eab3820")
-		)
-		(pin "1"
-			(uuid "ca4623e7-27fa-4d5d-b4bb-1fcf7a21bdda")
-		)
-		(pin "4"
-			(uuid "c0eb8f91-474c-4c94-924f-25ff3a56cf54")
-		)
-		(pin "5"
-			(uuid "13809373-9092-4d85-83af-41bd92d59867")
-		)
-		(pin "8"
-			(uuid "8b60218d-c1cc-4581-a9a1-dccafead788b")
-		)
-		(instances
-			(project "IOU_3V3"
-				(path "/7cd0c0ca-3d12-4860-aa86-3321ef5fa4ba"
-					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 77.47 195.58 0)
 		(mirror y)
@@ -16572,6 +16483,96 @@
 			(project "IOU_3V3"
 				(path "/7cd0c0ca-3d12-4860-aa86-3321ef5fa4ba"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_Symbols:TXU0102DTTR")
+		(at 303.53 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87e18e0b-ab5b-4ce1-a34d-95c5685362b1")
+		(property "Reference" "U10"
+			(at 305.7241 153.67 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TXU0102DTTR"
+			(at 305.7241 156.21 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_Footprints:X1SON8_DTT_TEX"
+			(at 321.564 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "TXU0102DTTR"
+			(at 321.564 155.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 285.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "8a78bf34-5a8d-47aa-8ca5-832982e0604d")
+		)
+		(pin "1"
+			(uuid "7049c3d5-2dd9-4908-bf53-c37c8c897f6b")
+		)
+		(pin "2"
+			(uuid "2398a59b-57e6-4020-be6b-95b4fa87ae84")
+		)
+		(pin "3"
+			(uuid "2cdcded6-36ef-4362-a098-c6814440fa8f")
+		)
+		(pin "4"
+			(uuid "ddfc713a-9319-422d-bdba-7406a5925253")
+		)
+		(pin "6"
+			(uuid "455b7971-e59d-4982-85e1-b4f757258021")
+		)
+		(pin "5"
+			(uuid "5359af4e-66a1-4871-a8ef-e71020db89ca")
+		)
+		(pin "8"
+			(uuid "5d6621ef-748e-4651-9ca1-33ae29c8ab90")
+		)
+		(instances
+			(project ""
+				(path "/7cd0c0ca-3d12-4860-aa86-3321ef5fa4ba"
+					(reference "U10")
 					(unit 1)
 				)
 			)
