@@ -9789,9 +9789,9 @@
 			)
 		)
 	)
-	(global_label "ORA1"
+	(global_label "ORA4"
 		(shape input)
-		(at 100.33 74.93 90)
+		(at 90.17 74.93 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9799,9 +9799,9 @@
 			)
 			(justify left)
 		)
-		(uuid "088f1ee1-23cb-4376-906d-2308a858e02e")
+		(uuid "0ca0edb8-0548-4c83-870f-9e937bdb33f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 100.33 67.0462 90)
+			(at 90.17 67.0462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9855,6 +9855,28 @@
 			)
 		)
 	)
+	(global_label "ORA2"
+		(shape input)
+		(at 95.25 74.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1003827c-2187-4b38-842c-395e844e730f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.25 67.0462 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "~{80COL}"
 		(shape input)
 		(at 374.65 99.06 180)
@@ -9895,6 +9917,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "R{slash}~{W}"
+		(shape input)
+		(at 105.41 74.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "12f094e9-d012-42a3-9803-cee7caeede51")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.41 67.8929 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -9965,28 +10009,6 @@
 			)
 		)
 	)
-	(global_label "ORA0"
-		(shape input)
-		(at 102.87 74.93 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "15d83cf8-e6e9-4cd2-8e0f-aa440def9c84")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.87 67.0462 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VID6_5V"
 		(shape input)
 		(at 374.65 167.64 180)
@@ -10053,28 +10075,6 @@
 			)
 		)
 	)
-	(global_label "~{RESET}"
-		(shape input)
-		(at 105.41 74.93 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1ae8fa47-7b07-46ef-83f1-f156bc6e770f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.41 66.1997 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "AN1"
 		(shape input)
 		(at 121.92 107.95 0)
@@ -10088,28 +10088,6 @@
 		(uuid "1e4ccdd1-7691-4d44-aea7-8db5315befdb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 128.5338 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ORA4"
-		(shape input)
-		(at 92.71 74.93 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "20358560-2e7d-4fa4-b271-1b99e7b367ea")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 67.0462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10203,6 +10181,50 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{RESET}"
+		(shape input)
+		(at 102.87 74.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "283a64e9-c215-4fe5-ad92-1432d4124168")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 66.1997 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ORA0"
+		(shape input)
+		(at 107.95 74.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2893fe1b-c50f-4455-8003-4c0b235fa288")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 107.95 67.0462 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -10352,28 +10374,6 @@
 		(uuid "36bfe6e9-bf0c-4bc0-a91e-2b9a1adfe80f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 255.5337 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "~{PRAS}"
-		(shape input)
-		(at 85.09 74.93 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3bf84cc3-a8cc-4dcc-a80c-d9b71a5a89ef")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.09 67.1067 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10867,50 +10867,6 @@
 			)
 		)
 	)
-	(global_label "ORA6"
-		(shape input)
-		(at 87.63 74.93 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "685bd792-bf88-42d4-9fa0-d8f61efdafc7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.63 67.0462 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "R{slash}~{W}"
-		(shape input)
-		(at 107.95 74.93 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "69e87d98-00de-43c9-a301-34e1c8111a91")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.95 67.8929 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "AN1"
 		(shape input)
 		(at 374.65 111.76 180)
@@ -10999,6 +10955,28 @@
 			)
 		)
 	)
+	(global_label "ORA6"
+		(shape input)
+		(at 85.09 74.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74ece603-a72a-44a3-a011-8fa169897b91")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 67.0462 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ORA5_5V"
 		(shape input)
 		(at 374.65 139.7 180)
@@ -11065,9 +11043,9 @@
 			)
 		)
 	)
-	(global_label "ORA3"
+	(global_label "ORA5"
 		(shape input)
-		(at 95.25 74.93 90)
+		(at 87.63 74.93 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11075,9 +11053,9 @@
 			)
 			(justify left)
 		)
-		(uuid "7b6edf3b-5596-4ecd-be2a-de8d3fa6d662")
+		(uuid "7eb18dc3-d8be-4b9e-9d66-143753bcf63d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 67.0462 90)
+			(at 87.63 67.0462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11276,6 +11254,28 @@
 		(uuid "8cc5d047-d83a-44af-b15c-c7e6443a8637")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 110.49 68.3162 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ORA3"
+		(shape input)
+		(at 92.71 74.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8f68fc8b-a0c4-44ff-9538-3cf349e6fc96")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 67.0462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11747,28 +11747,6 @@
 			)
 		)
 	)
-	(global_label "ORA5"
-		(shape input)
-		(at 90.17 74.93 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c9a9657f-3b36-4094-a193-4d83173fa8cd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 67.0462 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Q3_5V"
 		(shape input)
 		(at 247.65 154.94 0)
@@ -11879,28 +11857,6 @@
 			)
 		)
 	)
-	(global_label "ORA2"
-		(shape input)
-		(at 97.79 74.93 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "daefb19d-a8e5-42cb-b8c1-39e5939ae604")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.79 67.0462 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "~{RA9}"
 		(shape input)
 		(at 374.65 170.18 180)
@@ -11919,6 +11875,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{PRAS}"
+		(shape input)
+		(at 100.33 74.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e300f350-9755-46a9-8d7a-ebfdebf07b5c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 67.1067 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -12029,6 +12007,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ORA1"
+		(shape input)
+		(at 97.79 74.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e6ddc9df-1b46-4244-b003-2b263d1d9290")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.79 67.0462 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
