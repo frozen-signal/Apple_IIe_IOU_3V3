@@ -1,0 +1,229 @@
+----------------------------------------------------------------------
+Report for cell IOU.TECH
+Register bits:  97 of 424 (22.877%)
+I/O cells:      39
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 BB         8          100.0
+                              CCU2D        18          100.0
+                            FD1P3AX        21          100.0
+                            FD1P3AY         5          100.0
+                            FD1P3IX         2          100.0
+                             FD1S1A        10          100.0
+                             FD1S1B         5          100.0
+                             FD1S1D        13          100.0
+                             FD1S1I         2          100.0
+                            FD1S3AX        29          100.0
+                            FD1S3DX         3          100.0
+                            FD1S3IX         7          100.0
+                                GSR         1          100.0
+                                 IB        10          100.0
+                            L6MUX21         1          100.0
+                               LUT4       130          100.0
+                                 OB        19          100.0
+                                OBZ         2          100.0
+                               OSCH         1          100.0
+                              PFUMX         6          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                   COMMON_INTERNALS         1
+                   DELAY_OSCILLATOR         1
+                     DRAM_HOLD_TIME         1
+                     IOU_ADDR_LATCH         1
+                        IOU_DEVICES         1
+                      IOU_INTERNALS         1
+                       IOU_KEYBOARD         1
+                            IOU_MD7         1
+                          IOU_RESET         1
+                        IOU_TIMINGS         1
+                         LATCH_9334         1
+                 POWER_ON_DETECTION         1
+                             RA_MUX         1
+                 SOFT_SWITCHES_C00X         1
+                 SOFT_SWITCHES_C05X         1
+                     VIDEO_ADDR_MUX         1
+                    VIDEO_GENERATOR         1
+                     VIDEO_GRAPHICS         1
+                      VIDEO_SCANNER         1
+                              TOTAL       313
+----------------------------------------------------------------------
+Report for cell COMMON_INTERNALS.v1
+Instance Path : U_COMMON_INTERNALS
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1A         1           10.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell SOFT_SWITCHES_C00X.v1
+Instance Path : U_SOFT_SWITCHES_C00X
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1D         3           23.1
+                               LUT4         1            0.8
+SUB MODULES
+                         LATCH_9334         1
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell LATCH_9334.v1
+Instance Path : U_SOFT_SWITCHES_C00X.SOFT_SWITCHES_LATCH
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1D         3           23.1
+                               LUT4         1            0.8
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell SOFT_SWITCHES_C05X.v1
+Instance Path : U_SOFT_SWITCHES_C05X
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1A         1           10.0
+                             FD1S1D         6           46.2
+                             FD1S1I         1           50.0
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell IOU_MD7.v1
+Instance Path : U_IOU_MD7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1B         1           20.0
+                             FD1S1D         1            7.7
+                            L6MUX21         1          100.0
+                               LUT4         4            3.1
+                              PFUMX         2           33.3
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell VIDEO_ADDR_MUX.v1
+Instance Path : U_VIDEO_ADDR_MUX
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1B         1           20.0
+                             FD1S1D         1            7.7
+                             FD1S1I         1           50.0
+                            FD1S3AX        13           44.8
+                               LUT4        13           10.0
+                              PFUMX         3           50.0
+SUB MODULES
+                     DRAM_HOLD_TIME         1
+                             RA_MUX         1
+                              TOTAL        34
+----------------------------------------------------------------------
+Report for cell RA_MUX.v1
+Instance Path : U_VIDEO_ADDR_MUX.IOU_RA_MUX
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1B         1           20.0
+                             FD1S1D         1            7.7
+                             FD1S1I         1           50.0
+                            FD1S3AX        13           44.8
+                               LUT4        11            8.5
+                              PFUMX         3           50.0
+SUB MODULES
+                     DRAM_HOLD_TIME         1
+                              TOTAL        31
+----------------------------------------------------------------------
+Report for cell DRAM_HOLD_TIME.v1
+Instance Path : U_VIDEO_ADDR_MUX.IOU_RA_MUX.U_DRAM_HOLD_TIME
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        13           44.8
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell VIDEO_SCANNER.v1
+Instance Path : U_VIDEO_SCANNER
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11           61.1
+                            FD1P3AX         7           33.3
+                            FD1P3AY         5          100.0
+                            FD1P3IX         2          100.0
+                            FD1S3AX         1            3.4
+                            FD1S3IX         6           85.7
+                               LUT4        12            9.2
+                              TOTAL        44
+----------------------------------------------------------------------
+Report for cell IOU_RESET.v1
+Instance Path : U_IOU_RESET
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1A         1           10.0
+                             FD1S1B         1           20.0
+                               LUT4         3            2.3
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell IOU_INTERNALS.v1
+Instance Path : U_IOU_INTERNALS
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         4           13.8
+                               LUT4        18           13.8
+                              TOTAL        22
+----------------------------------------------------------------------
+Report for cell VIDEO_GENERATOR.v1
+Instance Path : U_VIDEO_GENERATOR
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         2            9.5
+                            FD1S3AX         1            3.4
+                               LUT4         6            4.6
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell IOU_DEVICES.v1
+Instance Path : U_IOU_DEVICES
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         2            6.9
+                               LUT4         2            1.5
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell IOU_ADDR_LATCH.v1
+Instance Path : U_IOU_ADDR_LATCH
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1A         7           70.0
+                               LUT4        45           34.6
+                              PFUMX         1           16.7
+                              TOTAL        53
+----------------------------------------------------------------------
+Report for cell DELAY_OSCILLATOR.v1
+Instance Path : U_DELAY_OSCILLATOR
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               OSCH         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell IOU_KEYBOARD.v1
+Instance Path : U_IOU_KEYBOARD
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1B         2           40.0
+                             FD1S1D         2           15.4
+                            FD1S3AX         2            6.9
+                            FD1S3DX         3          100.0
+                               LUT4        11            8.5
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell VIDEO_GRAPHICS.v1
+Instance Path : U_VIDEO_GRAPHICS
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         5           17.2
+                               LUT4         4            3.1
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell IOU_TIMINGS.v1
+Instance Path : U_IOU_TIMINGS
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3IX         1           14.3
+                               LUT4         3            2.3
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell POWER_ON_DETECTION.v1
+Instance Path : U_POWER_ON_DETECTION
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           38.9
+                            FD1P3AX        12           57.1
+                            FD1S3AX         1            3.4
+                               LUT4         5            3.8
+                              TOTAL        25

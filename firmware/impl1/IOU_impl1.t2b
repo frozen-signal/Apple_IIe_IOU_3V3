@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/dev/Apple_IIe_IOU_3V3/firmware"  

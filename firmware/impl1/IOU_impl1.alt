@@ -1,0 +1,47 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Thu May 22 20:14:23 2025 *
+NOTE DESIGN NAME: IOU *
+NOTE DEVICE NAME: LCMXO2-256HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS RESET_N : F14 : inout *
+NOTE PINS ORA6 : P6 : inout *
+NOTE PINS ORA5 : N6 : inout *
+NOTE PINS ORA4 : M3 : inout *
+NOTE PINS ORA3 : M2 : inout *
+NOTE PINS ORA2 : M1 : inout *
+NOTE PINS ORA1 : M7 : inout *
+NOTE PINS ORA0 : K3 : inout *
+NOTE PINS ORA7 : M8 : out *
+NOTE PINS H0 : A7 : out *
+NOTE PINS SEGA : A2 : out *
+NOTE PINS SEGB : C1 : out *
+NOTE PINS SEGC : D1 : out *
+NOTE PINS LGR_TXT_N : B3 : out *
+NOTE PINS MD7 : E2 : out *
+NOTE PINS SPKR : C3 : out *
+NOTE PINS CASSO : C2 : out *
+NOTE PINS AN0 : G3 : out *
+NOTE PINS AN1 : J2 : out *
+NOTE PINS AN2 : H2 : out *
+NOTE PINS AN3 : J1 : out *
+NOTE PINS S_80COL_N : E1 : out *
+NOTE PINS RA9_N : H12 : out *
+NOTE PINS RA10_N : B14 : out *
+NOTE PINS CLRGAT_N : E12 : out *
+NOTE PINS SYNC_N : B7 : out *
+NOTE PINS WNDW_N : C13 : out *
+NOTE PINS ORA_DIR : F13 : out *
+NOTE PINS MD7_OE : K13 : out *
+NOTE PINS PHI_0 : P8 : in *
+NOTE PINS Q3 : N10 : in *
+NOTE PINS PRAS_N : N8 : in *
+NOTE PINS R_W_N : K1 : in *
+NOTE PINS C0XX_N : M9 : in *
+NOTE PINS VID6 : K14 : in *
+NOTE PINS VID7 : L14 : in *
+NOTE PINS A6 : N13 : in *
+NOTE PINS IKSTRB : M13 : in *
+NOTE PINS IAKD : N14 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

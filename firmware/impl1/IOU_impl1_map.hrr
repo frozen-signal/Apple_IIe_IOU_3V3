@@ -1,0 +1,183 @@
+---------------------------------------------------
+Report for cell IOU
+   Instance path: IOU
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      92.00        100.0
+                                  LUT4	     129.00        100.0
+                                 IOBUF	         39        100.0
+                                PFUREG	         97        100.0
+                                RIPPLE	         18        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         VIDEO_SCANNER	          1        17.1
+                       VIDEO_GENERATOR	          1         3.0
+                        VIDEO_GRAPHICS	          1         3.2
+                        VIDEO_ADDR_MUX	          1        11.2
+                    SOFT_SWITCHES_C00X	          1         1.3
+                    SOFT_SWITCHES_C05X	          1         4.0
+                    POWER_ON_DETECTION	          1        10.1
+                             IOU_RESET	          1         2.2
+                           IOU_TIMINGS	          1         1.6
+                         IOU_INTERNALS	          1         7.5
+                               IOU_MD7	          1         2.9
+                          IOU_KEYBOARD	          1         9.2
+                           IOU_DEVICES	          1         2.2
+                        IOU_ADDR_LATCH	          1        22.8
+                      DELAY_OSCILLATOR	          1         0.0
+                      COMMON_INTERNALS	          1         0.5
+---------------------------------------------------
+Report for cell COMMON_INTERNALS
+   Instance path: IOU/U_COMMON_INTERNALS
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.5
+                                PFUREG	          1         1.0
+---------------------------------------------------
+Report for cell SOFT_SWITCHES_C00X
+   Instance path: IOU/U_SOFT_SWITCHES_C00X
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.17         1.3
+                                PFUREG	          3         3.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            LATCH_9334	          1         1.3
+---------------------------------------------------
+Report for cell LATCH_9334
+   Instance path: IOU/U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.17         1.3
+                                PFUREG	          3         3.1
+---------------------------------------------------
+Report for cell SOFT_SWITCHES_C05X
+   Instance path: IOU/U_SOFT_SWITCHES_C05X
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.67         4.0
+                                PFUREG	          8         8.2
+---------------------------------------------------
+Report for cell IOU_MD7
+   Instance path: IOU/U_IOU_MD7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.67         2.9
+                                  LUT4	       4.00         3.1
+                                PFUREG	          2         2.1
+---------------------------------------------------
+Report for cell VIDEO_ADDR_MUX
+   Instance path: IOU/U_VIDEO_ADDR_MUX
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.33        11.2
+                                  LUT4	      14.33        11.1
+                                PFUREG	         16        16.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                RA_MUX	          1        10.6
+---------------------------------------------------
+Report for cell RA_MUX
+   Instance path: IOU/U_VIDEO_ADDR_MUX/IOU_RA_MUX
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.75        10.6
+                                  LUT4	      12.67         9.8
+                                PFUREG	         16        16.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        DRAM_HOLD_TIME	          1         4.0
+---------------------------------------------------
+Report for cell DRAM_HOLD_TIME
+   Instance path: IOU/U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.67         4.0
+                                PFUREG	         13        13.4
+---------------------------------------------------
+Report for cell VIDEO_SCANNER
+   Instance path: IOU/U_VIDEO_SCANNER
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      15.75        17.1
+                                  LUT4	      11.00         8.5
+                                PFUREG	         21        21.6
+                                RIPPLE	         11        61.1
+---------------------------------------------------
+Report for cell IOU_RESET
+   Instance path: IOU/U_IOU_RESET
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         2.2
+                                  LUT4	       2.00         1.6
+                                PFUREG	          2         2.1
+---------------------------------------------------
+Report for cell IOU_INTERNALS
+   Instance path: IOU/U_IOU_INTERNALS
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       6.92         7.5
+                                  LUT4	      17.33        13.4
+                                PFUREG	          4         4.1
+---------------------------------------------------
+Report for cell VIDEO_GENERATOR
+   Instance path: IOU/U_VIDEO_GENERATOR
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.75         3.0
+                                  LUT4	       5.33         4.1
+                                PFUREG	          3         3.1
+---------------------------------------------------
+Report for cell IOU_DEVICES
+   Instance path: IOU/U_IOU_DEVICES
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         2.2
+                                  LUT4	       2.00         1.6
+                                PFUREG	          2         2.1
+---------------------------------------------------
+Report for cell IOU_ADDR_LATCH
+   Instance path: IOU/U_IOU_ADDR_LATCH
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.00        22.8
+                                  LUT4	      44.00        34.1
+                                PFUREG	          7         7.2
+---------------------------------------------------
+Report for cell DELAY_OSCILLATOR
+   Instance path: IOU/U_DELAY_OSCILLATOR
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell IOU_KEYBOARD
+   Instance path: IOU/U_IOU_KEYBOARD
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.50         9.2
+                                  LUT4	      10.00         7.8
+                                PFUREG	          9         9.3
+---------------------------------------------------
+Report for cell VIDEO_GRAPHICS
+   Instance path: IOU/U_VIDEO_GRAPHICS
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.92         3.2
+                                  LUT4	       4.00         3.1
+                                PFUREG	          5         5.2
+---------------------------------------------------
+Report for cell IOU_TIMINGS
+   Instance path: IOU/U_IOU_TIMINGS
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.50         1.6
+                                  LUT4	       3.00         2.3
+                                PFUREG	          1         1.0
+---------------------------------------------------
+Report for cell POWER_ON_DETECTION
+   Instance path: IOU/U_POWER_ON_DETECTION
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.33        10.1
+                                  LUT4	       5.00         3.9
+                                PFUREG	         13        13.4
+                                RIPPLE	          7        38.9
