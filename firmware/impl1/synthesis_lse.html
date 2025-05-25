@@ -1,0 +1,405 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.12.1.454
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Sun May 25 17:28:54 2025
+
+
+Command Line:  synthesis -f IOU_impl1_lattice.synproj -gui -msgset C:/dev/Apple_IIe_IOU_3V3/firmware/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-256HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-256HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = IOU.
+Target frequency = 2.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p C:/dev/Apple_IIe_IOU_3V3/firmware/impl1 (searchpath added)
+-p C:/dev/Apple_IIe_IOU_3V3/firmware (searchpath added)
+VHDL library = work
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/CUSTOM/IOU.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/COMMON_INTERNALS.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/RA_MUX.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C00X.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C05X.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/CUSTOM/DELAY_OSCILLATOR/VENDOR/LATTICE/MACHXO2/DELAY_OSCILLATOR.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/CUSTOM/DRAM_HOLD_TIME/DELAY_CLK/DRAM_HOLD_TIME.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/CUSTOM/POWER_ON_DETECTION.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_ADDR_DECODER.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_ADDR_LATCH.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_DEVICES.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_INTERNALS.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_KEYBOARD.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_MD7.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_RESET.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_TIMINGS.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_ADDR_MUX.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_GENERATOR.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_GRAPHICS.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_SCANNER.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/TTL/LATCH_9334.vhdl
+VHDL design file = C:/dev/Apple_IIe_IOU_3V3/firmware/sources/TTL/LS138.vhdl
+NGD file = IOU_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "C:/dev/Apple_IIe_IOU_3V3/firmware/impl1". VHDL-1504
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(16): analyzing entity iou. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(59): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/common/common_internals.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/common/common_internals.vhdl(17): analyzing entity common_internals. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/common/common_internals.vhdl(32): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/common/ra_mux.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/common/ra_mux.vhdl(16): analyzing entity ra_mux. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/common/ra_mux.vhdl(34): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/common/soft_switches_c00x.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/common/soft_switches_c00x.vhdl(18): analyzing entity soft_switches_c00x. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/common/soft_switches_c00x.vhdl(39): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/common/soft_switches_c05x.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/common/soft_switches_c05x.vhdl(16): analyzing entity soft_switches_c05x. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/common/soft_switches_c05x.vhdl(34): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/custom/delay_oscillator/vendor/lattice/machxo2/delay_oscillator.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/custom/delay_oscillator/vendor/lattice/machxo2/delay_oscillator.vhdl(20): analyzing entity delay_oscillator. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/custom/delay_oscillator/vendor/lattice/machxo2/delay_oscillator.vhdl(26): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/custom/dram_hold_time/delay_clk/dram_hold_time.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/custom/dram_hold_time/delay_clk/dram_hold_time.vhdl(20): analyzing entity dram_hold_time. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/custom/dram_hold_time/delay_clk/dram_hold_time.vhdl(31): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/custom/power_on_detection.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/custom/power_on_detection.vhdl(56): analyzing entity power_on_detection. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/custom/power_on_detection.vhdl(66): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_addr_decoder.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_addr_decoder.vhdl(16): analyzing entity iou_addr_decoder. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_addr_decoder.vhdl(35): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_addr_latch.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_addr_latch.vhdl(18): analyzing entity iou_addr_latch. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_addr_latch.vhdl(29): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_devices.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_devices.vhdl(16): analyzing entity iou_devices. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_devices.vhdl(27): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_internals.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_internals.vhdl(16): analyzing entity iou_internals. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_internals.vhdl(48): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_keyboard.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_keyboard.vhdl(16): analyzing entity iou_keyboard. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_keyboard.vhdl(41): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_md7.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_md7.vhdl(16): analyzing entity iou_md7. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_md7.vhdl(41): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_reset.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_reset.vhdl(22): analyzing entity iou_reset. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_reset.vhdl(34): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_timings.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_timings.vhdl(16): analyzing entity iou_timings. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/iou_timings.vhdl(29): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_addr_mux.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_addr_mux.vhdl(17): analyzing entity video_addr_mux. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_addr_mux.vhdl(37): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_generator.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_generator.vhdl(17): analyzing entity video_generator. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_generator.vhdl(40): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_graphics.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_graphics.vhdl(17): analyzing entity video_graphics. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_graphics.vhdl(33): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_scanner.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_scanner.vhdl(17): analyzing entity video_scanner. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/iou/video_scanner.vhdl(37): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/ttl/latch_9334.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/ttl/latch_9334.vhdl(17): analyzing entity latch_9334. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/ttl/latch_9334.vhdl(30): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/ttl/ls138.vhdl. VHDL-1481
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/ttl/ls138.vhdl(18): analyzing entity ls138. VHDL-1012
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/ttl/ls138.vhdl(27): analyzing architecture rtl. VHDL-1010
+unit IOU is not yet analyzed. VHDL-1485
+unit IOU is not yet analyzed. VHDL-1485
+c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(16): executing IOU(RTL)
+
+WARNING - synthesis: c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(57): replacing existing netlist IOU(RTL). VHDL-1205
+Top module name (VHDL): IOU
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c256.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.41.
+Top-level module name = IOU.
+
+
+
+GSR instance connected to net POC_N.
+WARNING - synthesis: mRegister \U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_I_0_reset is stuck at Zero
+WARNING - synthesis: mRegister \U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_reset is stuck at Zero
+WARNING - synthesis: mRegister \U_IOU_MD7/KEY_I_0_reset is stuck at Zero
+WARNING - synthesis: mRegister \U_IOU_KEYBOARD/SET_DELAY_I_0_reset is stuck at Zero
+WARNING - synthesis: mRegister \U_IOU_RESET/PWR_ON_FINISHED_I_0_17_reset is stuck at Zero
+Applying 2.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in IOU_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file IOU_impl1.ngd.
+
+################### Begin Area Report (IOU)######################
+Number of register bits => 97 of 424 (22 % )
+BB => 8
+CCU2D => 18
+FD1P3AX => 21
+FD1P3AY => 5
+FD1P3IX => 2
+FD1S1A => 10
+FD1S1B => 5
+FD1S1D => 13
+FD1S1I => 2
+FD1S3AX => 29
+FD1S3DX => 3
+FD1S3IX => 7
+GSR => 1
+IB => 11
+LUT4 => 128
+OB => 19
+OBZ => 2
+OSCH => 1
+PFUMX => 6
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 25
+  Net : PHI_0_c, loads : 49
+  Net : U_DELAY_OSCILLATOR/DELAY_CLK, loads : 13
+  Net : U_IOU_TIMINGS/P_PHI_2, loads : 12
+  Net : PRAS_N_c, loads : 13
+  Net : U_IOU_TIMINGS/CTC14S, loads : 3
+  Net : U_IOU_TIMINGS/PWR_ON_FINISHED_N_44, loads : 2
+  Net : U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1, loads : 3
+  Net : U_IOU_KEYBOARD/SET_DELAY_N_255, loads : 2
+  Net : U_IOU_INTERNALS/AUTOREPEAT_ACTIVE_N_256, loads : 2
+  Net : U_IOU_ADDR_DECODER/IOU_1_H6/ITEXT_N_201, loads : 1
+  Net : KEY_N_277, loads : 2
+  Net : U_IOU_ADDR_LATCH/Q0_N_128, loads : 1
+  Net : U_IOU_ADDR_LATCH/MIX_N_207, loads : 1
+  Net : C02X_N, loads : 1
+  Net : U_IOU_ADDR_LATCH/PG2_N_211, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN0_N_219, loads : 1
+  Net : C03X_N, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN2_N_225, loads : 1
+  Net : U_COMMON_INTERNALS/Q3_PRAS_N, loads : 1
+  Net : U_IOU_ADDR_LATCH/HIRES_N_216, loads : 1
+  Net : U_IOU_ADDR_LATCH/Q6_N_150, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN3_N_228, loads : 1
+  Net : U_IOU_ADDR_LATCH/Q7_N_153, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN1_N_222, loads : 1
+  Net : U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_244, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 4
+Top 4 highest fanout Clock Enables:
+  Net : U_VIDEO_SCANNER/HPE_N, loads : 12
+  Net : U_POWER_ON_DETECTION/COUNT_11__N_33, loads : 12
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : U_IOU_ADDR_LATCH/LA3, loads : 23
+  Net : U_IOU_ADDR_LATCH/LA1, loads : 22
+  Net : U_IOU_ADDR_LATCH/LA2, loads : 22
+  Net : U_IOU_ADDR_LATCH/LA0, loads : 14
+  Net : U_POWER_ON_DETECTION/POC_N, loads : 12
+  Net : U_VIDEO_SCANNER/HPE_N, loads : 12
+  Net : U_POWER_ON_DETECTION/COUNT_11__N_33, loads : 12
+  Net : U_VIDEO_SCANNER/TC_N_102, loads : 9
+  Net : U_VIDEO_SCANNER/V3, loads : 8
+  Net : U_VIDEO_SCANNER/H3, loads : 8
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk9 [get_nets C03X_N]                  |    2.000 MHz|  309.023 MHz|     2  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk8 [get_nets ITEXT_N_201]             |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk7 [get_nets                          |             |             |
+\U_COMMON_INTERNALS/Q3_PRAS_N]          |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk6 [get_nets DELAY_CLK]               |    2.000 MHz|  281.452 MHz|     2  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk5 [get_nets CTC14S]                  |    2.000 MHz|  216.779 MHz|     3  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk4 [get_nets PRAS_N_c]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk3 [get_nets C02X_N]                  |    2.000 MHz|  309.023 MHz|     2  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk2 [get_nets PWR_ON_FINISHED_N_44]    |            -|            -|     0  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk1 [get_nets PHI_0_c]                 |    2.000 MHz|  105.208 MHz|     5  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk0 [get_nets P_PHI_2]                 |    2.000 MHz|  119.947 MHz|     5  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 71.949  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.547  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

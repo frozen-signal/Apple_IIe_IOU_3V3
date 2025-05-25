@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="IOU" device="LCMXO2-256HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="IOU" top="IOU"/>
+        <Source name="CUSTOM/IOU.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="IOU"/>
+        </Source>
+        <Source name="sources/COMMON/COMMON_INTERNALS.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/COMMON/RA_MUX.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/COMMON/SOFT_SWITCHES_C00X.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/COMMON/SOFT_SWITCHES_C05X.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/CUSTOM/DELAY_OSCILLATOR/VENDOR/LATTICE/MACHXO2/DELAY_OSCILLATOR.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/CUSTOM/DRAM_HOLD_TIME/DELAY_CLK/DRAM_HOLD_TIME.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/CUSTOM/POWER_ON_DETECTION.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/IOU_ADDR_DECODER.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/IOU_ADDR_LATCH.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/IOU_DEVICES.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/IOU_INTERNALS.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/IOU_KEYBOARD.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/IOU_MD7.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/IOU_RESET.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/IOU_TIMINGS.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/VIDEO_ADDR_MUX.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/VIDEO_GENERATOR.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/VIDEO_GRAPHICS.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/IOU/VIDEO_SCANNER.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/TTL/LATCH_9334.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="sources/TTL/LS138.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="IOU.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="IOU1.sty"/>
+</BaliProject>

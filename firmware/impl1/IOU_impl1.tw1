@@ -1,0 +1,341 @@
+
+Loading design for application trce from file iou_impl1_map.ncd.
+Design name: IOU
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.41.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
+Sun May 25 17:28:56 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o IOU_impl1.tw1 -gui -msgset C:/dev/Apple_IIe_IOU_3V3/firmware/promote.xml IOU_impl1_map.ncd IOU_impl1.prf 
+Design file:     iou_impl1_map.ncd
+Preference file: iou_impl1.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+1 potential circuit loop found in timing analysis.
+
+
+================================================================================
+Preference: FREQUENCY NET "DELAY_CLK" 133.000000 MHz ;
+            13 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 4.805ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         Port       Pad            PRAS_N
+   Destination:    FF         Data in        U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i0  (to DELAY_CLK +)
+
+   Delay:               2.366ns  (47.8% logic, 52.2% route), 1 logic levels.
+
+ Constraint Details:
+
+      2.366ns physical path delay PRAS_N to SLICE_114 meets
+      7.519ns delay constraint less
+      0.348ns M_SET requirement (totaling 7.171ns) by 4.805ns
+
+ Physical Path Details:
+
+      Data path PRAS_N to SLICE_114:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C3.PAD to       C3.PADDI PRAS_N
+ROUTE        13   e 1.234       C3.PADDI to   SLICE_114.M0 PRAS_N_c (to DELAY_CLK)
+                  --------
+                    2.366   (47.8% logic, 52.2% route), 1 logic levels.
+
+Report:  368.460MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "DELAY_CLK" 133.000000    |             |             |
+MHz ;                                   |  133.000 MHz|  368.460 MHz|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 25 clocks:
+
+Clock Domain: U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_244   Source: U_VIDEO_ADDR_MUX/IOU_RA_MUX/SLICE_70.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1   Source: U_VIDEO_ADDR_MUX/IOU_RA_MUX/SLICE_70.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: U_SOFT_SWITCHES_C05X/ITEXT_N_201   Source: SLICE_98.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: U_IOU_RESET/PWR_ON_FINISHED_N_44   Source: SLICE_77.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: U_IOU_KEYBOARD/SET_DELAY_N_255   Source: SLICE_106.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: U_COMMON_INTERNALS/Q3_PRAS_N   Source: SLICE_111.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: Q7_N_153   Source: U_IOU_ADDR_LATCH/SLICE_102.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: Q6_N_150   Source: U_IOU_ADDR_LATCH/SLICE_102.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: Q0_N_128   Source: SLICE_38.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: P_PHI_2   Source: SLICE_44.F1   Loads: 7
+   No transfer within this clock domain is found
+
+Clock Domain: PRAS_N_c   Source: PRAS_N.PAD   Loads: 13
+   No transfer within this clock domain is found
+
+Clock Domain: PHI_0_c   Source: PHI_0.PAD   Loads: 38
+   No transfer within this clock domain is found
+
+Clock Domain: PG2_N_211   Source: U_IOU_ADDR_LATCH/SLICE_105.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: MIX_N_207   Source: SLICE_97.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: KEY_N_277   Source: SLICE_88.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: HIRES_N_216   Source: U_IOU_ADDR_LATCH/SLICE_104.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: DELAY_CLK   Source: U_DELAY_OSCILLATOR/U_OSCH.OSC   Loads: 7
+   Covered under: FREQUENCY NET "DELAY_CLK" 133.000000 MHz ;
+
+Clock Domain: CTC14S   Source: SLICE_26.Q0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: C03X_N   Source: SLICE_112.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: C02X_N   Source: SLICE_86.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: AUTOREPEAT_ACTIVE_N_256   Source: SLICE_106.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: AN3_N_228   Source: U_IOU_ADDR_LATCH/SLICE_104.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: AN2_N_225   Source: U_IOU_ADDR_LATCH/SLICE_103.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: AN1_N_222   Source: U_IOU_ADDR_LATCH/SLICE_103.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: AN0_N_219   Source: U_IOU_ADDR_LATCH/SLICE_105.F0   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 13 paths, 1 nets, and 34 connections (4.87% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
+Sun May 25 17:28:56 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o IOU_impl1.tw1 -gui -msgset C:/dev/Apple_IIe_IOU_3V3/firmware/promote.xml IOU_impl1_map.ncd IOU_impl1.prf 
+Design file:     iou_impl1_map.ncd
+Preference file: iou_impl1.prf
+Device,speed:    LCMXO2-256HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+1 potential circuit loop found in timing analysis.
+
+
+================================================================================
+Preference: FREQUENCY NET "DELAY_CLK" 133.000000 MHz ;
+            13 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i0  (from DELAY_CLK +)
+   Destination:    FF         Data in        U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i1  (to DELAY_CLK +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay SLICE_1 to SLICE_1 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path SLICE_1 to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    SLICE_1.CLK to     SLICE_1.Q0 SLICE_1 (from DELAY_CLK)
+ROUTE         1   e 0.199     SLICE_1.Q0 to     SLICE_1.M1 U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_0 (to DELAY_CLK)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "DELAY_CLK" 133.000000    |             |             |
+MHz ;                                   |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 25 clocks:
+
+Clock Domain: U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_244   Source: U_VIDEO_ADDR_MUX/IOU_RA_MUX/SLICE_70.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1   Source: U_VIDEO_ADDR_MUX/IOU_RA_MUX/SLICE_70.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: U_SOFT_SWITCHES_C05X/ITEXT_N_201   Source: SLICE_98.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: U_IOU_RESET/PWR_ON_FINISHED_N_44   Source: SLICE_77.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: U_IOU_KEYBOARD/SET_DELAY_N_255   Source: SLICE_106.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: U_COMMON_INTERNALS/Q3_PRAS_N   Source: SLICE_111.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: Q7_N_153   Source: U_IOU_ADDR_LATCH/SLICE_102.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: Q6_N_150   Source: U_IOU_ADDR_LATCH/SLICE_102.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: Q0_N_128   Source: SLICE_38.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: P_PHI_2   Source: SLICE_44.F1   Loads: 7
+   No transfer within this clock domain is found
+
+Clock Domain: PRAS_N_c   Source: PRAS_N.PAD   Loads: 13
+   No transfer within this clock domain is found
+
+Clock Domain: PHI_0_c   Source: PHI_0.PAD   Loads: 38
+   No transfer within this clock domain is found
+
+Clock Domain: PG2_N_211   Source: U_IOU_ADDR_LATCH/SLICE_105.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: MIX_N_207   Source: SLICE_97.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: KEY_N_277   Source: SLICE_88.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: HIRES_N_216   Source: U_IOU_ADDR_LATCH/SLICE_104.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: DELAY_CLK   Source: U_DELAY_OSCILLATOR/U_OSCH.OSC   Loads: 7
+   Covered under: FREQUENCY NET "DELAY_CLK" 133.000000 MHz ;
+
+Clock Domain: CTC14S   Source: SLICE_26.Q0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: C03X_N   Source: SLICE_112.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: C02X_N   Source: SLICE_86.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: AUTOREPEAT_ACTIVE_N_256   Source: SLICE_106.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: AN3_N_228   Source: U_IOU_ADDR_LATCH/SLICE_104.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: AN2_N_225   Source: U_IOU_ADDR_LATCH/SLICE_103.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: AN1_N_222   Source: U_IOU_ADDR_LATCH/SLICE_103.F0   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: AN0_N_219   Source: U_IOU_ADDR_LATCH/SLICE_105.F0   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 13 paths, 1 nets, and 34 connections (4.87% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

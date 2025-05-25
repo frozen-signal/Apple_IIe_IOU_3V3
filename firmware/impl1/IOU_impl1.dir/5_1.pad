@@ -1,0 +1,203 @@
+PAD Specification File
+***************************
+
+PART TYPE:        LCMXO2-256HC
+Performance Grade:      4
+PACKAGE:          CSBGA132
+Package Status:                     Final          Version 1.41
+
+Sun May 25 17:28:59 2025
+
+Pinout by Port Name:
++----------------+----------+--------------+------+-----------+-----------+----------------------------------------------------+
+| Port Name      | Pin/Bank | Buffer Type  | Site | PG Enable | BC Enable | Properties                                         |
++----------------+----------+--------------+------+-----------+-----------+----------------------------------------------------+
+| A6             | N14/1    | LVTTL33_IN   | PR6D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| AN0            | G3/3     | LVTTL33_OUT  | PL3C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| AN1            | J2/3     | LVTTL33_OUT  | PL5B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| AN2            | J1/3     | LVTTL33_OUT  | PL5A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| AN3            | K1/3     | LVTTL33_OUT  | PL5C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| C0XX_N         | M9/2     | LVTTL33_IN   | PB7C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| CASSO          | C2/3     | LVTTL33_OUT  | PL2C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| CLRGAT_N       | E12/1    | LVTTL33_OUT  | PR3A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| H0             | A7/0     | LVTTL33_OUT  | PT8A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| IAKD           | M13/1    | LVTTL33_IN   | PR6B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| IKSTRB         | L14/1    | LVTTL33_IN   | PR6A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| LGR_TXT_N      | B3/0     | LVTTL33_OUT  | PT6B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| MD7            | M2/3     | LVTTL33_OUT  | PL6B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| MD7_OE         | M1/3     | LVTTL33_OUT  | PL6A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| ORA0           | M3/2     | LVTTL33_BIDI | PB2B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| ORA1           | N6/2     | LVTTL33_BIDI | PB4A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| ORA2           | P6/2     | LVTTL33_BIDI | PB4B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| ORA3           | N8/2     | LVTTL33_BIDI | PB4D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| ORA4           | P8/2     | LVTTL33_BIDI | PB7A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| ORA5           | K3/3     | LVTTL33_BIDI | PL5D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| ORA6           | M7/2     | LVTTL33_BIDI | PB4C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| ORA7           | M8/2     | LVTTL33_OUT  | PB7B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| ORA_DIR        | F13/1    | LVTTL33_OUT  | PR3C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PHI_0          | N10/2    | LVTTL33_IN   | PB7D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| PRAS_N         | C3/3     | LVTTL33_IN   | PL2B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| Q3             | N13/1    | LVTTL33_IN   | PR6C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| RA10_N         | B14/1    | LVTTL33_OUT  | PR2A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| RA9_N          | H12/1    | LVTTL33_OUT  | PR5B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| RESET_N        | F14/1    | LVTTL33_BIDI | PR3D |           |           | DRIVE:8mA HYSTERESIS:SMALL OPENDRAIN:ON SLEW:SLOW  |
+| R_W_N          | H2/3     | LVTTL33_IN   | PL3D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| SEGA           | A2/0     | LVTTL33_OUT  | PT6A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| SEGB           | D1/3     | LVTTL33_OUT  | PL2D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| SEGC           | E1/3     | LVTTL33_OUT  | PL3A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| SPKR           | C1/3     | LVTTL33_OUT  | PL2A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| SWICH_NTSC_PAL | E14/1    | LVTTL33_IN   | PR3B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                |
+| SYNC_N         | B7/0     | LVTTL33_OUT  | PT8B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| S_80COL_N      | E2/3     | LVTTL33_OUT  | PL3B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| VID6           | K13/1    | LVTTL33_IN   | PR5C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| VID7           | K14/1    | LVTTL33_IN   | PR5D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| WNDW_N         | C13/1    | LVTTL33_OUT  | PR2B |           |           | DRIVE:8mA SLEW:SLOW                                |
++----------------+----------+--------------+------+-----------+-----------+----------------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 3.3V  |
+| 2    | 3.3V  |
+| 3    | 3.3V  |
++------+-------+
+
+Vref by Bank:
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+Pinout by Pin Number:
++----------+-----------------------+------------+--------------+------+---------------+-----------+-----------+
+| Pin/Bank | Pin Info              | Preference | Buffer Type  | Site | Dual Function | PG Enable | BC Enable |
++----------+-----------------------+------------+--------------+------+---------------+-----------+-----------+
+| A2/0     | SEGA                  | LOCATED    | LVTTL33_OUT  | PT6A |               |           |           |
+| A4/0     | Reserved: sysCONFIG   |            |              | PT6C | TDO           |           |           |
+| A6/0     | Reserved: sysCONFIG   |            |              | PT7B | TMS           |           |           |
+| A7/0     | H0                    | LOCATED    | LVTTL33_OUT  | PT8A | PCLKT0_1      |           |           |
+| A13/0    |     unused, PULL:DOWN |            |              | PT9D | DONE          |           |           |
+| B3/0     | LGR_TXT_N             | LOCATED    | LVTTL33_OUT  | PT6B |               |           |           |
+| B4/0     | Reserved: sysCONFIG   |            |              | PT6D | TDI           |           |           |
+| B6/0     | Reserved: sysCONFIG   |            |              | PT7A | TCK           |           |           |
+| B7/0     | SYNC_N                | LOCATED    | LVTTL33_OUT  | PT8B | PCLKC0_1      |           |           |
+| B8/0     |     unused, PULL:DOWN |            |              | PT8D | SDA/PCLKC0_0  |           |           |
+| B9/0     |     unused, PULL:DOWN |            |              | PT9A | JTAGENB       |           |           |
+| B13/0    |     unused, PULL:DOWN |            |              | PT9C | INITN         |           |           |
+| B14/1    | RA10_N                | LOCATED    | LVTTL33_OUT  | PR2A |               |           |           |
+| C1/3     | SPKR                  | LOCATED    | LVTTL33_OUT  | PL2A |               |           |           |
+| C2/3     | CASSO                 | LOCATED    | LVTTL33_OUT  | PL2C | PCLKT3_2      |           |           |
+| C3/3     | PRAS_N                | LOCATED    | LVTTL33_IN   | PL2B |               |           |           |
+| C8/0     |     unused, PULL:DOWN |            |              | PT8C | SCL/PCLKT0_0  |           |           |
+| C10/0    |     unused, PULL:DOWN |            |              | PT9B | PROGRAMN      |           |           |
+| C13/1    | WNDW_N                | LOCATED    | LVTTL33_OUT  | PR2B |               |           |           |
+| D1/3     | SEGB                  | LOCATED    | LVTTL33_OUT  | PL2D | PCLKC3_2      |           |           |
+| E1/3     | SEGC                  | LOCATED    | LVTTL33_OUT  | PL3A |               |           |           |
+| E2/3     | S_80COL_N             | LOCATED    | LVTTL33_OUT  | PL3B |               |           |           |
+| E12/1    | CLRGAT_N              | LOCATED    | LVTTL33_OUT  | PR3A |               |           |           |
+| E14/1    | SWICH_NTSC_PAL        | LOCATED    | LVTTL33_IN   | PR3B |               |           |           |
+| F13/1    | ORA_DIR               | LOCATED    | LVTTL33_OUT  | PR3C |               |           |           |
+| F14/1    | RESET_N               | LOCATED    | LVTTL33_BIDI | PR3D |               |           |           |
+| G3/3     | AN0                   | LOCATED    | LVTTL33_OUT  | PL3C | PCLKT3_1      |           |           |
+| G13/1    |     unused, PULL:DOWN |            |              | PR5A | PCLKT1_0      |           |           |
+| H2/3     | R_W_N                 | LOCATED    | LVTTL33_IN   | PL3D | PCLKC3_1      |           |           |
+| H12/1    | RA9_N                 | LOCATED    | LVTTL33_OUT  | PR5B | PCLKC1_0      |           |           |
+| J1/3     | AN2                   | LOCATED    | LVTTL33_OUT  | PL5A |               |           |           |
+| J2/3     | AN1                   | LOCATED    | LVTTL33_OUT  | PL5B |               |           |           |
+| K1/3     | AN3                   | LOCATED    | LVTTL33_OUT  | PL5C | PCLKT3_0      |           |           |
+| K3/3     | ORA5                  | LOCATED    | LVTTL33_BIDI | PL5D | PCLKC3_0      |           |           |
+| K13/1    | VID6                  | LOCATED    | LVTTL33_IN   | PR5C |               |           |           |
+| K14/1    | VID7                  | LOCATED    | LVTTL33_IN   | PR5D |               |           |           |
+| L14/1    | IKSTRB                | LOCATED    | LVTTL33_IN   | PR6A |               |           |           |
+| M1/3     | MD7_OE                | LOCATED    | LVTTL33_OUT  | PL6A |               |           |           |
+| M2/3     | MD7                   | LOCATED    | LVTTL33_OUT  | PL6B |               |           |           |
+| M3/2     | ORA0                  | LOCATED    | LVTTL33_BIDI | PB2B |               |           |           |
+| M4/2     |     unused, PULL:DOWN |            |              | PB2C | MCLK/CCLK     |           |           |
+| M7/2     | ORA6                  | LOCATED    | LVTTL33_BIDI | PB4C | PCLKT2_1      |           |           |
+| M8/2     | ORA7                  | LOCATED    | LVTTL33_OUT  | PB7B |               |           |           |
+| M9/2     | C0XX_N                | LOCATED    | LVTTL33_IN   | PB7C |               |           |           |
+| M13/1    | IAKD                  | LOCATED    | LVTTL33_IN   | PR6B |               |           |           |
+| N4/2     |     unused, PULL:DOWN |            |              | PB2D | SO/SPISO      |           |           |
+| N6/2     | ORA1                  | LOCATED    | LVTTL33_BIDI | PB4A | PCLKT2_0      |           |           |
+| N8/2     | ORA3                  | LOCATED    | LVTTL33_BIDI | PB4D | PCLKC2_1      |           |           |
+| N10/2    | PHI_0                 | LOCATED    | LVTTL33_IN   | PB7D |               |           |           |
+| N12/2    |     unused, PULL:DOWN |            |              | PB9A | SN            |           |           |
+| N13/1    | Q3                    | LOCATED    | LVTTL33_IN   | PR6C |               |           |           |
+| N14/1    | A6                    | LOCATED    | LVTTL33_IN   | PR6D |               |           |           |
+| P3/2     |     unused, PULL:DOWN |            |              | PB2A | CSSPIN        |           |           |
+| P6/2     | ORA2                  | LOCATED    | LVTTL33_BIDI | PB4B | PCLKC2_0      |           |           |
+| P8/2     | ORA4                  | LOCATED    | LVTTL33_BIDI | PB7A |               |           |           |
+| P13/2    |     unused, PULL:DOWN |            |              | PB9B | SI/SISPI      |           |           |
++----------+-----------------------+------------+--------------+------+---------------+-----------+-----------+
+
+sysCONFIG Pins:
++----------+--------------------+--------------------+----------+-------------+-------------------+
+| Pad Name | sysCONFIG Pin Name | sysCONFIG Settings | Pin/Bank | Buffer Type | Config Pull Mode  |
++----------+--------------------+--------------------+----------+-------------+-------------------+
+| PT7B     | TMS                | JTAG_PORT=ENABLE   | A6/0     |             | PULLUP            |
+| PT7A     | TCK/TEST_CLK       | JTAG_PORT=ENABLE   | B6/0     |             | NO pull up/down   |
+| PT6D     | TDI/MD7            | JTAG_PORT=ENABLE   | B4/0     |             | PULLUP            |
+| PT6C     | TDO                | JTAG_PORT=ENABLE   | A4/0     |             | PULLUP            |
++----------+--------------------+--------------------+----------+-------------+-------------------+
+
+Dedicated sysCONFIG Pins:
+
+
+List of All Pins' Locate Preferences Based on Final Placement After PAR 
+to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
+
+LOCATE  COMP  "A6"  SITE  "N14";
+LOCATE  COMP  "AN0"  SITE  "G3";
+LOCATE  COMP  "AN1"  SITE  "J2";
+LOCATE  COMP  "AN2"  SITE  "J1";
+LOCATE  COMP  "AN3"  SITE  "K1";
+LOCATE  COMP  "C0XX_N"  SITE  "M9";
+LOCATE  COMP  "CASSO"  SITE  "C2";
+LOCATE  COMP  "CLRGAT_N"  SITE  "E12";
+LOCATE  COMP  "H0"  SITE  "A7";
+LOCATE  COMP  "IAKD"  SITE  "M13";
+LOCATE  COMP  "IKSTRB"  SITE  "L14";
+LOCATE  COMP  "LGR_TXT_N"  SITE  "B3";
+LOCATE  COMP  "MD7"  SITE  "M2";
+LOCATE  COMP  "MD7_OE"  SITE  "M1";
+LOCATE  COMP  "ORA0"  SITE  "M3";
+LOCATE  COMP  "ORA1"  SITE  "N6";
+LOCATE  COMP  "ORA2"  SITE  "P6";
+LOCATE  COMP  "ORA3"  SITE  "N8";
+LOCATE  COMP  "ORA4"  SITE  "P8";
+LOCATE  COMP  "ORA5"  SITE  "K3";
+LOCATE  COMP  "ORA6"  SITE  "M7";
+LOCATE  COMP  "ORA7"  SITE  "M8";
+LOCATE  COMP  "ORA_DIR"  SITE  "F13";
+LOCATE  COMP  "PHI_0"  SITE  "N10";
+LOCATE  COMP  "PRAS_N"  SITE  "C3";
+LOCATE  COMP  "Q3"  SITE  "N13";
+LOCATE  COMP  "RA10_N"  SITE  "B14";
+LOCATE  COMP  "RA9_N"  SITE  "H12";
+LOCATE  COMP  "RESET_N"  SITE  "F14";
+LOCATE  COMP  "R_W_N"  SITE  "H2";
+LOCATE  COMP  "SEGA"  SITE  "A2";
+LOCATE  COMP  "SEGB"  SITE  "D1";
+LOCATE  COMP  "SEGC"  SITE  "E1";
+LOCATE  COMP  "SPKR"  SITE  "C1";
+LOCATE  COMP  "SWICH_NTSC_PAL"  SITE  "E14";
+LOCATE  COMP  "SYNC_N"  SITE  "B7";
+LOCATE  COMP  "S_80COL_N"  SITE  "E2";
+LOCATE  COMP  "VID6"  SITE  "K13";
+LOCATE  COMP  "VID7"  SITE  "K14";
+LOCATE  COMP  "WNDW_N"  SITE  "C13";
+
+
+
+
+
+PAR: Place And Route Diamond (64-bit) 3.12.1.454.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Sun May 25 17:29:00 2025
+

@@ -1,0 +1,96 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn250520190809"></A><B><U><big>pn250520190809</big></U></B>
+#Start recording tcl command: 5/20/2025 18:55:45
+#Project Location: C:/dev/Apple_IIe_IOU_3V3/firmware; Project name: IOU
+prj_project new -name "IOU" -impl "impl1" -dev LCMXO2-256HC-4MG132C -synthesis "lse"
+prj_src add "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/COMMON_INTERNALS.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/RA_MUX.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C00X.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C05X.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/CUSTOM/DELAY_OSCILLATOR/VENDOR/LATTICE/MACHXO2/DELAY_OSCILLATOR.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/CUSTOM/DRAM_HOLD_TIME/DELAY_CLK/DRAM_HOLD_TIME.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/CUSTOM/POWER_ON_DETECTION.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_ADDR_DECODER.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_ADDR_LATCH.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_DEVICES.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_INTERNALS.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_KEYBOARD.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_MD7.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_RESET.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_TIMINGS.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_ADDR_MUX.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_GENERATOR.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_GRAPHICS.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_SCANNER.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/TTL/LATCH_9334.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/TTL/LS138.vhdl"
+prj_project save
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "C:/dev/Apple_IIe_IOU_3V3/firmware/CUSTOM/IOU.vhdl"
+prj_src add "C:/dev/Apple_IIe_IOU_3V3/firmware/CUSTOM/IOU.vhdl"
+prj_src remove "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/COMMON_INTERNALS.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/RA_MUX.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C00X.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C05X.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/CUSTOM/DELAY_OSCILLATOR/VENDOR/LATTICE/MACHXO2/DELAY_OSCILLATOR.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/CUSTOM/DRAM_HOLD_TIME/DELAY_CLK/DRAM_HOLD_TIME.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/CUSTOM/POWER_ON_DETECTION.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_ADDR_DECODER.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_ADDR_LATCH.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_DEVICES.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_INTERNALS.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_KEYBOARD.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_MD7.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_RESET.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/IOU_TIMINGS.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_ADDR_MUX.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_GENERATOR.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_GRAPHICS.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/IOU/VIDEO_SCANNER.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/TTL/LATCH_9334.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/TTL/LS138.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/CUSTOM/IOU.vhdl"
+prj_src add "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/COMMON_INTERNALS.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/RA_MUX.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C00X.vhdl" "C:/dev/Apple_IIe_IOU_3V3/firmware/sources/COMMON/SOFT_SWITCHES_C05X.vhdl"
+#Stop recording: 5/20/2025 19:08:09
+
+
+
+<A name="pn250523125013"></A><B><U><big>pn250523125013</big></U></B>
+#Start recording tcl command: 5/23/2025 12:49:29
+#Project Location: C:/dev/Apple_IIe_IOU_3V3/firmware; Project name: IOU
+prj_project open "C:/dev/Apple_IIe_IOU_3V3/firmware/IOU.ldf"
+prj_project close
+#Stop recording: 5/23/2025 12:50:13
+
+
+
+<A name="pn250525101509"></A><B><U><big>pn250525101509</big></U></B>
+#Start recording tcl command: 5/23/2025 12:50:49
+#Project Location: C:/dev/Apple_IIe_IOU_3V3/firmware; Project name: IOU
+prj_project open "C:/dev/Apple_IIe_IOU_3V3/firmware/IOU.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 5/25/2025 10:15:09
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
