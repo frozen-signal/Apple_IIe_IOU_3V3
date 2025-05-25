@@ -4,7 +4,7 @@ This repository contains design files for the Apple IIe's IOU custom IC. A proto
 ## Project status
 The prototype of this adapter seems to work, but it has not yet been thoroughly tested.
 <br/>
-![IOU](https://img.shields.io/badge/3.3_V_Apple_IIe_IOU-Careful_Optimism-yellow)<br/>
+![IOU](https://img.shields.io/badge/3.3_V_Apple_IIe_IOU-Cautious_Optimism-yellow)<br/>
 
 ## The IOU Adapter
 <a align="center">
