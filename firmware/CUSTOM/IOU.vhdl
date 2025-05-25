@@ -49,14 +49,14 @@ entity IOU is
         SYNC_N             : out std_logic;
         WNDW_N             : out std_logic;
 
-        ORA_DIR : out std_logic;  -- CUSTOM: ORA Bus direction (LOW when ORA are OUTPUT pins, HIGH when ORA are INPUT pins)
-        MD7_OE  : out std_logic  -- CUSTOM: OE (active HIGH) pin for MD7
+        -- CUSTOM PINS
+        SWICH_NTSC_PAL : in std_logic;  -- LOW: Use the default mode compiled in the firmware; HIGH: Switch to the other mode. *** PULL-DOWN this pin ***
+        ORA_DIR        : out std_logic;  -- CUSTOM: ORA Bus direction (LOW when ORA are OUTPUT pins, HIGH when ORA are INPUT pins)
+        MD7_OE         : out std_logic  -- CUSTOM: OE (active HIGH) pin for MD7
     );
 end IOU;
 
 architecture RTL of IOU is
-    constant NTSC : std_logic := NTSC_CONSTANT;
-
     component DELAY_OSCILLATOR is
         port (
             DELAY_CLK : out std_logic
@@ -369,7 +369,11 @@ architecture RTL of IOU is
     signal LA_ADDR_3_1                                                                            : std_logic_vector(2 downto 0);
 
     signal H0_INT, LGR_TXT_N_INT, ORA7_INT : std_logic;
+    signal NTSC : std_logic;
+
 begin
+    NTSC <= NTSC_CONSTANT when SWICH_NTSC_PAL = '0' else not NTSC_CONSTANT;
+
     U_DELAY_OSCILLATOR : DELAY_OSCILLATOR port map(
         DELAY_CLK => DELAY_CLK
     );

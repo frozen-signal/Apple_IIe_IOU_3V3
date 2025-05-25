@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/dev/Apple_IIe_IOU_3V3/firmware/impl1/IOU_impl1.jed</File>
-			<FileTime>05/20/25 19:36:23</FileTime>
-			<JedecChecksum>0x10C8</JedecChecksum>
+			<FileTime>05/22/25 20:14:23</FileTime>
+			<JedecChecksum>0x6272</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -32,6 +32,7 @@
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
 				<SVFProcessor>ispVM</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
+				<AccessMode>FLASH</AccessMode>
 			</Option>
 		</Device>
 	</Chain>

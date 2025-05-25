@@ -60,15 +60,11 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|144907688|113146854|1ad16ce7-c598-4bf9-88ba-51cba37d61e9|a0e5efca-b962-4a42-917d-c89d01351e51",
+          "clearance|146151600|109611320|4c2b0ce9-b82c-4268-a987-c6937dd88d22|91e0b31f-eb24-41c4-bbe9-db71b6f0c09e",
           ""
         ],
         [
-          "clearance|144907688|113146854|25dd33c1-8ec1-4fa9-aa7d-bb42536361d1|a0e5efca-b962-4a42-917d-c89d01351e51",
-          ""
-        ],
-        [
-          "clearance|145791573|113521854|7e509b7d-36bf-48d3-9f60-80f8efb16bb6|927667da-47bb-478e-90fc-7b6e14056f60",
+          "clearance|149525000|107999212|48e77329-35a2-499b-852a-8b78db0ccd5e|b63a7812-a5b3-4032-884a-0ded80be4ae5",
           ""
         ],
         [
@@ -76,11 +72,19 @@
           ""
         ],
         [
-          "clearance|151094873|114490357|854c7612-c51a-4697-9044-78e6cafee497|c91dafaa-509d-4d79-a430-7be00d297408",
+          "courtyards_overlap|155095000|111497198|a9f833fd-8a6b-441a-bdae-f6e6798302a9|dc94a062-3f6c-40db-891e-33053958a9b3",
           ""
         ],
         [
-          "courtyards_overlap|155090001|111485129|a9f833fd-8a6b-441a-bdae-f6e6798302a9|dc94a062-3f6c-40db-891e-33053958a9b3",
+          "silk_over_copper|152068200|117651975|5bd26566-fac9-488c-8ec7-e5c692fd1715|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|152939525|98310111|04b7274f-cc38-4575-989f-c4b7088aa5fe|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_overlap|152294365|117820800|12c16bc6-9875-4b79-95e3-95fd74f9da9a|5bd26566-fac9-488c-8ec7-e5c692fd1715",
           ""
         ]
       ],
@@ -133,6 +137,7 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -169,9 +174,9 @@
       },
       "teardrop_options": [
         {
-          "td_onpthpad": true,
+          "td_onpthpad": false,
           "td_onroundshapesonly": false,
-          "td_onsmdpad": true,
+          "td_onsmdpad": false,
           "td_ontrackend": false,
           "td_onvia": true
         }

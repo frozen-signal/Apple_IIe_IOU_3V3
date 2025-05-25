@@ -14,7 +14,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-256HCCSBGA132
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.1.454
-Mapped on:  05/22/25  20:14:15
+Mapped on:  05/25/25  17:28:55
 
 Design Summary
 --------------
@@ -22,16 +22,16 @@ Design Summary
    Number of registers:     97 out of   424 (23%)
       PFU registers:           97 out of   256 (38%)
       PIO registers:            0 out of   168 (0%)
-   Number of SLICEs:        92 out of   128 (72%)
-      SLICEs as Logic/ROM:     92 out of   128 (72%)
+   Number of SLICEs:        89 out of   128 (70%)
+      SLICEs as Logic/ROM:     89 out of   128 (70%)
       SLICEs as RAM:            0 out of    96 (0%)
       SLICEs as Carry:         18 out of   128 (14%)
-   Number of LUT4s:        165 out of   256 (64%)
-      Number used as logic LUTs:        129
+   Number of LUT4s:        164 out of   256 (64%)
+      Number used as logic LUTs:        128
       Number used as distributed RAM:     0
       Number used as ripple logic:       36
       Number used as shift registers:     0
-   Number of PIO sites used: 39 + 4(JTAG) out of 56 (77%)
+   Number of PIO sites used: 40 + 4(JTAG) out of 56 (79%)
    Number of block RAMs:  0 out of 0
    Number of GSRs:        1 out of 1 (100%)
    EFB used :        No
@@ -51,109 +51,107 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  25
-     Net U_COMMON_INTERNALS/Q3_PRAS_N_N_40: 1 loads, 1 rising, 0 falling
-     (Driver: U_IOU_ADDR_LATCH/i1691_2_lut )
-     Net Q6_N_149: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_68 )
-     Net Q7_N_152: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_66 )
-     Net Q0_N_127: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i2_3_lut_4_lut_adj_64 )
-     Net HIRES_N_215: 1 loads, 1 rising, 0 falling (Driver:
+     Net U_COMMON_INTERNALS/Q3_PRAS_N: 1 loads, 1 rising, 0 falling (Driver:
+     U_COMMON_INTERNALS/i1330_2_lut )
+     Net PRAS_N_c: 2 loads, 2 rising, 0 falling (Driver: PIO PRAS_N )
+     Net Q6_N_150: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_63 )
+     Net Q7_N_153: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut )
+     Net Q0_N_128: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_59 )
 
                                     Page 1
 
 
 
 
-Design:  IOU                                           Date:  05/22/25  20:14:15
+Design:  IOU                                           Date:  05/25/25  17:28:55
 
 Design Summary (cont)
 ---------------------
-     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_55 )
-     Net AN0_N_218: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_50 )
-     Net AN1_N_221: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_49 )
-     Net AN2_N_224: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_67 )
-     Net AN3_N_227: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_65 )
-     Net U_SOFT_SWITCHES_C05X/ITEXT_N_200: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i2_3_lut_4_lut_adj_59 )
-     Net MIX_N_206: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i2_3_lut_4_lut_adj_52 )
-     Net PG2_N_210: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_53 )
+     Net C02X_N: 1 loads, 1 rising, 0 falling (Driver: i1_2_lut_3_lut_4_lut )
      Net PHI_0_c: 30 loads, 30 rising, 0 falling (Driver: PIO PHI_0 )
-     Net PRAS_N_c: 2 loads, 2 rising, 0 falling (Driver: PIO PRAS_N )
-     Net KEY_N_276: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_KEYBOARD/i1_4_lut )
-     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 rising, 0
-     falling (Driver: U_VIDEO_ADDR_MUX/IOU_RA_MUX/i1685_2_lut_rep_18 )
-     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_243: 1 loads, 1 rising,
-     0 falling (Driver:
-     U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_N_231_I_0_2_lut_3_lut_3_lut )
+     Net C03X_N: 1 loads, 1 rising, 0 falling (Driver:
+     i1_2_lut_3_lut_4_lut_adj_66 )
+     Net KEY_N_277: 1 loads, 1 rising, 0 falling (Driver: i2_3_lut )
+     Net HIRES_N_216: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_56 )
+     Net AN0_N_219: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_54 )
+     Net AN1_N_222: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_49 )
+     Net AN2_N_225: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_61 )
+     Net AN3_N_228: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_50 )
+     Net U_SOFT_SWITCHES_C05X/ITEXT_N_201: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_DECODER/IOU_1_H6/i2_3_lut_4_lut )
+     Net MIX_N_207: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i2_2_lut_3_lut_4_lut )
+     Net PG2_N_211: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_55 )
      Net DELAY_CLK: 7 loads, 7 rising, 0 falling (Driver:
      U_DELAY_OSCILLATOR/U_OSCH )
-     Net U_IOU_RESET/PWR_ON_FINISHED_N_43: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_TIMINGS/i2_3_lut_3_lut )
-     Net P_PHI_2: 7 loads, 7 rising, 0 falling (Driver:
-     U_IOU_TIMINGS/P_PHI_0_I_0_2_lut )
-     Net C02X_N: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i1_2_lut_4_lut )
-     Net C03X_N: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_ADDR_LATCH/i1_2_lut_4_lut_adj_63 )
-     Net U_IOU_KEYBOARD/SET_DELAY_N_254: 1 loads, 1 rising, 0 falling (Driver:
-     U_IOU_KEYBOARD/i1_2_lut_3_lut )
+     Net U_IOU_RESET/PWR_ON_FINISHED_N_44: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_TIMINGS/i2_2_lut_3_lut_3_lut )
+     Net U_IOU_KEYBOARD/SET_DELAY_N_255: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_KEYBOARD/STRBLE_I_0_2_lut_3_lut )
      Net CTC14S: 2 loads, 2 rising, 0 falling (Driver: U_IOU_TIMINGS/CTC14S_10 )
      
-     Net U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_N_255: 1 loads, 1 rising, 0 falling
-     (Driver: U_IOU_KEYBOARD/AUTOREPEAT_DELAY_I_0_2_lut_3_lut_4_lut_4_lut )
+     Net AUTOREPEAT_ACTIVE_N_256: 1 loads, 1 rising, 0 falling (Driver:
+     U_IOU_INTERNALS/AUTOREPEAT_DELAY_I_0_2_lut_3_lut_4_lut_4_lut )
+     Net P_PHI_2: 7 loads, 7 rising, 0 falling (Driver:
+     U_IOU_TIMINGS/P_PHI_0_I_0_2_lut )
+     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 rising, 0
+     falling (Driver: U_VIDEO_ADDR_MUX/IOU_RA_MUX/i1338_2_lut_rep_32 )
+     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_244: 1 loads, 1 rising,
+     0 falling (Driver:
+     U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_N_232_I_0_2_lut_3_lut_3_lut )
    Number of Clock Enables:  4
      Net PHI_0_c: 2 loads, 2 LSLICEs
      Net HPE_N: 6 loads, 6 LSLICEs
-     Net U_VIDEO_SCANNER/PHI_0_c_enable_6: 4 loads, 4 LSLICEs
-     Net U_POWER_ON_DETECTION/COUNT_11__N_32: 7 loads, 7 LSLICEs
+     Net PHI_0_c_enable_6: 4 loads, 4 LSLICEs
+     Net U_POWER_ON_DETECTION/COUNT_11__N_33: 7 loads, 7 LSLICEs
    Number of LSRs:  16
      Net RESET_N_out: 9 loads, 9 LSLICEs
-     Net POC_N: 1 loads, 1 LSLICEs
      Net PHI_0_c: 1 loads, 1 LSLICEs
-     Net KEY_N_276: 1 loads, 1 LSLICEs
-     Net KEY_N_279: 1 loads, 1 LSLICEs
+     Net POC_N: 1 loads, 1 LSLICEs
+     Net KEY_N_277: 1 loads, 1 LSLICEs
+     Net KEY_N_280: 1 loads, 1 LSLICEs
      Net LA0: 1 loads, 1 LSLICEs
-     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 LSLICEs
-     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/n2036: 1 loads, 1 LSLICEs
-     Net U_VIDEO_SCANNER/n2015: 2 loads, 2 LSLICEs
      Net HPE_N: 4 loads, 4 LSLICEs
+     Net n1688: 2 loads, 2 LSLICEs
+     Net U_IOU_RESET/PWR_ON_FINISHED_N_44: 1 loads, 1 LSLICEs
+     Net U_IOU_KEYBOARD/SET_DELAY_N_255: 1 loads, 1 LSLICEs
+     Net U_IOU_KEYBOARD/CLR_DELAY_N: 2 loads, 2 LSLICEs
+     Net AUTOREPEAT_ACTIVE_N_256: 1 loads, 1 LSLICEs
 
                                     Page 2
 
 
 
 
-Design:  IOU                                           Date:  05/22/25  20:14:15
+Design:  IOU                                           Date:  05/25/25  17:28:55
 
 Design Summary (cont)
 ---------------------
-     Net U_IOU_RESET/PWR_ON_FINISHED_N_43: 1 loads, 1 LSLICEs
+     Net n1692: 1 loads, 1 LSLICEs
      Net AKD: 1 loads, 1 LSLICEs
-     Net U_IOU_KEYBOARD/SET_DELAY_N_254: 1 loads, 1 LSLICEs
-     Net U_IOU_KEYBOARD/CLR_DELAY_N: 2 loads, 2 LSLICEs
-     Net U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_N_255: 1 loads, 1 LSLICEs
-     Net U_IOU_KEYBOARD/n2020: 1 loads, 1 LSLICEs
+     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 LSLICEs
+     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/n1700: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net LA1: 24 loads
-     Net LA2: 21 loads
-     Net U_IOU_ADDR_LATCH/LA3: 21 loads
+     Net LA3: 24 loads
+     Net LA1: 23 loads
+     Net LA2: 23 loads
+     Net LA0: 15 loads
      Net HPE_N: 14 loads
      Net POC_N: 13 loads
-     Net LA0: 12 loads
-     Net Q3_c: 11 loads
      Net RESET_N_out: 11 loads
-     Net TC_N_101: 10 loads
-     Net V3: 10 loads
+     Net TC_N_102: 10 loads
+     Net H3: 9 loads
+     Net ORA_DIR_c: 9 loads
 
 
 
@@ -165,15 +163,15 @@ Design Summary (cont)
 Design Errors/Warnings
 ----------------------
 
-WARNING - map: Register U_IOU_MD7/KEY_I_0_set has a clock signal tied to GND.
-WARNING - map: Register U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_set has a
-     clock signal tied to GND.
 WARNING - map: Register U_IOU_RESET/PWR_ON_FINISHED_I_0_17_set has a clock
      signal tied to GND.
 WARNING - map: Register U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_I_0_set has a clock
      signal tied to GND.
 WARNING - map: Register U_IOU_KEYBOARD/SET_DELAY_I_0_set has a clock signal tied
      to GND.
+WARNING - map: Register U_IOU_MD7/KEY_I_0_set has a clock signal tied to GND.
+WARNING - map: Register U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_set has a
+     clock signal tied to GND.
 
 IO (PIO) Attributes
 -------------------
@@ -192,18 +190,18 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | ORA3                | BIDIR     | LVTTL33   |            |
 +---------------------+-----------+-----------+------------+
+| ORA2                | BIDIR     | LVTTL33   |            |
++---------------------+-----------+-----------+------------+
 
                                     Page 3
 
 
 
 
-Design:  IOU                                           Date:  05/22/25  20:14:15
+Design:  IOU                                           Date:  05/25/25  17:28:55
 
 IO (PIO) Attributes (cont)
 --------------------------
-| ORA2                | BIDIR     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
 | ORA1                | BIDIR     | LVTTL33   |            |
 +---------------------+-----------+-----------+------------+
 | ORA0                | BIDIR     | LVTTL33   |            |
@@ -258,18 +256,18 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | R_W_N               | INPUT     | LVTTL33   |            |
 +---------------------+-----------+-----------+------------+
+| C0XX_N              | INPUT     | LVTTL33   |            |
++---------------------+-----------+-----------+------------+
 
                                     Page 4
 
 
 
 
-Design:  IOU                                           Date:  05/22/25  20:14:15
+Design:  IOU                                           Date:  05/25/25  17:28:55
 
 IO (PIO) Attributes (cont)
 --------------------------
-| C0XX_N              | INPUT     | LVTTL33   |            |
-+---------------------+-----------+-----------+------------+
 | VID6                | INPUT     | LVTTL33   |            |
 +---------------------+-----------+-----------+------------+
 | VID7                | INPUT     | LVTTL33   |            |
@@ -280,25 +278,27 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | IAKD                | INPUT     | LVTTL33   |            |
 +---------------------+-----------+-----------+------------+
+| SWICH_NTSC_PAL      | INPUT     | LVTTL33   |            |
++---------------------+-----------+-----------+------------+
 
 Removed logic
 -------------
 
-Block i1757 undriven or does not drive anything - clipped.
-Signal U_IOU_KEYBOARD/n2033 was merged into signal AKD
-Signal n2024 was merged into signal LA0
-Signal n2027 was merged into signal POC_N
-Signal U_VIDEO_SCANNER/n2030 was merged into signal HPE_N
-Signal RESET_N_N_213 was merged into signal RESET_N_out
-Signal n2095 undriven or does not drive anything - clipped.
+Block i1424 undriven or does not drive anything - clipped.
+Signal LA_0__N_295 was merged into signal LA0
+Signal n1703 was merged into signal AKD
+Signal POC_N_N_78 was merged into signal POC_N
+Signal U_VIDEO_SCANNER/n1701 was merged into signal HPE_N
+Signal RESET_N_N_214 was merged into signal RESET_N_out
+Signal n1758 undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal U_POWER_ON_DETECTION/COUNT_76_add_4_13/S1 undriven or does not drive
-     anything - clipped.
-Signal U_POWER_ON_DETECTION/COUNT_76_add_4_13/CO undriven or does not drive
-     anything - clipped.
 Signal U_POWER_ON_DETECTION/COUNT_76_add_4_1/S0 undriven or does not drive
      anything - clipped.
 Signal U_POWER_ON_DETECTION/COUNT_76_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal U_POWER_ON_DETECTION/COUNT_76_add_4_13/S1 undriven or does not drive
+     anything - clipped.
+Signal U_POWER_ON_DETECTION/COUNT_76_add_4_13/CO undriven or does not drive
      anything - clipped.
 Signal U_VIDEO_SCANNER/add_8_1/S0 undriven or does not drive anything - clipped.
      
@@ -306,10 +306,10 @@ Signal U_VIDEO_SCANNER/add_8_1/CI undriven or does not drive anything - clipped.
      
 Signal U_VIDEO_SCANNER/add_8_21/CO undriven or does not drive anything -
      clipped.
-Block U_IOU_KEYBOARD/AKD_I_0_1_lut_rep_30 was optimized away.
-Block U_IOU_ADDR_LATCH/i2_1_lut_rep_21 was optimized away.
-Block U_IOU_RESET/POC_N_I_0_26_1_lut_rep_24 was optimized away.
-Block U_VIDEO_SCANNER/i161_1_lut_rep_27 was optimized away.
+Block U_IOU_MD7/LA_0__I_0_1_lut was optimized away.
+Block U_IOU_INTERNALS/i621_1_lut_rep_28 was optimized away.
+Block U_IOU_RESET/POC_N_I_0_26_1_lut was optimized away.
+Block U_VIDEO_SCANNER/i166_1_lut_rep_26 was optimized away.
 Block U_SOFT_SWITCHES_C00X/SOFT_SWITCHES_LATCH/RESET_N_I_0_1_lut was optimized
      away.
 Block m0_lut was optimized away.
@@ -330,7 +330,7 @@ OSC 1:                                     Pin/Node Value
 
 
 
-Design:  IOU                                           Date:  05/22/25  20:14:15
+Design:  IOU                                           Date:  05/25/25  17:28:55
 
 OSC Summary (cont)
 ------------------
@@ -378,28 +378,53 @@ GSR Component:
    Register : U_SOFT_SWITCHES_C05X/ITEXT_I_0
    Register : U_SOFT_SWITCHES_C05X/MIX_I_0
    Register : U_SOFT_SWITCHES_C05X/PG2_I_0
-   Register : U_IOU_MD7/i409
-   Register : U_IOU_MD7/KEY_I_0_set
-   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_set
-   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/i413
-   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_I_0
-   Register :
-        U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i0
-   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i4
-   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i3
-   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i0
-   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16
-   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_14
+   Register : U_IOU_RESET/PWR_ON_FINISHED_I_0_17_set
+   Register : U_IOU_KEYBOARD/i409
+   Register : U_IOU_KEYBOARD/N9_SHIFT_i0
+   Register : U_IOU_KEYBOARD/D_KSTRB_N_INT_45
+   Register : U_IOU_KEYBOARD/M8_3_44
+   Register : U_IOU_KEYBOARD/i413
+   Register : U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_I_0_set
+   Register : U_IOU_KEYBOARD/N9_SHIFT_i2
+   Register : U_IOU_KEYBOARD/N9_SHIFT_i1
+   Register : U_IOU_KEYBOARD/SET_DELAY_I_0_set
+   Register : U_IOU_INTERNALS/AKD_SHIFT_i0
+   Register : U_IOU_INTERNALS/KSTRB_SHIFT_i0
 
                                     Page 6
 
 
 
 
-Design:  IOU                                           Date:  05/22/25  20:14:15
+Design:  IOU                                           Date:  05/25/25  17:28:55
 
 GSR Usage (cont)
 ----------------
+   Register : U_IOU_INTERNALS/KSTRB_SHIFT_i1
+   Register : U_IOU_INTERNALS/AKD_SHIFT_i1
+   Register : U_IOU_MD7/i417
+   Register : U_IOU_MD7/KEY_I_0_set
+   Register : U_IOU_TIMINGS/CTC14S_10
+   Register : U_IOU_ADDR_LATCH/RA1_I_0
+   Register : U_IOU_ADDR_LATCH/RA2_I_0
+   Register : U_IOU_ADDR_LATCH/RA3_I_0
+   Register : U_IOU_ADDR_LATCH/RA4_I_0
+   Register : U_IOU_ADDR_LATCH/RA5_I_0
+   Register : U_IOU_ADDR_LATCH/RA6_I_0
+   Register : U_IOU_ADDR_LATCH/RA0_I_0
+   Register : U_VIDEO_GENERATOR/WNDW_N_31
+   Register : U_VIDEO_GENERATOR/CLRGAT_N_32
+   Register : U_VIDEO_GENERATOR/SYNC_N_33
+   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_set
+   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/i421
+   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_I_0
+   Register :
+        U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i0
+   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i0
+   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16
+   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/D_RAS_N_14
+   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i4
+   Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i3
    Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i2
    Register : U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER_i1
    Register :
@@ -412,49 +437,24 @@ GSR Usage (cont)
         U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i2
    Register :
         U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER_i1
-   Register : U_IOU_RESET/PWR_ON_FINISHED_I_0_17_set
-   Register : U_IOU_INTERNALS/AKD_SHIFT_i0
-   Register : U_IOU_INTERNALS/KSTRB_SHIFT_i0
-   Register : U_IOU_INTERNALS/KSTRB_SHIFT_i1
-   Register : U_IOU_INTERNALS/AKD_SHIFT_i1
-   Register : U_VIDEO_GENERATOR/WNDW_N_31
-   Register : U_VIDEO_GENERATOR/CLRGAT_N_32
-   Register : U_VIDEO_GENERATOR/SYNC_N_33
-   Register : U_IOU_ADDR_LATCH/RA1_I_0
-   Register : U_IOU_ADDR_LATCH/RA2_I_0
-   Register : U_IOU_ADDR_LATCH/RA3_I_0
-   Register : U_IOU_ADDR_LATCH/RA4_I_0
-   Register : U_IOU_ADDR_LATCH/RA5_I_0
-   Register : U_IOU_ADDR_LATCH/RA6_I_0
-   Register : U_IOU_ADDR_LATCH/RA0_I_0
-   Register : U_IOU_KEYBOARD/i401
-   Register : U_IOU_KEYBOARD/N9_SHIFT_i0
-   Register : U_IOU_KEYBOARD/D_KSTRB_N_INT_45
-   Register : U_IOU_KEYBOARD/M8_3_44
-   Register : U_IOU_KEYBOARD/i405
-   Register : U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_I_0_set
-   Register : U_IOU_KEYBOARD/N9_SHIFT_i2
-   Register : U_IOU_KEYBOARD/N9_SHIFT_i1
-   Register : U_IOU_KEYBOARD/SET_DELAY_I_0_set
-   Register : U_VIDEO_GRAPHICS/SEGA_19
-   Register : U_VIDEO_GRAPHICS/SEGB_20
-   Register : U_VIDEO_GRAPHICS/SEGC_21
-   Register : U_VIDEO_GRAPHICS/LGR_TXT_N_22
-   Register : U_VIDEO_GRAPHICS/PGR_TXT_N_INT_18
-   Register : U_IOU_TIMINGS/CTC14S_10
-   Register : U_POWER_ON_DETECTION/COUNT_76__i5
    Register : U_POWER_ON_DETECTION/POC_N_14
    Register : U_POWER_ON_DETECTION/COUNT_76__i0
-   Register : U_POWER_ON_DETECTION/COUNT_76__i4
-   Register : U_POWER_ON_DETECTION/COUNT_76__i3
-   Register : U_POWER_ON_DETECTION/COUNT_76__i2
-   Register : U_POWER_ON_DETECTION/COUNT_76__i1
-   Register : U_POWER_ON_DETECTION/COUNT_76__i6
    Register : U_POWER_ON_DETECTION/COUNT_76__i11
    Register : U_POWER_ON_DETECTION/COUNT_76__i10
    Register : U_POWER_ON_DETECTION/COUNT_76__i9
    Register : U_POWER_ON_DETECTION/COUNT_76__i8
    Register : U_POWER_ON_DETECTION/COUNT_76__i7
+   Register : U_POWER_ON_DETECTION/COUNT_76__i6
+   Register : U_POWER_ON_DETECTION/COUNT_76__i5
+   Register : U_POWER_ON_DETECTION/COUNT_76__i4
+   Register : U_POWER_ON_DETECTION/COUNT_76__i3
+   Register : U_POWER_ON_DETECTION/COUNT_76__i2
+   Register : U_POWER_ON_DETECTION/COUNT_76__i1
+   Register : U_VIDEO_GRAPHICS/SEGA_19
+   Register : U_VIDEO_GRAPHICS/SEGB_20
+   Register : U_VIDEO_GRAPHICS/SEGC_21
+   Register : U_VIDEO_GRAPHICS/LGR_TXT_N_22
+   Register : U_VIDEO_GRAPHICS/PGR_TXT_N_INT_18
 
 
                                     Page 7
@@ -462,7 +462,7 @@ GSR Usage (cont)
 
 
 
-Design:  IOU                                           Date:  05/22/25  20:14:15
+Design:  IOU                                           Date:  05/25/25  17:28:55
 
 GSR Usage (cont)
 ----------------

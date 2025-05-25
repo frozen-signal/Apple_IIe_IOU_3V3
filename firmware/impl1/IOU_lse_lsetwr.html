@@ -9,7 +9,7 @@
 <PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Thu May 22 20:14:15 2025
+Sun May 25 17:28:55 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -27,7 +27,7 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 500.000000 -name clk9 [get_nets C02X_N]
+Constraint: create_clock -period 500.000000 -name clk9 [get_nets C03X_N]
             1 item scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -36,24 +36,24 @@ Passed:  The following path meets requirements by 496.764ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             \U_IOU_DEVICES/CURRENT_CASSO_17  (from C02X_N +)
-   Destination:    FD1S3AX    D              \U_IOU_DEVICES/CURRENT_CASSO_17  (to C02X_N +)
+   Source:         FD1S3AX    CK             \U_IOU_DEVICES/CURRENT_SPKR_16  (from C03X_N +)
+   Destination:    FD1S3AX    D              \U_IOU_DEVICES/CURRENT_SPKR_16  (to C03X_N +)
 
    Delay:                   3.076ns  (30.5% logic, 69.5% route), 2 logic levels.
 
  Constraint Details:
 
-      3.076ns data_path \U_IOU_DEVICES/CURRENT_CASSO_17 to \U_IOU_DEVICES/CURRENT_CASSO_17 meets
+      3.076ns data_path \U_IOU_DEVICES/CURRENT_SPKR_16 to \U_IOU_DEVICES/CURRENT_SPKR_16 meets
     500.000ns delay constraint less
       0.160ns L_S requirement (totaling 499.840ns) by 496.764ns
 
- Path Details: \U_IOU_DEVICES/CURRENT_CASSO_17 to \U_IOU_DEVICES/CURRENT_CASSO_17
+ Path Details: \U_IOU_DEVICES/CURRENT_SPKR_16 to \U_IOU_DEVICES/CURRENT_SPKR_16
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_IOU_DEVICES/CURRENT_CASSO_17 (from C02X_N)
-Route         2   e 1.198                                  CASSO_c
-LUT4        ---     0.493              A to Z              \U_IOU_DEVICES/CASSO_I_0_1_lut
-Route         1   e 0.941                                  \U_IOU_DEVICES/CASSO_N_249
+L_CO        ---     0.444             CK to Q              \U_IOU_DEVICES/CURRENT_SPKR_16 (from C03X_N)
+Route         2   e 1.198                                  SPKR_c
+LUT4        ---     0.493              A to Z              \U_IOU_DEVICES/SPKR_I_0_1_lut
+Route         1   e 0.941                                  \U_IOU_DEVICES/SPKR_N_246
                   --------
                     3.076  (30.5% logic, 69.5% route), 2 logic levels.
 
@@ -62,13 +62,13 @@ Report: 3.236 ns is the maximum delay for this constraint.
 
 
 ================================================================================
-Constraint: create_clock -period 500.000000 -name clk8 [get_nets ITEXT_N_200]
+Constraint: create_clock -period 500.000000 -name clk8 [get_nets ITEXT_N_201]
             0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Constraint: create_clock -period 500.000000 -name clk7 [get_nets PWR_ON_FINISHED_N_43]
+Constraint: create_clock -period 500.000000 -name clk7 [get_nets \U_COMMON_INTERNALS/Q3_PRAS_N]
             0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -99,7 +99,7 @@ Passed:  The following path meets requirements by 496.447ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16 (from DELAY_CLK)
 Route         2   e 1.198                                  \U_VIDEO_ADDR_MUX/IOU_RA_MUX/D_Q3
-LUT4        ---     0.493              B to Z              \U_VIDEO_ADDR_MUX/IOU_RA_MUX/i1685_2_lut_rep_18
+LUT4        ---     0.493              B to Z              \U_VIDEO_ADDR_MUX/IOU_RA_MUX/i1338_2_lut_rep_32
 Route         3   e 1.258                                  \U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1
                   --------
                     3.393  (27.6% logic, 72.4% route), 2 logic levels.
@@ -110,23 +110,23 @@ Passed:  The following path meets requirements by 496.764ns
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1S1I     CK             \U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_I_0  (from DELAY_CLK +)
-   Destination:    FD1S1D     CD             \U_VIDEO_ADDR_MUX/IOU_RA_MUX/i413  (to DELAY_CLK +)
+   Destination:    FD1S1D     CD             \U_VIDEO_ADDR_MUX/IOU_RA_MUX/i421  (to DELAY_CLK +)
 
    Delay:                   3.076ns  (30.5% logic, 69.5% route), 2 logic levels.
 
  Constraint Details:
 
-      3.076ns data_path \U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_I_0 to \U_VIDEO_ADDR_MUX/IOU_RA_MUX/i413 meets
+      3.076ns data_path \U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_I_0 to \U_VIDEO_ADDR_MUX/IOU_RA_MUX/i421 meets
     500.000ns delay constraint less
       0.160ns L_S requirement (totaling 499.840ns) by 496.764ns
 
- Path Details: \U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_I_0 to \U_VIDEO_ADDR_MUX/IOU_RA_MUX/i413
+ Path Details: \U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_I_0 to \U_VIDEO_ADDR_MUX/IOU_RA_MUX/i421
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_I_0 (from DELAY_CLK)
 Route         2   e 1.198                                  \U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_HIGH
-LUT4        ---     0.493              B to Z              \U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_I_0_2_lut_rep_33
-Route         1   e 0.941                                  \U_VIDEO_ADDR_MUX/IOU_RA_MUX/n2036
+LUT4        ---     0.493              B to Z              \U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_I_0_2_lut_rep_25
+Route         1   e 0.941                                  \U_VIDEO_ADDR_MUX/IOU_RA_MUX/n1700
                   --------
                     3.076  (30.5% logic, 69.5% route), 2 logic levels.
 
@@ -159,144 +159,37 @@ Report: 3.553 ns is the maximum delay for this constraint.
 
 
 ================================================================================
-Constraint: create_clock -period 500.000000 -name clk5 [get_nets PRAS_N_c]
-            0 items scored, 0 timing errors detected.
+Constraint: create_clock -period 500.000000 -name clk5 [get_nets CTC14S]
+            3 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-================================================================================
-Constraint: create_clock -period 500.000000 -name clk4 [get_nets PHI_0_c]
-            760 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Passed:  The following path meets requirements by 490.724ns
+Passed:  The following path meets requirements by 495.387ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             \U_VIDEO_SCANNER/counters_i15  (from PHI_0_c +)
-   Destination:    FD1P3AX    SP             \U_VIDEO_SCANNER/counters_i15  (to PHI_0_c +)
+   Source:         FD1S1D     CK             \U_IOU_KEYBOARD/i413  (from CTC14S +)
+   Destination:    FD1S1D     CD             \U_IOU_MD7/i417  (to CTC14S +)
 
-   Delay:                   8.991ns  (26.9% logic, 73.1% route), 5 logic levels.
-
- Constraint Details:
-
-      8.991ns data_path \U_VIDEO_SCANNER/counters_i15 to \U_VIDEO_SCANNER/counters_i15 meets
-    500.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 499.715ns) by 490.724ns
-
- Path Details: \U_VIDEO_SCANNER/counters_i15 to \U_VIDEO_SCANNER/counters_i15
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_VIDEO_SCANNER/counters_i15 (from PHI_0_c)
-Route         9   e 1.632                                  V4
-LUT4        ---     0.493              A to Z              \U_VIDEO_GRAPHICS/i1_2_lut_rep_32
-Route         1   e 0.941                                  n2035
-LUT4        ---     0.493              B to Z              \U_IOU_INTERNALS/i10_4_lut
-Route         1   e 0.941                                  \U_IOU_INTERNALS/n23
-LUT4        ---     0.493              B to Z              \U_IOU_INTERNALS/i1_4_lut
-Route        10   e 1.604                                  TC_N_101
-LUT4        ---     0.493              B to Z              \U_VIDEO_SCANNER/i1_2_lut_3_lut
-Route         6   e 1.457                                  \U_VIDEO_SCANNER/PHI_0_c_enable_6
-                  --------
-                    8.991  (26.9% logic, 73.1% route), 5 logic levels.
-
-
-Passed:  The following path meets requirements by 490.724ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1P3AX    CK             \U_VIDEO_SCANNER/counters_i15  (from PHI_0_c +)
-   Destination:    FD1P3AX    SP             \U_VIDEO_SCANNER/counters_i14  (to PHI_0_c +)
-
-   Delay:                   8.991ns  (26.9% logic, 73.1% route), 5 logic levels.
+   Delay:                   4.453ns  (32.1% logic, 67.9% route), 3 logic levels.
 
  Constraint Details:
 
-      8.991ns data_path \U_VIDEO_SCANNER/counters_i15 to \U_VIDEO_SCANNER/counters_i14 meets
+      4.453ns data_path \U_IOU_KEYBOARD/i413 to \U_IOU_MD7/i417 meets
     500.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 499.715ns) by 490.724ns
+      0.160ns L_S requirement (totaling 499.840ns) by 495.387ns
 
- Path Details: \U_VIDEO_SCANNER/counters_i15 to \U_VIDEO_SCANNER/counters_i14
+ Path Details: \U_IOU_KEYBOARD/i413 to \U_IOU_MD7/i417
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_VIDEO_SCANNER/counters_i15 (from PHI_0_c)
-Route         9   e 1.632                                  V4
-LUT4        ---     0.493              A to Z              \U_VIDEO_GRAPHICS/i1_2_lut_rep_32
-Route         1   e 0.941                                  n2035
-LUT4        ---     0.493              B to Z              \U_IOU_INTERNALS/i10_4_lut
-Route         1   e 0.941                                  \U_IOU_INTERNALS/n23
-LUT4        ---     0.493              B to Z              \U_IOU_INTERNALS/i1_4_lut
-Route        10   e 1.604                                  TC_N_101
-LUT4        ---     0.493              B to Z              \U_VIDEO_SCANNER/i1_2_lut_3_lut
-Route         6   e 1.457                                  \U_VIDEO_SCANNER/PHI_0_c_enable_6
+L_CO        ---     0.444             CK to Q              \U_IOU_KEYBOARD/i413 (from CTC14S)
+Route         1   e 0.941                                  \U_IOU_KEYBOARD/n674
+LUT4        ---     0.493              C to Z              \U_IOU_KEYBOARD/KEYLE_I_0_4_lut
+Route         2   e 1.141                                  KEYLE
+LUT4        ---     0.493              B to Z              i1333_3_lut
+Route         1   e 0.941                                  KEY_N_280
                   --------
-                    8.991  (26.9% logic, 73.1% route), 5 logic levels.
-
-
-Passed:  The following path meets requirements by 490.724ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1P3AX    CK             \U_VIDEO_SCANNER/counters_i15  (from PHI_0_c +)
-   Destination:    FD1P3AX    SP             \U_VIDEO_SCANNER/counters_i13  (to PHI_0_c +)
-
-   Delay:                   8.991ns  (26.9% logic, 73.1% route), 5 logic levels.
-
- Constraint Details:
-
-      8.991ns data_path \U_VIDEO_SCANNER/counters_i15 to \U_VIDEO_SCANNER/counters_i13 meets
-    500.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 499.715ns) by 490.724ns
-
- Path Details: \U_VIDEO_SCANNER/counters_i15 to \U_VIDEO_SCANNER/counters_i13
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_VIDEO_SCANNER/counters_i15 (from PHI_0_c)
-Route         9   e 1.632                                  V4
-LUT4        ---     0.493              A to Z              \U_VIDEO_GRAPHICS/i1_2_lut_rep_32
-Route         1   e 0.941                                  n2035
-LUT4        ---     0.493              B to Z              \U_IOU_INTERNALS/i10_4_lut
-Route         1   e 0.941                                  \U_IOU_INTERNALS/n23
-LUT4        ---     0.493              B to Z              \U_IOU_INTERNALS/i1_4_lut
-Route        10   e 1.604                                  TC_N_101
-LUT4        ---     0.493              B to Z              \U_VIDEO_SCANNER/i1_2_lut_3_lut
-Route         6   e 1.457                                  \U_VIDEO_SCANNER/PHI_0_c_enable_6
-                  --------
-                    8.991  (26.9% logic, 73.1% route), 5 logic levels.
-
-Report: 9.276 ns is the maximum delay for this constraint.
-
-
-
-================================================================================
-Constraint: create_clock -period 500.000000 -name clk3 [get_nets CTC14S]
-            2 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Passed:  The following path meets requirements by 498.455ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3DX    CK             \U_IOU_KEYBOARD/N9_SHIFT_i1  (from CTC14S +)
-   Destination:    FD1S3DX    D              \U_IOU_KEYBOARD/N9_SHIFT_i2  (to CTC14S +)
-
-   Delay:                   1.385ns  (32.1% logic, 67.9% route), 1 logic levels.
-
- Constraint Details:
-
-      1.385ns data_path \U_IOU_KEYBOARD/N9_SHIFT_i1 to \U_IOU_KEYBOARD/N9_SHIFT_i2 meets
-    500.000ns delay constraint less
-      0.160ns L_S requirement (totaling 499.840ns) by 498.455ns
-
- Path Details: \U_IOU_KEYBOARD/N9_SHIFT_i1 to \U_IOU_KEYBOARD/N9_SHIFT_i2
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_IOU_KEYBOARD/N9_SHIFT_i1 (from CTC14S)
-Route         1   e 0.941                                  \U_IOU_KEYBOARD/N9_SHIFT[1]
-                  --------
-                    1.385  (32.1% logic, 67.9% route), 1 logic levels.
+                    4.453  (32.1% logic, 67.9% route), 3 logic levels.
 
 
 Passed:  The following path meets requirements by 498.455ns
@@ -322,115 +215,42 @@ Route         1   e 0.941                                  \U_IOU_KEYBOARD/N9_SH
                   --------
                     1.385  (32.1% logic, 67.9% route), 1 logic levels.
 
-Report: 1.545 ns is the maximum delay for this constraint.
+
+Passed:  The following path meets requirements by 498.455ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \U_IOU_KEYBOARD/N9_SHIFT_i1  (from CTC14S +)
+   Destination:    FD1S3DX    D              \U_IOU_KEYBOARD/N9_SHIFT_i2  (to CTC14S +)
+
+   Delay:                   1.385ns  (32.1% logic, 67.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.385ns data_path \U_IOU_KEYBOARD/N9_SHIFT_i1 to \U_IOU_KEYBOARD/N9_SHIFT_i2 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 498.455ns
+
+ Path Details: \U_IOU_KEYBOARD/N9_SHIFT_i1 to \U_IOU_KEYBOARD/N9_SHIFT_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_IOU_KEYBOARD/N9_SHIFT_i1 (from CTC14S)
+Route         1   e 0.941                                  \U_IOU_KEYBOARD/N9_SHIFT[1]
+                  --------
+                    1.385  (32.1% logic, 67.9% route), 1 logic levels.
+
+Report: 4.613 ns is the maximum delay for this constraint.
 
 
 
 ================================================================================
-Constraint: create_clock -period 500.000000 -name clk2 [get_nets P_PHI_2]
-            53 items scored, 0 timing errors detected.
+Constraint: create_clock -period 500.000000 -name clk4 [get_nets PRAS_N_c]
+            0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Passed:  The following path meets requirements by 491.572ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S1A     CK             \U_IOU_ADDR_LATCH/RA2_I_0  (from P_PHI_2 +)
-   Destination:    FD1S1D     CD             \U_IOU_MD7/i409  (to P_PHI_2 +)
-
-   Delay:                   8.268ns  (29.2% logic, 70.8% route), 5 logic levels.
-
- Constraint Details:
-
-      8.268ns data_path \U_IOU_ADDR_LATCH/RA2_I_0 to \U_IOU_MD7/i409 meets
-    500.000ns delay constraint less
-      0.160ns L_S requirement (totaling 499.840ns) by 491.572ns
-
- Path Details: \U_IOU_ADDR_LATCH/RA2_I_0 to \U_IOU_MD7/i409
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_IOU_ADDR_LATCH/RA2_I_0 (from P_PHI_2)
-Route        21   e 1.888                                  LA2
-LUT4        ---     0.493              A to Z              \U_IOU_ADDR_LATCH/i1_2_lut_rep_25
-Route         1   e 0.941                                  \U_IOU_ADDR_LATCH/n2028
-LUT4        ---     0.493              A to Z              \U_IOU_ADDR_LATCH/i1_4_lut
-Route         2   e 1.141                                  \U_IOU_ADDR_LATCH/n154
-LUT4        ---     0.493              D to Z              \U_IOU_ADDR_LATCH/i2_3_lut_4_lut_adj_58
-Route         1   e 0.941                                  n6
-LUT4        ---     0.493              C to Z              \U_IOU_RESET/i1_4_lut_4_lut
-Route         1   e 0.941                                  KEY_N_279
-                  --------
-                    8.268  (29.2% logic, 70.8% route), 5 logic levels.
-
-
-Passed:  The following path meets requirements by 491.572ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S1A     CK             \U_IOU_ADDR_LATCH/RA3_I_0  (from P_PHI_2 +)
-   Destination:    FD1S1D     CD             \U_IOU_MD7/i409  (to P_PHI_2 +)
-
-   Delay:                   8.268ns  (29.2% logic, 70.8% route), 5 logic levels.
-
- Constraint Details:
-
-      8.268ns data_path \U_IOU_ADDR_LATCH/RA3_I_0 to \U_IOU_MD7/i409 meets
-    500.000ns delay constraint less
-      0.160ns L_S requirement (totaling 499.840ns) by 491.572ns
-
- Path Details: \U_IOU_ADDR_LATCH/RA3_I_0 to \U_IOU_MD7/i409
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_IOU_ADDR_LATCH/RA3_I_0 (from P_PHI_2)
-Route        21   e 1.888                                  \U_IOU_ADDR_LATCH/LA3
-LUT4        ---     0.493              B to Z              \U_IOU_ADDR_LATCH/i1_2_lut_rep_25
-Route         1   e 0.941                                  \U_IOU_ADDR_LATCH/n2028
-LUT4        ---     0.493              A to Z              \U_IOU_ADDR_LATCH/i1_4_lut
-Route         2   e 1.141                                  \U_IOU_ADDR_LATCH/n154
-LUT4        ---     0.493              D to Z              \U_IOU_ADDR_LATCH/i2_3_lut_4_lut_adj_58
-Route         1   e 0.941                                  n6
-LUT4        ---     0.493              C to Z              \U_IOU_RESET/i1_4_lut_4_lut
-Route         1   e 0.941                                  KEY_N_279
-                  --------
-                    8.268  (29.2% logic, 70.8% route), 5 logic levels.
-
-
-Passed:  The following path meets requirements by 492.998ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S1A     CK             \U_IOU_ADDR_LATCH/RA1_I_0  (from P_PHI_2 +)
-   Destination:    FD1S1D     CD             \U_IOU_MD7/i409  (to P_PHI_2 +)
-
-   Delay:                   6.842ns  (28.1% logic, 71.9% route), 4 logic levels.
-
- Constraint Details:
-
-      6.842ns data_path \U_IOU_ADDR_LATCH/RA1_I_0 to \U_IOU_MD7/i409 meets
-    500.000ns delay constraint less
-      0.160ns L_S requirement (totaling 499.840ns) by 492.998ns
-
- Path Details: \U_IOU_ADDR_LATCH/RA1_I_0 to \U_IOU_MD7/i409
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_IOU_ADDR_LATCH/RA1_I_0 (from P_PHI_2)
-Route        24   e 1.896                                  LA1
-LUT4        ---     0.493              D to Z              \U_IOU_ADDR_LATCH/i1_4_lut
-Route         2   e 1.141                                  \U_IOU_ADDR_LATCH/n154
-LUT4        ---     0.493              D to Z              \U_IOU_ADDR_LATCH/i2_3_lut_4_lut_adj_58
-Route         1   e 0.941                                  n6
-LUT4        ---     0.493              C to Z              \U_IOU_RESET/i1_4_lut_4_lut
-Route         1   e 0.941                                  KEY_N_279
-                  --------
-                    6.842  (28.1% logic, 71.9% route), 4 logic levels.
-
-Report: 8.428 ns is the maximum delay for this constraint.
-
-
-
 ================================================================================
-Constraint: create_clock -period 500.000000 -name clk1 [get_nets C03X_N]
+Constraint: create_clock -period 500.000000 -name clk3 [get_nets C02X_N]
             1 item scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -439,24 +259,24 @@ Passed:  The following path meets requirements by 496.764ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             \U_IOU_DEVICES/CURRENT_SPKR_16  (from C03X_N +)
-   Destination:    FD1S3AX    D              \U_IOU_DEVICES/CURRENT_SPKR_16  (to C03X_N +)
+   Source:         FD1S3AX    CK             \U_IOU_DEVICES/CURRENT_CASSO_17  (from C02X_N +)
+   Destination:    FD1S3AX    D              \U_IOU_DEVICES/CURRENT_CASSO_17  (to C02X_N +)
 
    Delay:                   3.076ns  (30.5% logic, 69.5% route), 2 logic levels.
 
  Constraint Details:
 
-      3.076ns data_path \U_IOU_DEVICES/CURRENT_SPKR_16 to \U_IOU_DEVICES/CURRENT_SPKR_16 meets
+      3.076ns data_path \U_IOU_DEVICES/CURRENT_CASSO_17 to \U_IOU_DEVICES/CURRENT_CASSO_17 meets
     500.000ns delay constraint less
       0.160ns L_S requirement (totaling 499.840ns) by 496.764ns
 
- Path Details: \U_IOU_DEVICES/CURRENT_SPKR_16 to \U_IOU_DEVICES/CURRENT_SPKR_16
+ Path Details: \U_IOU_DEVICES/CURRENT_CASSO_17 to \U_IOU_DEVICES/CURRENT_CASSO_17
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \U_IOU_DEVICES/CURRENT_SPKR_16 (from C03X_N)
-Route         2   e 1.198                                  SPKR_c
-LUT4        ---     0.493              A to Z              \U_IOU_DEVICES/SPKR_I_0_1_lut
-Route         1   e 0.941                                  \U_IOU_DEVICES/SPKR_N_245
+L_CO        ---     0.444             CK to Q              \U_IOU_DEVICES/CURRENT_CASSO_17 (from C02X_N)
+Route         2   e 1.198                                  CASSO_c
+LUT4        ---     0.493              A to Z              \U_IOU_DEVICES/CASSO_I_0_1_lut
+Route         1   e 0.941                                  \U_IOU_DEVICES/CASSO_N_250
                   --------
                     3.076  (30.5% logic, 69.5% route), 2 logic levels.
 
@@ -465,9 +285,215 @@ Report: 3.236 ns is the maximum delay for this constraint.
 
 
 ================================================================================
-Constraint: create_clock -period 500.000000 -name clk0 [get_nets Q3_PRAS_N_N_40]
+Constraint: create_clock -period 500.000000 -name clk2 [get_nets PWR_ON_FINISHED_N_44]
             0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 500.000000 -name clk1 [get_nets PHI_0_c]
+            759 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 490.495ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \U_VIDEO_SCANNER/counters_i7  (from PHI_0_c +)
+   Destination:    FD1P3AX    SP             \U_VIDEO_SCANNER/counters_i15  (to PHI_0_c +)
+
+   Delay:                   9.220ns  (26.2% logic, 73.8% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.220ns data_path \U_VIDEO_SCANNER/counters_i7 to \U_VIDEO_SCANNER/counters_i15 meets
+    500.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 499.715ns) by 490.495ns
+
+ Path Details: \U_VIDEO_SCANNER/counters_i7 to \U_VIDEO_SCANNER/counters_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_VIDEO_SCANNER/counters_i7 (from PHI_0_c)
+Route        13   e 1.861                                  HPE_N
+LUT4        ---     0.493              B to Z              \U_VIDEO_SCANNER/i1_2_lut
+Route         1   e 0.941                                  \U_VIDEO_SCANNER/n14
+LUT4        ---     0.493              D to Z              \U_VIDEO_SCANNER/i10_4_lut
+Route         1   e 0.941                                  \U_VIDEO_SCANNER/n23
+LUT4        ---     0.493              A to Z              \U_VIDEO_SCANNER/i1_4_lut
+Route        10   e 1.604                                  TC_N_102
+LUT4        ---     0.493              B to Z              \U_POWER_ON_DETECTION/i1_2_lut_3_lut_adj_47
+Route         6   e 1.457                                  PHI_0_c_enable_6
+                  --------
+                    9.220  (26.2% logic, 73.8% route), 5 logic levels.
+
+
+Passed:  The following path meets requirements by 490.495ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \U_VIDEO_SCANNER/counters_i7  (from PHI_0_c +)
+   Destination:    FD1P3AX    SP             \U_VIDEO_SCANNER/counters_i14  (to PHI_0_c +)
+
+   Delay:                   9.220ns  (26.2% logic, 73.8% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.220ns data_path \U_VIDEO_SCANNER/counters_i7 to \U_VIDEO_SCANNER/counters_i14 meets
+    500.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 499.715ns) by 490.495ns
+
+ Path Details: \U_VIDEO_SCANNER/counters_i7 to \U_VIDEO_SCANNER/counters_i14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_VIDEO_SCANNER/counters_i7 (from PHI_0_c)
+Route        13   e 1.861                                  HPE_N
+LUT4        ---     0.493              B to Z              \U_VIDEO_SCANNER/i1_2_lut
+Route         1   e 0.941                                  \U_VIDEO_SCANNER/n14
+LUT4        ---     0.493              D to Z              \U_VIDEO_SCANNER/i10_4_lut
+Route         1   e 0.941                                  \U_VIDEO_SCANNER/n23
+LUT4        ---     0.493              A to Z              \U_VIDEO_SCANNER/i1_4_lut
+Route        10   e 1.604                                  TC_N_102
+LUT4        ---     0.493              B to Z              \U_POWER_ON_DETECTION/i1_2_lut_3_lut_adj_47
+Route         6   e 1.457                                  PHI_0_c_enable_6
+                  --------
+                    9.220  (26.2% logic, 73.8% route), 5 logic levels.
+
+
+Passed:  The following path meets requirements by 490.495ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \U_VIDEO_SCANNER/counters_i7  (from PHI_0_c +)
+   Destination:    FD1P3AX    SP             \U_VIDEO_SCANNER/counters_i13  (to PHI_0_c +)
+
+   Delay:                   9.220ns  (26.2% logic, 73.8% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.220ns data_path \U_VIDEO_SCANNER/counters_i7 to \U_VIDEO_SCANNER/counters_i13 meets
+    500.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 499.715ns) by 490.495ns
+
+ Path Details: \U_VIDEO_SCANNER/counters_i7 to \U_VIDEO_SCANNER/counters_i13
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_VIDEO_SCANNER/counters_i7 (from PHI_0_c)
+Route        13   e 1.861                                  HPE_N
+LUT4        ---     0.493              B to Z              \U_VIDEO_SCANNER/i1_2_lut
+Route         1   e 0.941                                  \U_VIDEO_SCANNER/n14
+LUT4        ---     0.493              D to Z              \U_VIDEO_SCANNER/i10_4_lut
+Route         1   e 0.941                                  \U_VIDEO_SCANNER/n23
+LUT4        ---     0.493              A to Z              \U_VIDEO_SCANNER/i1_4_lut
+Route        10   e 1.604                                  TC_N_102
+LUT4        ---     0.493              B to Z              \U_POWER_ON_DETECTION/i1_2_lut_3_lut_adj_47
+Route         6   e 1.457                                  PHI_0_c_enable_6
+                  --------
+                    9.220  (26.2% logic, 73.8% route), 5 logic levels.
+
+Report: 9.505 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 500.000000 -name clk0 [get_nets P_PHI_2]
+            53 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 491.663ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S1A     CK             \U_IOU_ADDR_LATCH/RA6_I_0  (from P_PHI_2 +)
+   Destination:    FD1S1D     CD             \U_IOU_MD7/i417  (to P_PHI_2 +)
+
+   Delay:                   8.177ns  (29.5% logic, 70.5% route), 5 logic levels.
+
+ Constraint Details:
+
+      8.177ns data_path \U_IOU_ADDR_LATCH/RA6_I_0 to \U_IOU_MD7/i417 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 491.663ns
+
+ Path Details: \U_IOU_ADDR_LATCH/RA6_I_0 to \U_IOU_MD7/i417
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_IOU_ADDR_LATCH/RA6_I_0 (from P_PHI_2)
+Route         2   e 1.198                                  LA7
+LUT4        ---     0.493              B to Z              i1_3_lut_rep_24
+Route         4   e 1.340                                  n1699
+LUT4        ---     0.493              B to Z              i1_2_lut_rep_15_3_lut
+Route         2   e 1.141                                  n1690
+LUT4        ---     0.493              D to Z              i2_4_lut
+Route         2   e 1.141                                  n1506
+LUT4        ---     0.493              C to Z              i1333_3_lut
+Route         1   e 0.941                                  KEY_N_280
+                  --------
+                    8.177  (29.5% logic, 70.5% route), 5 logic levels.
+
+
+Passed:  The following path meets requirements by 492.998ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S1A     CK             \U_IOU_ADDR_LATCH/RA3_I_0  (from P_PHI_2 +)
+   Destination:    FD1S1D     CD             \U_IOU_MD7/i417  (to P_PHI_2 +)
+
+   Delay:                   6.842ns  (28.1% logic, 71.9% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.842ns data_path \U_IOU_ADDR_LATCH/RA3_I_0 to \U_IOU_MD7/i417 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 492.998ns
+
+ Path Details: \U_IOU_ADDR_LATCH/RA3_I_0 to \U_IOU_MD7/i417
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_IOU_ADDR_LATCH/RA3_I_0 (from P_PHI_2)
+Route        24   e 1.896                                  LA3
+LUT4        ---     0.493              A to Z              \U_IOU_ADDR_LATCH/i202_2_lut_3_lut_4_lut
+Route         1   e 0.941                                  n198
+LUT4        ---     0.493              A to Z              i2_4_lut
+Route         2   e 1.141                                  n1506
+LUT4        ---     0.493              C to Z              i1333_3_lut
+Route         1   e 0.941                                  KEY_N_280
+                  --------
+                    6.842  (28.1% logic, 71.9% route), 4 logic levels.
+
+
+Passed:  The following path meets requirements by 493.000ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S1A     CK             \U_IOU_ADDR_LATCH/RA1_I_0  (from P_PHI_2 +)
+   Destination:    FD1S1D     CD             \U_IOU_MD7/i417  (to P_PHI_2 +)
+
+   Delay:                   6.840ns  (28.1% logic, 71.9% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.840ns data_path \U_IOU_ADDR_LATCH/RA1_I_0 to \U_IOU_MD7/i417 meets
+    500.000ns delay constraint less
+      0.160ns L_S requirement (totaling 499.840ns) by 493.000ns
+
+ Path Details: \U_IOU_ADDR_LATCH/RA1_I_0 to \U_IOU_MD7/i417
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \U_IOU_ADDR_LATCH/RA1_I_0 (from P_PHI_2)
+Route        23   e 1.894                                  LA1
+LUT4        ---     0.493              D to Z              \U_IOU_ADDR_LATCH/i202_2_lut_3_lut_4_lut
+Route         1   e 0.941                                  n198
+LUT4        ---     0.493              A to Z              i2_4_lut
+Route         2   e 1.141                                  n1506
+LUT4        ---     0.493              C to Z              i1333_3_lut
+Route         1   e 0.941                                  KEY_N_280
+                  --------
+                    6.840  (28.1% logic, 71.9% route), 4 logic levels.
+
+Report: 8.337 ns is the maximum delay for this constraint.
+
 
 <A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
 --------------
@@ -476,34 +502,35 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk9 [get_nets C02X_N]                  |   500.000 ns|     3.236 ns|     2  
+clk9 [get_nets C03X_N]                  |   500.000 ns|     3.236 ns|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk8 [get_nets ITEXT_N_200]             |            -|            -|     0  
+clk8 [get_nets ITEXT_N_201]             |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk7 [get_nets PWR_ON_FINISHED_N_43]    |            -|            -|     0  
+clk7 [get_nets                          |             |             |
+\U_COMMON_INTERNALS/Q3_PRAS_N]          |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
 clk6 [get_nets DELAY_CLK]               |   500.000 ns|     3.553 ns|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk5 [get_nets PRAS_N_c]                |            -|            -|     0  
+clk5 [get_nets CTC14S]                  |   500.000 ns|     4.613 ns|     3  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk4 [get_nets PHI_0_c]                 |   500.000 ns|     9.276 ns|     5  
+clk4 [get_nets PRAS_N_c]                |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk3 [get_nets CTC14S]                  |   500.000 ns|     1.545 ns|     1  
+clk3 [get_nets C02X_N]                  |   500.000 ns|     3.236 ns|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk2 [get_nets P_PHI_2]                 |   500.000 ns|     8.428 ns|     5  
+clk2 [get_nets PWR_ON_FINISHED_N_44]    |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk1 [get_nets C03X_N]                  |   500.000 ns|     3.236 ns|     2  
+clk1 [get_nets PHI_0_c]                 |   500.000 ns|     9.505 ns|     5  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk0 [get_nets Q3_PRAS_N_N_40]          |            -|            -|     0  
+clk0 [get_nets P_PHI_2]                 |   500.000 ns|     8.337 ns|     5  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -517,10 +544,10 @@ All constraints were met.
 
 Timing errors: 0  Score: 0
 
-Constraints cover  838 paths, 173 nets, and 415 connections (54.9% coverage)
+Constraints cover  834 paths, 174 nets, and 413 connections (54.8% coverage)
 
 
-Peak memory: 74186752 bytes, TRCE: 1986560 bytes, DLYMAN: 0 bytes
+Peak memory: 74170368 bytes, TRCE: 2473984 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 
 
 

@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Thu May 22 20:14:14 2025
+Sun May 25 17:28:54 2025
 
 
 Command Line:  synthesis -f IOU_impl1_lattice.synproj -gui -msgset C:/dev/Apple_IIe_IOU_3V3/firmware/promote.xml 
@@ -100,7 +100,7 @@ Compile Design Begin
 INFO - synthesis: The default VHDL library search path is now "C:/dev/Apple_IIe_IOU_3V3/firmware/impl1". VHDL-1504
 Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl. VHDL-1481
 INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(16): analyzing entity iou. VHDL-1012
-INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(57): analyzing architecture rtl. VHDL-1010
+INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(59): analyzing architecture rtl. VHDL-1010
 unit IOU is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/dev/apple_iie_iou_3v3/firmware/sources/common/common_internals.vhdl. VHDL-1481
 INFO - synthesis: c:/dev/apple_iie_iou_3v3/firmware/sources/common/common_internals.vhdl(17): analyzing entity common_internals. VHDL-1012
@@ -189,7 +189,7 @@ unit IOU is not yet analyzed. VHDL-1485
 unit IOU is not yet analyzed. VHDL-1485
 c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(16): executing IOU(RTL)
 
-WARNING - synthesis: c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(55): replacing existing netlist IOU(RTL). VHDL-1205
+WARNING - synthesis: c:/dev/apple_iie_iou_3v3/firmware/custom/iou.vhdl(57): replacing existing netlist IOU(RTL). VHDL-1205
 Top module name (VHDL): IOU
 Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -202,8 +202,8 @@ Top-level module name = IOU.
 
 GSR instance connected to net POC_N.
 WARNING - synthesis: mRegister \U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_I_0_reset is stuck at Zero
-WARNING - synthesis: mRegister \U_IOU_MD7/KEY_I_0_reset is stuck at Zero
 WARNING - synthesis: mRegister \U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_reset is stuck at Zero
+WARNING - synthesis: mRegister \U_IOU_MD7/KEY_I_0_reset is stuck at Zero
 WARNING - synthesis: mRegister \U_IOU_KEYBOARD/SET_DELAY_I_0_reset is stuck at Zero
 WARNING - synthesis: mRegister \U_IOU_RESET/PWR_ON_FINISHED_I_0_17_reset is stuck at Zero
 Applying 2.000000 MHz constraint to all clocks
@@ -231,9 +231,8 @@ FD1S3AX => 29
 FD1S3DX => 3
 FD1S3IX => 7
 GSR => 1
-IB => 10
-L6MUX21 => 1
-LUT4 => 130
+IB => 11
+LUT4 => 128
 OB => 19
 OBZ => 2
 OSCH => 1
@@ -247,49 +246,48 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 25
-  Net : PHI_0_c, loads : 48
+  Net : PHI_0_c, loads : 49
   Net : U_DELAY_OSCILLATOR/DELAY_CLK, loads : 13
   Net : U_IOU_TIMINGS/P_PHI_2, loads : 12
   Net : PRAS_N_c, loads : 13
   Net : U_IOU_TIMINGS/CTC14S, loads : 3
-  Net : U_IOU_TIMINGS/PWR_ON_FINISHED_N_43, loads : 2
+  Net : U_IOU_TIMINGS/PWR_ON_FINISHED_N_44, loads : 2
   Net : U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1, loads : 3
-  Net : U_IOU_ADDR_LATCH/C03X_N, loads : 1
-  Net : U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_N_255, loads : 2
-  Net : U_IOU_KEYBOARD/KEY_N_276, loads : 2
-  Net : U_IOU_ADDR_LATCH/ITEXT_N_200, loads : 1
-  Net : U_IOU_ADDR_LATCH/Q3_PRAS_N_N_40, loads : 1
-  Net : U_IOU_ADDR_LATCH/C02X_N, loads : 1
-  Net : U_IOU_KEYBOARD/SET_DELAY_N_254, loads : 2
-  Net : U_IOU_ADDR_LATCH/Q0_N_127, loads : 1
-  Net : U_IOU_ADDR_LATCH/PG2_N_210, loads : 1
-  Net : U_IOU_ADDR_LATCH/Q7_N_152, loads : 1
-  Net : U_IOU_ADDR_LATCH/AN2_N_224, loads : 1
-  Net : U_IOU_ADDR_LATCH/Q6_N_149, loads : 1
-  Net : U_IOU_ADDR_LATCH/MIX_N_206, loads : 1
-  Net : U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_243, loads : 1
-  Net : U_IOU_ADDR_LATCH/AN3_N_227, loads : 1
-  Net : U_IOU_ADDR_LATCH/HIRES_N_215, loads : 1
-  Net : U_IOU_ADDR_LATCH/AN1_N_221, loads : 1
-  Net : U_IOU_ADDR_LATCH/AN0_N_218, loads : 1
+  Net : U_IOU_KEYBOARD/SET_DELAY_N_255, loads : 2
+  Net : U_IOU_INTERNALS/AUTOREPEAT_ACTIVE_N_256, loads : 2
+  Net : U_IOU_ADDR_DECODER/IOU_1_H6/ITEXT_N_201, loads : 1
+  Net : KEY_N_277, loads : 2
+  Net : U_IOU_ADDR_LATCH/Q0_N_128, loads : 1
+  Net : U_IOU_ADDR_LATCH/MIX_N_207, loads : 1
+  Net : C02X_N, loads : 1
+  Net : U_IOU_ADDR_LATCH/PG2_N_211, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN0_N_219, loads : 1
+  Net : C03X_N, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN2_N_225, loads : 1
+  Net : U_COMMON_INTERNALS/Q3_PRAS_N, loads : 1
+  Net : U_IOU_ADDR_LATCH/HIRES_N_216, loads : 1
+  Net : U_IOU_ADDR_LATCH/Q6_N_150, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN3_N_228, loads : 1
+  Net : U_IOU_ADDR_LATCH/Q7_N_153, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN1_N_222, loads : 1
+  Net : U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_244, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 4
 Top 4 highest fanout Clock Enables:
   Net : U_VIDEO_SCANNER/HPE_N, loads : 12
-  Net : U_POWER_ON_DETECTION/COUNT_11__N_32, loads : 12
-  Net : U_VIDEO_SCANNER/PHI_0_c_enable_6, loads : 6
+  Net : U_POWER_ON_DETECTION/COUNT_11__N_33, loads : 12
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : U_IOU_ADDR_LATCH/LA1, loads : 23
-  Net : U_IOU_ADDR_LATCH/LA3, loads : 21
-  Net : U_IOU_ADDR_LATCH/LA2, loads : 20
+  Net : U_IOU_ADDR_LATCH/LA3, loads : 23
+  Net : U_IOU_ADDR_LATCH/LA1, loads : 22
+  Net : U_IOU_ADDR_LATCH/LA2, loads : 22
+  Net : U_IOU_ADDR_LATCH/LA0, loads : 14
   Net : U_POWER_ON_DETECTION/POC_N, loads : 12
   Net : U_VIDEO_SCANNER/HPE_N, loads : 12
-  Net : U_POWER_ON_DETECTION/COUNT_11__N_32, loads : 12
-  Net : Q3_c, loads : 11
-  Net : U_IOU_ADDR_LATCH/LA0, loads : 11
-  Net : U_VIDEO_SCANNER/V3, loads : 9
-  Net : U_IOU_INTERNALS/TC_N_101, loads : 9
+  Net : U_POWER_ON_DETECTION/COUNT_11__N_33, loads : 12
+  Net : U_VIDEO_SCANNER/TC_N_102, loads : 9
+  Net : U_VIDEO_SCANNER/V3, loads : 8
+  Net : U_VIDEO_SCANNER/H3, loads : 8
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -299,34 +297,35 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk9 [get_nets C02X_N]                  |    2.000 MHz|  309.023 MHz|     2  
+clk9 [get_nets C03X_N]                  |    2.000 MHz|  309.023 MHz|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk8 [get_nets ITEXT_N_200]             |            -|            -|     0  
+clk8 [get_nets ITEXT_N_201]             |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk7 [get_nets PWR_ON_FINISHED_N_43]    |            -|            -|     0  
+clk7 [get_nets                          |             |             |
+\U_COMMON_INTERNALS/Q3_PRAS_N]          |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
 clk6 [get_nets DELAY_CLK]               |    2.000 MHz|  281.452 MHz|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk5 [get_nets PRAS_N_c]                |            -|            -|     0  
+clk5 [get_nets CTC14S]                  |    2.000 MHz|  216.779 MHz|     3  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk4 [get_nets PHI_0_c]                 |    2.000 MHz|  107.805 MHz|     5  
+clk4 [get_nets PRAS_N_c]                |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk3 [get_nets CTC14S]                  |    2.000 MHz|  647.249 MHz|     1  
+clk3 [get_nets C02X_N]                  |    2.000 MHz|  309.023 MHz|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk2 [get_nets P_PHI_2]                 |    2.000 MHz|  118.652 MHz|     5  
+clk2 [get_nets PWR_ON_FINISHED_N_44]    |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk1 [get_nets C03X_N]                  |    2.000 MHz|  309.023 MHz|     2  
+clk1 [get_nets PHI_0_c]                 |    2.000 MHz|  105.208 MHz|     5  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk0 [get_nets Q3_PRAS_N_N_40]          |            -|            -|     0  
+clk0 [get_nets P_PHI_2]                 |    2.000 MHz|  119.947 MHz|     5  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -334,8 +333,8 @@ clk0 [get_nets Q3_PRAS_N_N_40]          |            -|            -|     0
 All constraints were met.
 
 
-Peak Memory Usage: 71.770  MB
+Peak Memory Usage: 71.949  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.578  secs
+Elapsed CPU time for LSE flow : 0.547  secs
 --------------------------------------------------------------
