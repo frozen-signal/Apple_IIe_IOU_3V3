@@ -459,7 +459,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "BSD235NH6327XTSA1"
+		(property "Value" "BSD235N"
 			(at 4.064 4.826 0)
 			(effects
 				(font
@@ -544,6 +544,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C534443"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)

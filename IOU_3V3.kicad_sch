@@ -468,7 +468,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "BSD235NH6327XTSA1"
+			(property "Value" "BSD235N"
 				(at 4.064 4.826 0)
 				(effects
 					(font
@@ -553,6 +553,15 @@
 						(size 1.27 1.27)
 					)
 					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part #" "C2843749"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 					(hide yes)
 				)
 			)
@@ -14757,7 +14766,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3K"
+		(property "Value" "3.3K"
 			(at 298.45 323.8499 0)
 			(effects
 				(font
@@ -15782,7 +15791,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "6.8K"
+		(property "Value" "5.1K"
 			(at 360.68 300.9899 0)
 			(effects
 				(font
@@ -15908,9 +15917,9 @@
 		(at 81.28 270.51 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "41f7680b-b77c-4bed-9a86-1486705408b8")
 		(property "Reference" "U7"
@@ -16181,9 +16190,9 @@
 		(at 538.48 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "48f5ea0b-ddea-4b83-9b41-d5b009aab7fc")
 		(property "Reference" "U4"
@@ -17303,9 +17312,9 @@
 		(at 204.47 255.27 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6380e60d-ac7d-4442-b73f-61bffc113782")
 		(property "Reference" "U9"
@@ -18477,7 +18486,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "6.8K"
+		(property "Value" "5.1K"
 			(at 349.25 300.9899 0)
 			(effects
 				(font
@@ -18611,7 +18620,7 @@
 				)
 			)
 		)
-		(property "Value" "BSD235NH6327XTSA1"
+		(property "Value" "BSD235N"
 			(at 327.66 304.8 0)
 			(effects
 				(font
@@ -18695,6 +18704,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C534443"
+			(at 314.96 309.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -20498,7 +20516,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6.8K"
+		(property "Value" "5.1K"
 			(at 170.18 133.3499 0)
 			(effects
 				(font
