@@ -1,7 +1,7 @@
 (footprint "40-Pins"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
@@ -23,18 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "439be246-531b-4f6b-be53-8d20462fc95d")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -97,15 +85,15 @@
 	)
 	(fp_poly
 		(pts
-			(xy -6.215165 7.832322) (xy -6.197487 8.097487) (xy -5.95 7.85)
+			(xy -5.969636 8.080365) (xy -5.951958 8.451958) (xy -5.598043 8.098043)
 		)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
-		(uuid "c6d39182-a5da-442b-85d0-9b93d0d645f8")
+		(uuid "e2815073-3fc6-4ef1-8bd4-31bc2125d25a")
 	)
 	(fp_rect
 		(start -8.38 5.6)
@@ -114,7 +102,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "2b025b21-2782-40a7-bdee-8d6112e40332")
 	)
@@ -125,7 +113,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "34861320-cf52-4b3e-8d0d-8147b67f5d66")
 	)
@@ -462,4 +450,5 @@
 		(remove_unused_layers no)
 		(uuid "29738ed6-7bd8-49bf-98b8-2cb6f20de956")
 	)
+	(embedded_fonts no)
 )
