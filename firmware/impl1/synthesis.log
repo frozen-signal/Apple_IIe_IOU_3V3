@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sun May 25 17:28:54 2025
+Wed Jun 04 19:44:57 2025
 
 
 Command Line:  synthesis -f IOU_impl1_lattice.synproj -gui -msgset C:/dev/Apple_IIe_IOU_3V3/firmware/promote.xml 
@@ -333,8 +333,8 @@ clk0 [get_nets P_PHI_2]                 |    2.000 MHz|  119.947 MHz|     5
 All constraints were met.
 
 
-Peak Memory Usage: 71.949  MB
+Peak Memory Usage: 72.805  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.547  secs
+Elapsed CPU time for LSE flow : 0.594  secs
 --------------------------------------------------------------

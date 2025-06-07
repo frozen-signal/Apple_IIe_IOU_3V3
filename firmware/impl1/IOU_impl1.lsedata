@@ -1,11 +1,11 @@
 <top name = "IOU"  library = "work"  arch = "RTL"  entry = "VHDL">
 
 <clocks>
-    <clockitem name = "PRAS_N"  type = "port" />
     <clockitem name = "PHI_0"  type = "port" />
+    <clockitem name = "PRAS_N"  type = "port" />
+    <clockitem name = "CTC14S"  type = "net" />
     <clockitem name = "DELAY_CLK"  type = "net" />
     <clockitem name = "P_PHI_2"  type = "net" />
-    <clockitem name = "CTC14S"  type = "net" />
     <clockitem name = "C03X_N"  type = "net" />
     <clockitem name = "C02X_N"  type = "net" />
 </clocks>

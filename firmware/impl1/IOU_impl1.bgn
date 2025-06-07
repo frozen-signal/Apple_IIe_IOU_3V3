@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sun May 25 17:29:01 2025
+Wed Jun 04 19:45:05 2025
 
 
 Command: bitgen -g RamCfg:Reset -path C:/dev/Apple_IIe_IOU_3V3/firmware -w -jedec -gui -msgset C:/dev/Apple_IIe_IOU_3V3/firmware/promote.xml IOU_impl1.ncd IOU_impl1.prf 
@@ -72,5 +72,5 @@ Bitstream Status: Final           Version 1.95.
  
 Saving bit stream in "IOU_impl1.jed".
 Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
+Total REAL Time: 0 secs 
 Peak Memory Usage: 240 MB
