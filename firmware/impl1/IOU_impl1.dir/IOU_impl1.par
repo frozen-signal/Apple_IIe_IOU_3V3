@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 04 19:44:59 2025
+Wed Jul 02 15:35:32 2025
 
 C:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f IOU_impl1.p2t IOU_impl1_map.ncd
 IOU_impl1.dir IOU_impl1.prf -gui -msgset
@@ -16,11 +16,11 @@ Preference file: IOU_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            3.960        0            0.304        0            05           Completed
+5_1   *      0            3.832        0            0.304        0            06           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 5 secs 
+Total (real) run time for 1-seed: 6 secs 
 
 par done!
 

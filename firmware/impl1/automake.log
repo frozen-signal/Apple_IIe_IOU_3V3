@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 04 19:44:57 2025
+Wed Jul 02 15:35:30 2025
 
 
 Command Line:  synthesis -f IOU_impl1_lattice.synproj -gui -msgset C:/dev/Apple_IIe_IOU_3V3/firmware/promote.xml 
@@ -206,8 +206,8 @@ Top-level module name = IOU.
 
 GSR instance connected to net POC_N.
     <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_I_0_reset"  />
-    <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_reset"  />
     <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\U_IOU_MD7/KEY_I_0_reset"  />
+    <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_reset"  />
     <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\U_IOU_KEYBOARD/SET_DELAY_I_0_reset"  />
     <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\U_IOU_RESET/PWR_ON_FINISHED_I_0_17_reset"  />
 Applying 2.000000 MHz constraint to all clocks
@@ -224,17 +224,18 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    294 blocks expanded
+    302 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file IOU_impl1.ngd.
 
 ################### Begin Area Report (IOU)######################
-Number of register bits => 97 of 424 (22 % )
+Number of register bits => 98 of 424 (23 % )
 BB => 8
 CCU2D => 18
 FD1P3AX => 21
 FD1P3AY => 5
+FD1P3BX => 1
 FD1P3IX => 2
 FD1S1A => 10
 FD1S1B => 5
@@ -245,11 +246,13 @@ FD1S3DX => 3
 FD1S3IX => 7
 GSR => 1
 IB => 11
-LUT4 => 128
+INV => 1
+L6MUX21 => 1
+LUT4 => 135
 OB => 19
 OBZ => 2
 OSCH => 1
-PFUMX => 6
+PFUMX => 4
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -258,49 +261,51 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 25
-  Net : PHI_0_c, loads : 49
+Number of Clocks: 26
+  Net : PHI_0_c, loads : 50
   Net : U_DELAY_OSCILLATOR/DELAY_CLK, loads : 13
   Net : U_IOU_TIMINGS/P_PHI_2, loads : 12
-  Net : PRAS_N_c, loads : 13
+  Net : PRAS_N_c, loads : 14
   Net : U_IOU_TIMINGS/CTC14S, loads : 3
-  Net : U_IOU_TIMINGS/PWR_ON_FINISHED_N_44, loads : 2
+  Net : Q3_c, loads : 6
+  Net : U_IOU_MD7/PWR_ON_FINISHED_N_44, loads : 2
   Net : U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1, loads : 3
+  Net : U_IOU_ADDR_DECODER/IOU_1_H6/C02X_N, loads : 1
+  Net : U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_N_256, loads : 2
+  Net : U_IOU_ADDR_LATCH/ITEXT_N_201, loads : 1
+  Net : U_IOU_KEYBOARD/KEY_N_277, loads : 2
+  Net : U_IOU_ADDR_DECODER/IOU_1_H6/C03X_N, loads : 1
   Net : U_IOU_KEYBOARD/SET_DELAY_N_255, loads : 2
-  Net : U_IOU_INTERNALS/AUTOREPEAT_ACTIVE_N_256, loads : 2
-  Net : U_IOU_ADDR_DECODER/IOU_1_H6/ITEXT_N_201, loads : 1
-  Net : KEY_N_277, loads : 2
-  Net : U_IOU_ADDR_LATCH/Q0_N_128, loads : 1
-  Net : U_IOU_ADDR_LATCH/MIX_N_207, loads : 1
-  Net : C02X_N, loads : 1
-  Net : U_IOU_ADDR_LATCH/PG2_N_211, loads : 1
-  Net : U_IOU_ADDR_LATCH/AN0_N_219, loads : 1
-  Net : C03X_N, loads : 1
-  Net : U_IOU_ADDR_LATCH/AN2_N_225, loads : 1
-  Net : U_COMMON_INTERNALS/Q3_PRAS_N, loads : 1
-  Net : U_IOU_ADDR_LATCH/HIRES_N_216, loads : 1
-  Net : U_IOU_ADDR_LATCH/Q6_N_150, loads : 1
-  Net : U_IOU_ADDR_LATCH/AN3_N_228, loads : 1
   Net : U_IOU_ADDR_LATCH/Q7_N_153, loads : 1
-  Net : U_IOU_ADDR_LATCH/AN1_N_222, loads : 1
+  Net : U_IOU_ADDR_DECODER/IOU_1_H6/PG2_N_211, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN0_N_219, loads : 1
+  Net : U_IOU_ADDR_LATCH/Q6_N_150, loads : 1
+  Net : U_IOU_ADDR_DECODER/IOU_1_H6/AN2_N_225, loads : 1
   Net : U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_244, loads : 1
+  Net : U_IOU_ADDR_LATCH/MIX_N_207, loads : 1
+  Net : U_COMMON_INTERNALS/Q3_PRAS_N, loads : 1
+  Net : U_IOU_ADDR_DECODER/IOU_1_H6/AN3_N_228, loads : 1
+  Net : U_IOU_MD7/Q0_N_128, loads : 1
+  Net : U_IOU_ADDR_LATCH/AN1_N_222, loads : 1
+  Net : U_IOU_ADDR_DECODER/IOU_1_H6/HIRES_N_216, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 4
 Top 4 highest fanout Clock Enables:
   Net : U_VIDEO_SCANNER/HPE_N, loads : 12
   Net : U_POWER_ON_DETECTION/COUNT_11__N_33, loads : 12
+  Net : U_VIDEO_SCANNER/PHI_0_c_enable_6, loads : 6
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : U_IOU_ADDR_LATCH/LA3, loads : 23
-  Net : U_IOU_ADDR_LATCH/LA1, loads : 22
-  Net : U_IOU_ADDR_LATCH/LA2, loads : 22
+  Net : U_IOU_ADDR_LATCH/LA1, loads : 19
+  Net : U_IOU_ADDR_LATCH/LA3, loads : 19
+  Net : U_IOU_ADDR_LATCH/LA2, loads : 18
   Net : U_IOU_ADDR_LATCH/LA0, loads : 14
   Net : U_POWER_ON_DETECTION/POC_N, loads : 12
   Net : U_VIDEO_SCANNER/HPE_N, loads : 12
   Net : U_POWER_ON_DETECTION/COUNT_11__N_33, loads : 12
-  Net : U_VIDEO_SCANNER/TC_N_102, loads : 9
+  Net : U_IOU_INTERNALS/TC_N_102, loads : 9
+  Net : R_W_N_c, loads : 8
   Net : U_VIDEO_SCANNER/V3, loads : 8
-  Net : U_VIDEO_SCANNER/H3, loads : 8
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -310,7 +315,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk9 [get_nets C03X_N]                  |    2.000 MHz|  309.023 MHz|     2  
+clk10 [get_nets C02X_N]                 |    2.000 MHz|  309.023 MHz|     2  
+                                        |             |             |
+create_clock -period 500.000000 -name   |             |             |
+clk9 [get_nets Q3_c]                    |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
 clk8 [get_nets ITEXT_N_201]             |            -|            -|     0  
@@ -320,25 +328,25 @@ clk7 [get_nets                          |             |             |
 \U_COMMON_INTERNALS/Q3_PRAS_N]          |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk6 [get_nets DELAY_CLK]               |    2.000 MHz|  281.452 MHz|     2  
+clk6 [get_nets PRAS_N_c]                |    2.000 MHz|  309.023 MHz|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk5 [get_nets CTC14S]                  |    2.000 MHz|  216.779 MHz|     3  
+clk5 [get_nets C03X_N]                  |    2.000 MHz|  309.023 MHz|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk4 [get_nets PRAS_N_c]                |            -|            -|     0  
+clk4 [get_nets PWR_ON_FINISHED_N_44]    |            -|            -|     0  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk3 [get_nets C02X_N]                  |    2.000 MHz|  309.023 MHz|     2  
+clk3 [get_nets DELAY_CLK]               |    2.000 MHz|  281.452 MHz|     2  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk2 [get_nets PWR_ON_FINISHED_N_44]    |            -|            -|     0  
+clk2 [get_nets CTC14S]                  |    2.000 MHz|  216.779 MHz|     3  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk1 [get_nets PHI_0_c]                 |    2.000 MHz|  105.208 MHz|     5  
+clk1 [get_nets P_PHI_2]                 |    2.000 MHz|  114.508 MHz|     5  
                                         |             |             |
 create_clock -period 500.000000 -name   |             |             |
-clk0 [get_nets P_PHI_2]                 |    2.000 MHz|  119.947 MHz|     5  
+clk0 [get_nets PHI_0_c]                 |    2.000 MHz|  108.202 MHz|     5  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -346,10 +354,10 @@ clk0 [get_nets P_PHI_2]                 |    2.000 MHz|  119.947 MHz|     5
 All constraints were met.
 
 
-Peak Memory Usage: 72.805  MB
+Peak Memory Usage: 73.246  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.594  secs
+Elapsed CPU time for LSE flow : 0.563  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-256HC -t CSBGA132 -s 4 -oc Commercial   "IOU_impl1.ngd" -o "IOU_impl1_map.ncd" -pr "IOU_impl1.prf" -mp "IOU_impl1.mrp" -lpf "C:/dev/Apple_IIe_IOU_3V3/firmware/impl1/IOU_impl1.lpf" -lpf "C:/dev/Apple_IIe_IOU_3V3/firmware/IOU.lpf"  -c 0           
@@ -382,24 +390,24 @@ Removing unused logic...
 
 Optimizing...
 
+    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_set"  />
     <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="U_IOU_RESET/PWR_ON_FINISHED_I_0_17_set"  />
+    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="U_IOU_MD7/KEY_I_0_set"  />
     <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_I_0_set"  />
     <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="U_IOU_KEYBOARD/SET_DELAY_I_0_set"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="U_IOU_MD7/KEY_I_0_set"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_I_0_set"  />
 
 
 
 Design Summary:
-   Number of registers:     97 out of   424 (23%)
-      PFU registers:           97 out of   256 (38%)
+   Number of registers:     98 out of   424 (23%)
+      PFU registers:           98 out of   256 (38%)
       PIO registers:            0 out of   168 (0%)
-   Number of SLICEs:        89 out of   128 (70%)
-      SLICEs as Logic/ROM:     89 out of   128 (70%)
+   Number of SLICEs:        93 out of   128 (73%)
+      SLICEs as Logic/ROM:     93 out of   128 (73%)
       SLICEs as RAM:            0 out of    96 (0%)
       SLICEs as Carry:         18 out of   128 (14%)
-   Number of LUT4s:        164 out of   256 (64%)
-      Number used as logic LUTs:        128
+   Number of LUT4s:        170 out of   256 (66%)
+      Number used as logic LUTs:        134
       Number used as distributed RAM:     0
       Number used as ripple logic:       36
       Number used as shift registers:     0
@@ -420,66 +428,67 @@ Design Summary:
    Notes:-
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
-   Number of clocks:  25
-     Net U_COMMON_INTERNALS/Q3_PRAS_N: 1 loads, 1 rising, 0 falling (Driver: U_COMMON_INTERNALS/i1330_2_lut )
+   Number of clocks:  26
+     Net U_COMMON_INTERNALS/Q3_PRAS_N: 1 loads, 1 rising, 0 falling (Driver: U_COMMON_INTERNALS/i1362_2_lut )
+     Net Q3_c: 1 loads, 0 rising, 1 falling (Driver: PIO Q3 )
      Net PRAS_N_c: 2 loads, 2 rising, 0 falling (Driver: PIO PRAS_N )
-     Net Q6_N_150: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_63 )
-     Net Q7_N_153: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut )
-     Net Q0_N_128: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_59 )
-     Net C02X_N: 1 loads, 1 rising, 0 falling (Driver: i1_2_lut_3_lut_4_lut )
+     Net Q6_N_150: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut )
+     Net Q7_N_153: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_60 )
+     Net Q0_N_128: 1 loads, 1 rising, 0 falling (Driver: U_IOU_MD7/i1368_2_lut_4_lut_4_lut_4_lut )
+     Net HIRES_N_216: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_DECODER/IOU_1_H6/i1_2_lut_3_lut_4_lut_adj_46 )
+     Net AN0_N_219: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1383_2_lut_4_lut )
+     Net AN1_N_222: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_4_lut )
+     Net AN2_N_225: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_DECODER/IOU_1_H6/i1_2_lut_3_lut_4_lut_adj_48 )
+     Net AN3_N_228: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_DECODER/IOU_1_H6/i1_2_lut_3_lut_4_lut_adj_49 )
+     Net U_SOFT_SWITCHES_C05X/ITEXT_N_201: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_adj_58 )
+     Net MIX_N_207: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut )
+     Net PG2_N_211: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_DECODER/IOU_1_H6/i1_2_lut_3_lut_4_lut_adj_47 )
      Net PHI_0_c: 30 loads, 30 rising, 0 falling (Driver: PIO PHI_0 )
-     Net C03X_N: 1 loads, 1 rising, 0 falling (Driver: i1_2_lut_3_lut_4_lut_adj_66 )
-     Net KEY_N_277: 1 loads, 1 rising, 0 falling (Driver: i2_3_lut )
-     Net HIRES_N_216: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_56 )
-     Net AN0_N_219: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_54 )
-     Net AN1_N_222: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_49 )
-     Net AN2_N_225: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_61 )
-     Net AN3_N_228: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_50 )
-     Net U_SOFT_SWITCHES_C05X/ITEXT_N_201: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_DECODER/IOU_1_H6/i2_3_lut_4_lut )
-     Net MIX_N_207: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i2_2_lut_3_lut_4_lut )
-     Net PG2_N_211: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_LATCH/i1_2_lut_3_lut_4_lut_adj_55 )
-     Net DELAY_CLK: 7 loads, 7 rising, 0 falling (Driver: U_DELAY_OSCILLATOR/U_OSCH )
-     Net U_IOU_RESET/PWR_ON_FINISHED_N_44: 1 loads, 1 rising, 0 falling (Driver: U_IOU_TIMINGS/i2_2_lut_3_lut_3_lut )
-     Net U_IOU_KEYBOARD/SET_DELAY_N_255: 1 loads, 1 rising, 0 falling (Driver: U_IOU_KEYBOARD/STRBLE_I_0_2_lut_3_lut )
-     Net CTC14S: 2 loads, 2 rising, 0 falling (Driver: U_IOU_TIMINGS/CTC14S_10 )
-     Net AUTOREPEAT_ACTIVE_N_256: 1 loads, 1 rising, 0 falling (Driver: U_IOU_INTERNALS/AUTOREPEAT_DELAY_I_0_2_lut_3_lut_4_lut_4_lut )
      Net P_PHI_2: 7 loads, 7 rising, 0 falling (Driver: U_IOU_TIMINGS/P_PHI_0_I_0_2_lut )
-     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 rising, 0 falling (Driver: U_VIDEO_ADDR_MUX/IOU_RA_MUX/i1338_2_lut_rep_32 )
+     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 rising, 0 falling (Driver: U_VIDEO_ADDR_MUX/IOU_RA_MUX/i1374_2_lut_rep_24 )
      Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_244: 1 loads, 1 rising, 0 falling (Driver: U_VIDEO_ADDR_MUX/IOU_RA_MUX/RA_ENABLE_N_N_232_I_0_2_lut_3_lut_3_lut )
+     Net DELAY_CLK: 7 loads, 7 rising, 0 falling (Driver: U_DELAY_OSCILLATOR/U_OSCH )
+     Net U_IOU_RESET/PWR_ON_FINISHED_N_44: 1 loads, 1 rising, 0 falling (Driver: U_IOU_MD7/i2_3_lut_3_lut )
+     Net KEY_N_277: 1 loads, 1 rising, 0 falling (Driver: U_IOU_KEYBOARD/i2_3_lut )
+     Net C03X_N: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_DECODER/IOU_1_H6/i1_2_lut_3_lut_4_lut )
+     Net C02X_N: 1 loads, 1 rising, 0 falling (Driver: U_IOU_ADDR_DECODER/IOU_1_H6/i1_2_lut_3_lut_4_lut_adj_44 )
+     Net U_IOU_KEYBOARD/SET_DELAY_N_255: 1 loads, 1 rising, 0 falling (Driver: U_IOU_KEYBOARD/i1_2_lut_3_lut )
+     Net CTC14S: 2 loads, 2 rising, 0 falling (Driver: U_IOU_TIMINGS/CTC14S_10 )
+     Net U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_N_256: 1 loads, 1 rising, 0 falling (Driver: U_IOU_KEYBOARD/AUTOREPEAT_DELAY_I_0_2_lut_3_lut_4_lut )
    Number of Clock Enables:  4
-     Net PHI_0_c: 2 loads, 2 LSLICEs
+     Net PHI_0_c: 3 loads, 3 LSLICEs
      Net HPE_N: 6 loads, 6 LSLICEs
-     Net PHI_0_c_enable_6: 4 loads, 4 LSLICEs
+     Net U_VIDEO_SCANNER/PHI_0_c_enable_6: 4 loads, 4 LSLICEs
      Net U_POWER_ON_DETECTION/COUNT_11__N_33: 7 loads, 7 LSLICEs
    Number of LSRs:  16
      Net RESET_N_out: 9 loads, 9 LSLICEs
-     Net PHI_0_c: 1 loads, 1 LSLICEs
      Net POC_N: 1 loads, 1 LSLICEs
-     Net KEY_N_277: 1 loads, 1 LSLICEs
-     Net KEY_N_280: 1 loads, 1 LSLICEs
+     Net PHI_0_c: 1 loads, 1 LSLICEs
      Net LA0: 1 loads, 1 LSLICEs
-     Net HPE_N: 4 loads, 4 LSLICEs
-     Net n1688: 2 loads, 2 LSLICEs
-     Net U_IOU_RESET/PWR_ON_FINISHED_N_44: 1 loads, 1 LSLICEs
-     Net U_IOU_KEYBOARD/SET_DELAY_N_255: 1 loads, 1 LSLICEs
-     Net U_IOU_KEYBOARD/CLR_DELAY_N: 2 loads, 2 LSLICEs
-     Net AUTOREPEAT_ACTIVE_N_256: 1 loads, 1 LSLICEs
-     Net n1692: 1 loads, 1 LSLICEs
-     Net AKD: 1 loads, 1 LSLICEs
      Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1: 1 loads, 1 LSLICEs
-     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/n1700: 1 loads, 1 LSLICEs
+     Net U_VIDEO_ADDR_MUX/IOU_RA_MUX/n1730: 1 loads, 1 LSLICEs
+     Net U_IOU_RESET/PWR_ON_FINISHED_N_44: 1 loads, 1 LSLICEs
+     Net U_IOU_MD7/TIMING_ENABLE_N_N_302: 1 loads, 1 LSLICEs
+     Net KEY_N_277: 1 loads, 1 LSLICEs
+     Net U_IOU_MD7/KEY_N_280: 1 loads, 1 LSLICEs
+     Net AKD: 1 loads, 1 LSLICEs
+     Net HPE_N: 4 loads, 4 LSLICEs
+     Net U_IOU_KEYBOARD/SET_DELAY_N_255: 1 loads, 1 LSLICEs
+     Net U_IOU_KEYBOARD/n1727: 3 loads, 3 LSLICEs
+     Net U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_N_256: 1 loads, 1 LSLICEs
+     Net U_VIDEO_SCANNER/n1722: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net LA3: 24 loads
-     Net LA1: 23 loads
-     Net LA2: 23 loads
+     Net LA1: 20 loads
+     Net LA3: 20 loads
+     Net LA2: 19 loads
      Net LA0: 15 loads
      Net HPE_N: 14 loads
      Net POC_N: 13 loads
-     Net RESET_N_out: 11 loads
+     Net RESET_N_out: 10 loads
      Net TC_N_102: 10 loads
      Net H3: 9 loads
-     Net ORA_DIR_c: 9 loads
+     Net LA4: 9 loads
  
 
    Number of warnings:  5
@@ -520,7 +529,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
-Wed Jun 04 19:44:59 2025
+Wed Jul 02 15:35:32 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -546,11 +555,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 13 paths, 1 nets, and 34 connections (4.87% coverage)
+Constraints cover 13 paths, 1 nets, and 34 connections (4.72% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
-Wed Jun 04 19:44:59 2025
+Wed Jul 02 15:35:32 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -576,7 +585,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 13 paths, 1 nets, and 34 connections (4.87% coverage)
+Constraints cover 13 paths, 1 nets, and 34 connections (4.72% coverage)
 
 
 
@@ -602,7 +611,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "IOU_impl1_map.ncd"
-Wed Jun 04 19:44:59 2025
+Wed Jul 02 15:35:32 2025
 
 PAR: Place And Route Diamond (64-bit) 3.12.1.454.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/dev/Apple_IIe_IOU_3V3/firmware/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 IOU_impl1_map.ncd IOU_impl1.dir/5_1.ncd IOU_impl1.prf
@@ -629,15 +638,15 @@ Device utilization summary:
    PIO (prelim)   40+4(JTAG)/56      79% used
                   40+4(JTAG)/56      79% bonded
 
-   SLICE             89/128          69% used
+   SLICE             93/128          72% used
 
    GSR                1/1           100% used
    OSC                1/1           100% used
 
 
 1 potential circuit loop found in timing analysis.
-Number of Signals: 289
-Number of Connections: 698
+Number of Signals: 298
+Number of Connections: 720
 
 Pin Constraint Summary:
    40 out of 40 pins locked (100% locked).
@@ -646,10 +655,10 @@ No signal is selected as primary clock.
 
 
 The following 4 signals are selected to use the secondary clock routing resources:
-    PHI_0_c (driver: PHI_0, clk load #: 30, sr load #: 1, ce load #: 2)
+    PHI_0_c (driver: PHI_0, clk load #: 30, sr load #: 1, ce load #: 3)
+    P_PHI_2 (driver: SLICE_118, clk load #: 7, sr load #: 0, ce load #: 0)
     DELAY_CLK (driver: U_DELAY_OSCILLATOR/U_OSCH, clk load #: 7, sr load #: 0, ce load #: 0)
-    P_PHI_2 (driver: SLICE_44, clk load #: 7, sr load #: 0, ce load #: 0)
-    HPE_N (driver: SLICE_30, clk load #: 0, sr load #: 4, ce load #: 6)
+    HPE_N (driver: U_VIDEO_SCANNER/SLICE_28, clk load #: 0, sr load #: 4, ce load #: 6)
 
     <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="PHI_0_c" arg1="Secondary" arg2="PHI_0" arg3="N10" arg4="Secondary"  />
 Signal POC_N is selected as Global Set/Reset.
@@ -659,12 +668,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 
 Starting Placer Phase 1.
 ....................
-Placer score = 27588.
+Placer score = 28367.
 Finished Placer Phase 1.  REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  27547
+Placer score =  28201
 Finished Placer Phase 2.  REAL time: 4 secs 
 
 
@@ -677,10 +686,10 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Global Clocks:
-  SECONDARY "PHI_0_c" from comp "PHI_0" on PIO site "N10 (PB7D)", clk load = 30, ce load = 2, sr load = 1
+  SECONDARY "PHI_0_c" from comp "PHI_0" on PIO site "N10 (PB7D)", clk load = 30, ce load = 3, sr load = 1
+  SECONDARY "P_PHI_2" from F1 on comp "SLICE_118" on site "R5C5D", clk load = 7, ce load = 0, sr load = 0
   SECONDARY "DELAY_CLK" from OSC on comp "U_DELAY_OSCILLATOR/U_OSCH" on site "OSC", clk load = 7, ce load = 0, sr load = 0
-  SECONDARY "P_PHI_2" from F1 on comp "SLICE_44" on site "R2C6C", clk load = 7, ce load = 0, sr load = 0
-  SECONDARY "HPE_N" from Q0 on comp "SLICE_30" on site "R2C6D", clk load = 0, ce load = 6, sr load = 4
+  SECONDARY "HPE_N" from Q0 on comp "U_VIDEO_SCANNER/SLICE_28" on site "R5C9C", clk load = 0, ce load = 6, sr load = 4
 
   PRIMARY  : 0 out of 8 (0%)
   SECONDARY: 4 out of 8 (50%)
@@ -709,14 +718,14 @@ Total placer CPU time: 3 secs
 Dumping design to file IOU_impl1.dir/5_1.ncd.
 
 1 potential circuit loop found in timing analysis.
-0 connections routed; 698 unrouted.
+0 connections routed; 720 unrouted.
 Starting router resource preassignment
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=U_COMMON_INTERNALS/Q3_PRAS_N loads=1 clock_loads=1&#xA;   Signal=PRAS_N_c loads=13 clock_loads=2&#xA;   Signal=Q6_N_150 loads=1 clock_loads=1&#xA;   Signal=Q7_N_153 loads=1 clock_loads=1&#xA;   Signal=Q0_N_128 loads=1 clock_loads=1&#xA;   Signal=C02X_N loads=1 clock_loads=1&#xA;   Signal=C03X_N loads=1 clock_loads=1&#xA;   Signal=KEY_N_277    ....   s=1&#xA;   Signal=U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1 loads=3 clock_loads=1&#xA;   Signal=U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_244 loads=1 clock_loads=1"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=U_COMMON_INTERNALS/Q3_PRAS_N loads=1 clock_loads=1&#xA;   Signal=Q3_c loads=6 clock_loads=1&#xA;   Signal=PRAS_N_c loads=14 clock_loads=2&#xA;   Signal=Q6_N_150 loads=1 clock_loads=1&#xA;   Signal=Q7_N_153 loads=1 clock_loads=1&#xA;   Signal=Q0_N_128 loads=1 clock_loads=1&#xA;   Signal=HIRES_N_216 loads=1 clock_loads=1&#xA;   Signal=AN0_N_2   ....   al=U_IOU_KEYBOARD/SET_DELAY_N_255 loads=2 clock_loads=1&#xA;   Signal=CTC14S loads=2 clock_loads=2&#xA;   Signal=U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_N_256 loads=2 clock_loads=1"  />
 
 Completed router resource preassignment. Real time: 5 secs 
 
-Start NBR router at 19:45:04 06/04/25
+Start NBR router at 15:35:37 07/02/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -732,88 +741,124 @@ Note: NBR uses a different method to calculate timing slacks. The
 *****************************************************************
 
 1 potential circuit loop found in timing analysis.
-Start NBR special constraint process at 19:45:04 06/04/25
+Start NBR special constraint process at 15:35:37 07/02/25
 
-Start NBR section for initial routing at 19:45:04 06/04/25
+Start NBR section for initial routing at 15:35:37 07/02/25
 Level 1, iteration 1
-0(0.00%) conflict; 468(67.05%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+0(0.00%) conflict; 472(65.56%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.845ns/0.000ns; real time: 5 secs 
 Level 2, iteration 1
-0(0.00%) conflict; 468(67.05%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+0(0.00%) conflict; 472(65.56%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.845ns/0.000ns; real time: 5 secs 
 Level 3, iteration 1
-0(0.00%) conflict; 468(67.05%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+0(0.00%) conflict; 471(65.42%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.845ns/0.000ns; real time: 5 secs 
 Level 4, iteration 1
-53(0.25%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+46(0.21%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 19:45:04 06/04/25
+Start NBR section for normal routing at 15:35:37 07/02/25
 Level 1, iteration 1
-41(0.19%) conflicts; 24(3.44%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+30(0.14%) conflicts; 15(2.08%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 Level 1, iteration 2
-33(0.15%) conflicts; 31(4.44%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+25(0.12%) conflicts; 20(2.78%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 Level 1, iteration 3
-25(0.12%) conflicts; 34(4.87%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+22(0.10%) conflicts; 21(2.92%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 Level 1, iteration 4
-21(0.10%) conflicts; 35(5.01%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+21(0.10%) conflicts; 22(3.06%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 Level 1, iteration 5
-16(0.07%) conflicts; 36(5.16%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+17(0.08%) conflicts; 24(3.33%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 Level 1, iteration 6
-14(0.06%) conflicts; 39(5.59%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+12(0.06%) conflicts; 27(3.75%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 Level 1, iteration 7
-12(0.06%) conflicts; 43(6.16%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+11(0.05%) conflicts; 27(3.75%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 Level 1, iteration 8
-10(0.05%) conflicts; 46(6.59%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+8(0.04%) conflicts; 28(3.89%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 Level 4, iteration 1
-23(0.11%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+28(0.13%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.838ns/0.000ns; real time: 5 secs 
 Level 4, iteration 2
-21(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+24(0.11%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.826ns/0.000ns; real time: 5 secs 
 Level 4, iteration 3
-16(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+22(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.826ns/0.000ns; real time: 5 secs 
 Level 4, iteration 4
-15(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+19(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.826ns/0.000ns; real time: 5 secs 
 Level 4, iteration 5
-10(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+16(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.826ns/0.000ns; real time: 5 secs 
 Level 4, iteration 6
-6(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+14(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.826ns/0.000ns; real time: 5 secs 
 Level 4, iteration 7
-2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+12(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.826ns/0.000ns; real time: 5 secs 
 Level 4, iteration 8
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+8(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.826ns/0.000ns; real time: 5 secs 
 Level 4, iteration 9
+6(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 5 secs 
+Level 4, iteration 10
+4(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 5 secs 
+Level 4, iteration 11
+3(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 5 secs 
+Level 4, iteration 12
+2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 5 secs 
+Level 4, iteration 13
+2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
+Level 4, iteration 14
+2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
+Level 4, iteration 15
+2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
+Level 4, iteration 16
+2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
+Level 4, iteration 17
+2(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
+Level 4, iteration 18
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
+Level 4, iteration 19
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
+Level 4, iteration 20
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
+Level 4, iteration 21
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 19:45:04 06/04/25
+Start NBR section for setup/hold timing optimization with effort level 3 at 15:35:38 07/02/25
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
 
-Start NBR section for re-routing at 19:45:04 06/04/25
+Start NBR section for re-routing at 15:35:38 07/02/25
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.960ns/0.000ns; real time: 5 secs 
+Estimated worst slack/total negative slack<setup>: 3.832ns/0.000ns; real time: 6 secs 
 
-Start NBR section for post-routing at 19:45:04 06/04/25
+Start NBR section for post-routing at 15:35:38 07/02/25
 1 potential circuit loop found in timing analysis.
 
 End NBR router with 0 unrouted connection
@@ -822,22 +867,22 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 3.960ns
+  Estimated worst slack<setup> : 3.832ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=U_COMMON_INTERNALS/Q3_PRAS_N loads=1 clock_loads=1&#xA;   Signal=PRAS_N_c loads=13 clock_loads=2&#xA;   Signal=Q6_N_150 loads=1 clock_loads=1&#xA;   Signal=Q7_N_153 loads=1 clock_loads=1&#xA;   Signal=Q0_N_128 loads=1 clock_loads=1&#xA;   Signal=C02X_N loads=1 clock_loads=1&#xA;   Signal=C03X_N loads=1 clock_loads=1&#xA;   Signal=KEY_N_277    ....   s=1&#xA;   Signal=U_VIDEO_ADDR_MUX/IOU_RA_MUX/PRAS_N_c_derived_1 loads=3 clock_loads=1&#xA;   Signal=U_VIDEO_ADDR_MUX/IOU_RA_MUX/WAITING_FOR_PRAS_N_244 loads=1 clock_loads=1"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=U_COMMON_INTERNALS/Q3_PRAS_N loads=1 clock_loads=1&#xA;   Signal=Q3_c loads=6 clock_loads=1&#xA;   Signal=PRAS_N_c loads=14 clock_loads=2&#xA;   Signal=Q6_N_150 loads=1 clock_loads=1&#xA;   Signal=Q7_N_153 loads=1 clock_loads=1&#xA;   Signal=Q0_N_128 loads=1 clock_loads=1&#xA;   Signal=HIRES_N_216 loads=1 clock_loads=1&#xA;   Signal=AN0_N_2   ....   al=U_IOU_KEYBOARD/SET_DELAY_N_255 loads=2 clock_loads=1&#xA;   Signal=CTC14S loads=2 clock_loads=2&#xA;   Signal=U_IOU_KEYBOARD/AUTOREPEAT_ACTIVE_N_256 loads=2 clock_loads=1"  />
 
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
-Total CPU time 4 secs 
-Total REAL time: 5 secs 
+Total CPU time 5 secs 
+Total REAL time: 6 secs 
 Completely routed.
-End of route.  698 routed (100.00%); 0 unrouted.
+End of route.  720 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -848,14 +893,14 @@ Dumping design to file IOU_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 3.960
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 3.832
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.304
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 4 secs 
-Total REAL time to completion: 5 secs 
+Total CPU  time to completion: 5 secs 
+Total REAL time to completion: 6 secs 
 
 par done!
 
@@ -892,7 +937,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
-Wed Jun 04 19:45:04 2025
+Wed Jul 02 15:35:38 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -918,11 +963,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 13 paths, 1 nets, and 36 connections (5.16% coverage)
+Constraints cover 13 paths, 1 nets, and 36 connections (5.00% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
-Wed Jun 04 19:45:04 2025
+Wed Jul 02 15:35:38 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -948,7 +993,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 13 paths, 1 nets, and 36 connections (5.16% coverage)
+Constraints cover 13 paths, 1 nets, and 36 connections (5.00% coverage)
 
 
 
@@ -1043,5 +1088,5 @@ Bitstream Status: Final           Version 1.95.
  
 Saving bit stream in "IOU_impl1.jed".
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 2 secs 
 Peak Memory Usage: 240 MB

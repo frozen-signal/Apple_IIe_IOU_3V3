@@ -1,7 +1,7 @@
 (footprint "ProgrammingPads"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 1.069 -0.5 0)
@@ -28,21 +28,8 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 1.069 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "c041d00a-2101-42bd-8f67-8055c00b5ede")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" ""
-		(at 1.069 0 0)
+		(at -0.481 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -55,7 +42,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 1.069 0 0)
+		(at -0.481 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -81,14 +68,14 @@
 		)
 	)
 	(pad "1" smd rect
-		(at -1.05 -1.008)
+		(at -3.5 -1)
 		(size 1.8 1.8)
 		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "0db9b310-c1a1-4449-9eeb-664b3a08a7e2")
 	)
 	(pad "2" smd rect
-		(at 1.05 -1.008)
+		(at -1.4 -1)
 		(size 1.8 1.8)
 		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 45)
@@ -108,4 +95,5 @@
 		(thermal_bridge_angle 45)
 		(uuid "f2236b20-fe68-4e6e-81f7-177b5d01c345")
 	)
+	(embedded_fonts no)
 )

@@ -9,7 +9,7 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    294 blocks expanded
+    302 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file IOU_impl1.ngd.

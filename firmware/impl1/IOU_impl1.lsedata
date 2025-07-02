@@ -1,18 +1,19 @@
 <top name = "IOU"  library = "work"  arch = "RTL"  entry = "VHDL">
 
 <clocks>
+    <clockitem name = "CTC14S"  type = "net" />
     <clockitem name = "PHI_0"  type = "port" />
     <clockitem name = "PRAS_N"  type = "port" />
-    <clockitem name = "CTC14S"  type = "net" />
+    <clockitem name = "Q3"  type = "port" />
     <clockitem name = "DELAY_CLK"  type = "net" />
     <clockitem name = "P_PHI_2"  type = "net" />
-    <clockitem name = "C03X_N"  type = "net" />
     <clockitem name = "C02X_N"  type = "net" />
+    <clockitem name = "C03X_N"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 7
+    //  Number of Clocks processed: 8
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.
@@ -72,7 +73,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 344
+        Instances in netlist: 347
     -->
 
     <instance  name = "U_IOU_INTERNALS/BL_N_I_0"  library = "work"  arch = "RTL"  type = "comb">
@@ -3984,7 +3985,7 @@
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/KEY_S_I_0_49"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/KEY_S_I_0_51"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -4036,7 +4037,63 @@
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/LA_3__I_0_51"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/RC01X_N_I_0_53"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "RC01X_N"  />
+        <nitem  name = "LA0"  />
+        <nitem  name = "U_IOU_MD7/RC010_N_N_288"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U_IOU_MD7/RC010_N_I_40"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "LA1"  />
+        <nitem  name = "U_IOU_MD7/RC010_N_N_288"  />
+        <nitem  name = "U_IOU_MD7/RC010_N_N_287"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U_IOU_MD7/RC010_N_I_39"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "LA2"  />
+        <nitem  name = "U_IOU_MD7/RC010_N_N_287"  />
+        <nitem  name = "U_IOU_MD7/RC010_N_N_286"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U_IOU_MD7/RC010_N_I_38"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "LA3"  />
+        <nitem  name = "U_IOU_MD7/RC010_N"  />
+        <nitem  name = "U_IOU_MD7/RC010_N_N_286"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U_IOU_MD7/LA_3__I_0_55"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -4044,7 +4101,7 @@
 
         <nets>
         <nitem  name = "LA3"  />
-        <nitem  name = "U_IOU_MD7/LA_3__N_287"  />
+        <nitem  name = "U_IOU_MD7/LA_3__N_290"  />
         </nets>
     </instance>
 
@@ -4056,7 +4113,7 @@
 
         <nets>
         <nitem  name = "LA2"  />
-        <nitem  name = "U_IOU_MD7/LA_2__N_291"  />
+        <nitem  name = "U_IOU_MD7/LA_2__N_294"  />
         </nets>
     </instance>
 
@@ -4068,11 +4125,11 @@
 
         <nets>
         <nitem  name = "LA1"  />
-        <nitem  name = "U_IOU_MD7/LA_1__N_293"  />
+        <nitem  name = "U_IOU_MD7/LA_1__N_296"  />
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/XXX9_F_N_I_39"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/XXX9_F_N_I_42"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -4080,9 +4137,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "U_IOU_MD7/LA_2__N_291"  />
-        <nitem  name = "U_IOU_MD7/LA_1__N_293"  />
-        <nitem  name = "U_IOU_MD7/XXX9_F_N_N_289"  />
+        <nitem  name = "U_IOU_MD7/LA_2__N_294"  />
+        <nitem  name = "U_IOU_MD7/LA_1__N_296"  />
+        <nitem  name = "U_IOU_MD7/XXX9_F_N_N_292"  />
         </nets>
     </instance>
 
@@ -4094,11 +4151,11 @@
 
         <nets>
         <nitem  name = "LA0"  />
-        <nitem  name = "U_IOU_MD7/LA_0__N_295"  />
+        <nitem  name = "U_IOU_MD7/LA_0__N_298"  />
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/XXX9_F_N_I_38"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/XXX9_F_N_I_41"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -4106,9 +4163,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "U_IOU_MD7/XXX9_F_N_N_289"  />
-        <nitem  name = "U_IOU_MD7/LA_0__N_295"  />
-        <nitem  name = "U_IOU_MD7/XXX9_F_N_N_288"  />
+        <nitem  name = "U_IOU_MD7/XXX9_F_N_N_292"  />
+        <nitem  name = "U_IOU_MD7/LA_0__N_298"  />
+        <nitem  name = "U_IOU_MD7/XXX9_F_N_N_291"  />
         </nets>
     </instance>
 
@@ -4121,8 +4178,8 @@
 
         <nets>
         <nitem  name = "U_IOU_MD7/XXX9_F_N"  />
-        <nitem  name = "U_IOU_MD7/LA_3__N_287"  />
-        <nitem  name = "U_IOU_MD7/XXX9_F_N_N_288"  />
+        <nitem  name = "U_IOU_MD7/LA_3__N_290"  />
+        <nitem  name = "U_IOU_MD7/XXX9_F_N_N_291"  />
         </nets>
     </instance>
 
@@ -4140,32 +4197,6 @@
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/Q3_I_0"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "i"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "Q3"  />
-        <nitem  name = "U_IOU_MD7/Q3_N_299"  />
-        </nets>
-    </instance>
-
-    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_I_42"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "PHI_0"  />
-        <nitem  name = "U_IOU_MD7/Q3_N_299"  />
-        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_297"  />
-        </nets>
-    </instance>
-
     <instance  name = "U_IOU_MD7/PHI_0_I_0"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
@@ -4174,39 +4205,23 @@
 
         <nets>
         <nitem  name = "PHI_0"  />
-        <nitem  name = "U_IOU_MD7/PHI_0_N_303"  />
+        <nitem  name = "U_IOU_MD7/PHI_0_N_304"  />
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_I_44"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/PRAS_N_I_0"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "Q3"  />
-        <nitem  name = "U_IOU_MD7/PHI_0_N_303"  />
-        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_301"  />
-        </nets>
-    </instance>
-
-    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_I_43"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "PRAS_N"  />
-        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_301"  />
-        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_300"  />
+        <nitem  name = "U_IOU_MD7/PRAS_N_N_306"  />
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_I_41"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_I_43"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -4214,25 +4229,41 @@
         </pins>
 
         <nets>
-        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_297"  />
-        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_300"  />
-        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_296"  />
+        <nitem  name = "U_IOU_MD7/PHI_0_N_304"  />
+        <nitem  name = "U_IOU_MD7/PRAS_N_N_306"  />
+        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_302"  />
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_I_40"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/Q3_I_0"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
-        <pitem  name = "o"  direction = "out"  />
         <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N"  />
-        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_296"  />
+        <nitem  name = "Q3"  />
+        <nitem  name = "U_IOU_MD7/Q3_N_301"  />
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/RC01X_N_I_0_48"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U_IOU_MD7/n12"  />
+        <nitem  name = "PHI_0"  />
+        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N"  />
+        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_299"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U_IOU_MD7/RC010_N_I_0"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -4241,7 +4272,7 @@
 
         <nets>
         <nitem  name = "RC00X_N"  />
-        <nitem  name = "RC01X_N"  />
+        <nitem  name = "U_IOU_MD7/RC010_N"  />
         <nitem  name = "U_IOU_MD7/MD7_ENABLE_N_N_270"  />
         </nets>
     </instance>
@@ -4260,7 +4291,7 @@
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_I_0"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_I_0_54"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "o"  direction = "out"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -4343,7 +4374,7 @@
         </nets>
     </instance>
 
-    <instance  name = "U_IOU_MD7/RC01X_N_I_0_50"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "U_IOU_MD7/RC01X_N_I_0_52"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -4424,6 +4455,24 @@
         <nitem  name = "U_IOU_MD7/KEY_N_277"  />
         <nitem  name = "U_IOU_MD7/n13"  />
         <nitem  name = "U_IOU_MD7/KEY_N_280"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U_IOU_MD7/TIMING_ENABLE_N_50"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U_IOU_MD7/n12"  />
+        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N"  />
+        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_302"  />
+        <nitem  name = "U_IOU_MD7/Q3_N_301"  />
+        <nitem  name = "U_IOU_MD7/TIMING_ENABLE_N_N_299"  />
         </nets>
     </instance>
 
@@ -5888,7 +5937,7 @@
     <instance  name = "U_VIDEO_GRAPHICS"  />
     <instance  name = "U_VIDEO_SCANNER"  />
     <!--
-        REG instances in netlist: 23
+        REG instances in netlist: 24
     -->
 
     <regs>
@@ -5911,6 +5960,7 @@
         <reg  name = "U_IOU_KEYBOARD/D_KSTRB_N_INT_45"  />
         <reg  name = "U_IOU_KEYBOARD/N9_SHIFT"  />
         <reg  name = "U_IOU_KEYBOARD/M8_3_44"  />
+        <reg  name = "U_IOU_MD7/TIMING_ENABLE_N_50"  />
         <reg  name = "U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/PRAS_N_SHIFT_REGISTER"  />
         <reg  name = "U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/D_Q3_16"  />
         <reg  name = "U_VIDEO_ADDR_MUX/IOU_RA_MUX/U_DRAM_HOLD_TIME/Q3_SHIFT_REGISTER"  />

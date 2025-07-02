@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/dev/Apple_IIe_IOU_3V3/firmware/impl1/IOU_impl1.jed</File>
-			<FileTime>05/22/25 20:14:23</FileTime>
-			<JedecChecksum>0x6272</JedecChecksum>
+			<FileTime>07/02/25 15:35:40</FileTime>
+			<JedecChecksum>0x7019</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -49,9 +49,5 @@
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
 		<USBID>JTAG Programmer A Location 0000 Serial A</USBID>
-		<JTAGPinSetting>
-			TRST	ABSENT;
-			ISPEN	ABSENT;
-		</JTAGPinSetting>
 	</CableOptions>
 </ispXCF>
