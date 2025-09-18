@@ -16,6 +16,20 @@ Notable thanks go to:
 
 And lastly, a special thanks to **Leeland Heins [@SoftwareJanitor](https://github.com/softwarejanitor)**, who thoroughly tested this project. His steady encouragement was a much-appreciated source of motivation during the tougher stretches of development.
 
+## The IOU Adapter
+<a align="center">
+    <img src="/resources/IOU_Raytraced_v1_0.png" style="width: 480px"/>
+</a>
+<p><i>A rendering of the IOU, front and back</i></p>
+### Obtaining the IOU Adapter
+#### Buying
+If you wish to express support and gratitude, both ReActiveMicro and Ralle Palaveev’s store offer this project through their store.
+ - [Ralle Palaveev's store](https://apple2.co.uk/Products)
+ - [ReActiveMicro](https://www.reactivemicro.com/) (Available soon)
+### Building yourself
+Gerbers, production files, and instructions are located in [production](production/)
+
+
 ## Tested Hardware
 
 | Category         | Hardware Components |
@@ -36,9 +50,3 @@ Other hardware reference designs are located here:
 - 5V IOU adapter (To be done)
 - 5V MMU adapter (To be done)
 
-
-## The IOU Adapter
-<a align="center">
-    <img src="/resources/IOU_Raytraced_v1_0.png" style="width: 480px"/>
-</a>
-<p><i>A rendering of the IOU, front and back</i></p>
