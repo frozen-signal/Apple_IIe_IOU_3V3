@@ -11,10 +11,10 @@ Make sure these requirements are within you PCB fab house capabilities:
 - Smallest track width: 0.15mm
 ### BGA solderpads adjustments
 Review and/or adjust the BGA's solderpads so that they are within your fab house's mask registration capability or your reflow process if you will be reflowing the components yourself.
-Read Lattice's "[PCB Layout Recommendations for BGA Packages (FPGA-TN-02024-5.6)](https://www.latticesemi.com/view_document?document_id=671)" technical note for further details (See section 3 for the ).
+Read Lattice's "[PCB Layout Recommendations for BGA Packages (FPGA-TN-02024-5.6)](https://www.latticesemi.com/view_document?document_id=671)" technical note for further details (See section 3 for the 0.5mm ball pitch, csBGA-132).
 
 ## Assembly
-Soldering the components yourself is very much not recommended; the FPGA is a 132-ball csBGA (0.5mm pitch) and is beyond the capabilities of most hobbyists. Using the assembly services of your fab house is recommended.
+Soldering the components yourself is not recommended; the FPGA is a 132-ball csBGA (0.5mm pitch) and is beyond the capabilities of most hobbyists. Using the assembly services of your fab house is recommended.
 You can use leadframes for the 40 pins of the device, or use 2.54mm pin headers. If you use pin headers, be sure to use a 40-pin socket between them and the Apple IIe's socket; otherwise, the pin headers will damage the Apple IIe's socket.
 
 ## Programming
@@ -29,7 +29,7 @@ You will need Lattice Diamond to build the code and flash the device.
 3. Synthesize and build the JEDEC file
 
 ### Flash the MACHXO2
-Note: You will need a compatible JTAG programming device to flash the MACHXO2. In doubt, you can use the programmer found here: (JTAG Programmer)[https://github.com/frozen-signal/JTAG-Programmer]
+Note: You will need a compatible JTAG programming device to flash the MACHXO2. In doubt, you can use the programmer found here: [JTAG Programmer](https://github.com/frozen-signal/JTAG-Programmer)
 1. Connect the programmer and launch the Lattice Diamond Programmer
 2. Load the JEDEC file generated earlier
 3. Connect the JTAG to the IOU Adapter
