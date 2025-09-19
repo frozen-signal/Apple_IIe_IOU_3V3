@@ -19,13 +19,16 @@ You can use leadframes for the 40 pins of the device, or use 2.54mm pin headers.
 
 ## Programming
 ### Requirements
-You will need Lattice Diamond to build the code and flash the device.
+You will need Lattice Diamond to build the code and flash the device.<br/>
+Note: You can skip building the JEDEC file by using the one in the [Latest Official Release](https://github.com/frozen-signal/Apple_IIe_IOU_3V3/releases/tag/1.0)
 
 ### Build the code
 1. Open the project `firmware\IOU.ldf` in Lattice Diamond.
 2. In the file `firmware\CUSTOM\IOU.vhdl`, make sure the constant `NTSC_CONSTANT` (line 18) correspond with the version you want:
-- '1' will build a NTSC IOU
-- '0' will build a PAL IOU
+   | To build this IOU | Use this value |
+   | --- | --- |
+   | NTSC | `'1'` |
+   | PAL | `'0'` |
 3. Synthesize and build the JEDEC file
 
 ### Flash the MACHXO2
