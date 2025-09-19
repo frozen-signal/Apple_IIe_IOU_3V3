@@ -1,0 +1,4 @@
+#Start recording tcl command: 9/18/2025 16:40:22
+#Project Location: C:/dev/Apple_IIe_IOU_3V3/firmware; Project name: IOU
+prj_project open "C:/dev/Apple_IIe_IOU_3V3/firmware/IOU.ldf"
+#Stop recording: 9/18/2025 16:40:58
